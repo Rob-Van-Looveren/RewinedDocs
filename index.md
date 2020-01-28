@@ -1,7 +1,3 @@
----
-layout: post
-title: RewinedDocs
----
 
 # Rewined Documentation
 ![Rewined](media/logo/rewined_logo_s.png)

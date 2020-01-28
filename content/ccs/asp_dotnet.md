@@ -1,8 +1,3 @@
----
-layout: post
-page.title: test
-
----
 
 # ASP.net
 
@@ -31,7 +26,7 @@ sudo apt-get install aspnetcore-runtime-2.2
 sudo apt-get install dotnet-sdk-2.2
 ```
 
-# Uitleg werking a.d.h.v testapp
+## Uitleg werking a.d.h.v testapp
 * Maak en ga naar nieuwe map
 * Create nieuwe app via ```dotnet new webapp ```
     * we kiezen het template webapp, dit gebruikt ASP.net
