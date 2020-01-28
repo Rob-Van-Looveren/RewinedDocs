@@ -1,6 +1,7 @@
 ---
 layout: post
-title: ASP.net
+page.title: test
+
 ---
 
 # ASP.net
@@ -47,4 +48,4 @@ sudo apt-get install dotnet-sdk-2.2
 * start de app opnieuw via ```dotnet run```
 
 
-abc
+abcd
