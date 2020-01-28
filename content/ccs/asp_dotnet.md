@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Blogging Like a Hacker
 ---
 
@@ -23,4 +22,4 @@ wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-pr
 sudo dpkg -i packages-microsoft-prod.deb
 
 ```
-## configuratie 
+## configuratie m
