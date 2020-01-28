@@ -4,7 +4,6 @@ title: CCS
 ---
 
 [Home](/RewinedDocs/) /
-[css](/RewinedDocs/content/ccs) /
-[ASP.net](/RewinedDocs/content/ccs/asp_dotnet)
+[ccs](/RewinedDocs/content/ccs/index) /
 
 # CCS
