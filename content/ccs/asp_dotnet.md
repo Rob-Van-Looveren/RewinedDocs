@@ -1,16 +1,14 @@
 ---
 layout: default
-title: Blogging Like a Hacker
-
+title: Asp.net
 ---
-
 
 # ASP.net
 
 ![ASP.net](../../media/logo/asp.net.png)
 ![ASP.net](../../media/logo/dotnet.png)
 
-## wat
+## Wat
 Asp.net is een framework dat draait bovenop het dotnet core framework van Microsoft. Het is crossplatform en kan dus op zowel Windows, Linux als Mac runnen.
 
 ## Installatie 
@@ -47,6 +45,9 @@ sudo apt-get install dotnet-sdk-2.2
     * je kan zelf poorten aanpassen
     * je kan ook enkel http gebruiken door https te verwijderen
 * start de app opnieuw via ```dotnet run```
+    * Nu kan je met een ander machine aan de applicatie
 
-
-abcd
+## Sammengevat
+* ```dotnet new webapp``` maakt app aan
+* ```dotnet new run``` start de applicatie
+* ```Properties/launchSettings.json``` bevat de URL eigenschappen
