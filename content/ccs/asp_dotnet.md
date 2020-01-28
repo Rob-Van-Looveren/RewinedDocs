@@ -3,7 +3,7 @@ layout: default
 title: Asp.net
 ---
 
-[Home](/RewinedDocs/index.) /
+[Home](/RewinedDocs/) /
 [css](/RewinedDocs/content/ccs) /
 [ASP.net](/RewinedDocs/content/ccs/asp_dotnet)
 
