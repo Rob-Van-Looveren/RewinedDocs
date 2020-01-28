@@ -1,4 +1,5 @@
 ---
+layout: post
 title: ASP.net
 ---
 
@@ -44,3 +45,6 @@ sudo apt-get install dotnet-sdk-2.2
     * je kan zelf poorten aanpassen
     * je kan ook enkel http gebruiken door https te verwijderen
 * start de app opnieuw via ```dotnet run```
+
+
+abc
