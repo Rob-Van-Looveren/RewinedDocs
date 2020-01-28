@@ -1,7 +1,6 @@
-<link rel="icon" type="image/png" sizes="32x32" href="media/logo/favicon-32x32.png">
-
-
-
+---
+title: RewinedDocs
+---
 
 # Rewined Documentation
 ![Rewined](media/logo/rewined_logo_s.png)

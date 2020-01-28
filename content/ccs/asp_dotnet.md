@@ -19,7 +19,7 @@ wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-pr
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-### installeren Dotnet, ASP.net & SDK
+### Installeren .NET, ASP.net & SDK
 ```
 sudo add-apt-repository universe
 sudo apt-get update
@@ -29,4 +29,18 @@ sudo apt-get install aspnetcore-runtime-2.2
 sudo apt-get install dotnet-sdk-2.2
 ```
 
-## configuratie 
+# Uitleg werking a.d.h.v testapp
+* Maak en ga naar nieuwe map
+* Create nieuwe app via ```dotnet new webapp ```
+    * we kiezen het template webapp, dit gebruikt ASP.net
+* Start app via ```dotnet run```
+    * de applicatie draait nu
+    * maar is enkel alleen voor localhost bereikbaar
+    * andere machines kunnen er dus niet naartoe browsen
+* Onderbreek de app via crl + c
+* Open ```Properties/launchSettings.json``` in een editor
+* De regel applicationUrl bepaald de URL, http protocol en poort
+    * verander localhost naar *, zo kan iedere machine de app bereiken 
+    * je kan zelf poorten aanpassen
+    * je kan ook enkel http gebruiken door https te verwijderen
+* start de app opnieuw via ```dotnet run```
