@@ -1,3 +1,6 @@
+<link rel="shortcut icon" type="image/x-icon" href="media/logo/favicon-32x32.png">
+
+
 # Rewined Documentation
 ![Rewined](media/logo/rewined_logo_s.png)
 
