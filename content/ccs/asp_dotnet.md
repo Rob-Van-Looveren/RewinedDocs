@@ -3,7 +3,9 @@ layout: default
 title: Asp.net
 ---
 
-[Home](/index.md)
+[Home](/RewinedDocs/index.md)/
+[css](/RewinedDocs/content/ccs)/
+[asp.net](/RewinedDocs/content/ccs/asp_dotnet/md)
 
 # ASP.net
 
