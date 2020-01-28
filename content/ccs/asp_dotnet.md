@@ -55,3 +55,5 @@ sudo apt-get install dotnet-sdk-2.2
 * ```dotnet new webapp``` maakt app aan
 * ```dotnet new run``` start de applicatie
 * ```Properties/launchSettings.json``` bevat de URL eigenschappen
+
+# Bronnen 

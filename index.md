@@ -15,7 +15,6 @@ Deze documentatie is opgesteld in markdown en wordt beheer in een repository op 
 
 ```
 iets
-
 ```
 
 * CCS
