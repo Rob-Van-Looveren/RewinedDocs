@@ -18,4 +18,4 @@ iets
 ```
 
 * CCS
-     * [ASP.net](content/css/asp_dotnet)
+     * [ASP.net](content/ccs/asp_dotnet)
