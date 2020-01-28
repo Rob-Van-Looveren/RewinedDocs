@@ -3,7 +3,7 @@ layout: default
 title: Asp.net
 ---
 
- * [Home](/index.md)
+[Home](/index.md)
 
 # ASP.net
 
