@@ -1,10 +1,6 @@
 ---
-title: Blogging Like a Hacker
+title: ASP.net
 ---
-
-
-
-
 
 # ASP.net
 
@@ -22,4 +18,4 @@ wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-pr
 sudo dpkg -i packages-microsoft-prod.deb
 
 ```
-## configuratie m
+## configuratie 
