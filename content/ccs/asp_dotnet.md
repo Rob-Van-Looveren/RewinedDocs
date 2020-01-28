@@ -11,10 +11,22 @@ title: ASP.net
 Asp.net is een framework dat draait bovenop het dotnet core framework van Microsoft. Het is crossplatform en kan dus op zowel Windows, Linux als Mac runnen.
 
 ## Installatie 
+De API is geschreven in .netcore 2.2 en is dus de versie die we installeren 
 
+### Repository toevoegen
 ```
 wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
-
 ```
+
+### installeren Dotnet, ASP.net & SDK
+```
+sudo add-apt-repository universe
+sudo apt-get update
+sudo apt-get install apt-transport-https
+sudo apt-get install dotnet-runtime-2.2
+sudo apt-get install aspnetcore-runtime-2.2
+sudo apt-get install dotnet-sdk-2.2
+```
+
 ## configuratie 
