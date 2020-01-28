@@ -1,4 +1,6 @@
-<link rel="shortcut icon" type="image/x-icon" href="media/logo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="32x32" href="media/logo/favicon-32x32.png">
+
+
 
 
 # Rewined Documentation
@@ -16,4 +18,4 @@ iets
 ```
 
 * CCS
-     * [ASP.net](content/CCS/asp_net)
+     * [ASP.net](content/css/asp_dotnet)
