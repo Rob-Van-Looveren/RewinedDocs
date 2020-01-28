@@ -5,6 +5,6 @@ title: test
 
 [Home](/RewinedDocs/) /
 [ccs](/RewinedDocs/content/ccs/index) /
-[ASP.net](/RewinedDocs/content/ccs/mysql)
+[MySQL](/RewinedDocs/content/ccs/mysql)
 
 # MySQL
