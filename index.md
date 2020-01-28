@@ -1,12 +1,11 @@
-## Welcome to GitHub Pages
+# Rewined Documentation
+![Rewined](media/logo/rewined_logo_s.png)
 
-You can use the [editor on GitHub](https://github.com/Rob-Van-Looveren/RewindDocs/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Welkom
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+welkom op de documentatie pagina van rewined ookwel RewinedDocs gedoopt.
+Deze documentatie is opgesteld in markdown en wordt beheer in een repository op Github en gehost door
+[Github Pages](https://rob-van-looveren.github.io/RewinedDocs/)
 
 ```markdown
 Syntax highlighted code block
