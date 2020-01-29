@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 title: RewinedDocs
-description: [De plek voord onze documentatie]
+description: [De plek voor onze documentatie!]
 include: _includes/footer.html
 
 github:
