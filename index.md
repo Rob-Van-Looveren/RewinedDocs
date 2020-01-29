@@ -21,3 +21,4 @@ iets
 
      * [ASP.net](content/ccs/asp_dotnet)
      
+{% include footer.html %}
