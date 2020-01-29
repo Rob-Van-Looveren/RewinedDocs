@@ -3,7 +3,7 @@ layout: default
 title: CCS
 ---
 
-[Home](/RewinedDocs/) /
+[Home](/) /
 [ccs](/RewinedDocs/content/ccs/index) /
 
 # CCS
