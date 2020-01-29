@@ -12,5 +12,5 @@ Onderwerpen onder CCS
 * [mysql](/RewinedDocs/content/ccs/mysql)
 * [backup](/RewinedDocs/content/ccs/backupt)
 * [netwerk](/RewinedDocs/content/ccs/netwerk)
-{{ site.time | date: '%y' }}
+{{ site.time | date: '%B %d, %Y' }}
 
