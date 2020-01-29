@@ -1,92 +1,27 @@
-<nav class="breadcrumbs bootstrap hidden-sm-down">
-   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+{% capture url_tree %}
+  {{ page.url | replace: '/', ' ' | strip }}
+{% endcapture %}
 
-      {% for crumb in breadcrumbs %} 
-         {% if forloop.first and site.breadcrumbs.root.image %}
-         <li class="breadcrumb-item breadcrumb-item-icon" property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
-               <span class="icon" property="name">{% include nav-breadcrumb-icon.svg %}</span>
-               <meta property="position" content="{{ crumb.position }}" />
-            </a>
-         </li>
-         {% continue %} 
-      {% endif %} 
-      {% if forloop.last %}
-      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">{{ crumb.title }}</span>
-         <meta property="position" content="{{ crumb.position }}" />
-      </li>
-      {% continue %} {% endif %}
-      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
-            <span property="name">{{ crumb.title }}</span>
-            <meta property="position" content="{{ crumb.position }}" />
-         </a>
-      </li>
-      {% endfor %}
+{% capture url_level %}
+  {{ url_tree | number_of_words | minus: 1 }}
+{% endcapture %}
 
-   </ol>
-</nav>
+{% assign breadcrumb = url_tree | split: ' ' %}
 
-
-
-<!-- This is an example of CSS. Maybe you want to implement the css code into your main css file or modify it as you want -->
-<style>
-   nav.breadcrumbs.bootstrap {
-      /* from Twitter Bootstrap 4 */
-      /* If you already use Twitter, you do not need these css lines above, cause they already in Twitter Bootstrap */
-      /* Additions: image integration */
-   }
-
-   nav.breadcrumbs.bootstrap ol {
-      margin-left: 0
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb {
-      font-size: 1rem;
-      padding: 0.75rem 1rem;
-      margin-bottom: 1rem;
-      list-style: none;
-      background-color: #f1f2ed;
-      border-radius: 0.25rem;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb::after {
-      content: "";
-      display: table;
-      clear: both;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb-item {
-      float: left;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item::before {
-      display: inline-block;
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
-      color: #818a91;
-      content: "/";
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
-      text-decoration: underline;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
-      text-decoration: none;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb-item-active {
-      color: #818a91;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb .icon {
-      display: inline-block;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
-      height: 0.8rem;
-      width: 0.8rem;
-   }
-</style>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="{{ site.baseurl }}">Home</a>
+  </li>
+{% for item in breadcrumb %}
+  {% assign label = item | replace: '-', ' ' | capitalize %}
+  {% assign index = forloop.length | minus: forloop.index %}
+  {% assign page_url = page.url | split: '/' | pop: index | join: '/' %}
+  <li class="breadcrumb-item">
+    {% if forloop.last %}
+    <span>{{ page.breadcrumb_label | default: label }}</span>
+    {% else %}
+    <a href="{{ page_url }}/">{{ label }}</a>
+    {% endif %}
+  </li>
+{% endfor %}
+</ol>
