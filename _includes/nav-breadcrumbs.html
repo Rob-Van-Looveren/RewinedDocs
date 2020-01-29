@@ -20,7 +20,7 @@
     {% if forloop.last %}
     <span>{{ page.breadcrumb_label | default: label }}</span>
     {% else %}
-    <a href="{{ page_url }}/">{{ label }}</a>
+    <a href="{{ site.baseurl }}{{ page_url }}/">{{ label }}</a>
     {% endif %}
   </li>
 {% endfor %}
