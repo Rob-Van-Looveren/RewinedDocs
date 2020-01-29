@@ -38,7 +38,7 @@
     {% assign crumbs_total = crumbs | size | minus: 1 %}
     {% for crumb in crumbs offset: 1 %}
         {% if forloop.index == crumbs_total %}
-            <li class="active"><a href="{{ site.baseurl }}{{ page.url }}">{{page.title}}</a></li>
+            <li class="active"><a href="{{ site.baseurl }}--{{ page.url }}">{{page.title}}</a></li>
         {% else %}
             {% assign crumb_limit = forloop.index | plus: 1 %}
             {% capture crumb_url %}{% for c in crumbs limit: crumb_limit %}{{ c | append: '/' }}{% endfor %}{% endcapture %}
