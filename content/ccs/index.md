@@ -17,3 +17,4 @@ Laatst bewerkt op
 
 {{ site.time | date: '%d %B  %Y - %H:%M:%S' }}
 
+{% include footer.html %}
