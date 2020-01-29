@@ -15,6 +15,34 @@ m
 ![ASP.net](../../media/logo/asp.net.png)
 ![ASP.net](../../media/logo/dotnet.png)
 
+{% capture url_tree %}
+  {{ page.url | replace: '/', ' ' | strip }}
+{% endcapture %}
+
+{% capture url_level %}
+  {{ url_tree | number_of_words | minus: 1 }}
+{% endcapture %}
+
+{% assign breadcrumb = url_tree | split: ' ' %}
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="{{ site.baseurl }}">Home</a>
+  </li>
+{% for item in breadcrumb %}
+  {% assign label = item | replace: '-', ' ' | capitalize %}
+  {% assign index = forloop.length | minus: forloop.index %}
+  {% assign page_url = page.url | split: '/' | pop: index | join: '/' %}
+  <li class="breadcrumb-item">
+    {% if forloop.last %}
+    <span>{{ page.breadcrumb_label | default: label }}</span>
+    {% else %}
+    <a href="{{ page_url }}/">{{ label }}</a>
+    {% endif %}
+  </li>
+{% endfor %}
+</ol>
+
 ## Wat
 Asp.net is een framework dat draait bovenop het dotnet core framework van Microsoft. Het is crossplatform en kan dus op zowel Windows, Linux als Mac runnen.
 
