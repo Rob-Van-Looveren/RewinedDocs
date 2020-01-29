@@ -32,37 +32,9 @@
         right: 0px;
     }
 </style>
-test3
 {% include breadcrumbs.html %}
 
-<H1> f {{  page.url}}</H1>
-
-
-<ol class="pull-right breadcrumb">
-    <li><a href="/{{site.RepoName}}">Home</a></li>
-    {% assign crumbs = page.url | split: '/' %}
-    {% assign crumbs_total = crumbs | size | minus: 1 %}
-    {% for crumb in crumbs offset: 1 %}
-        {% if forloop.index == crumbs_total %}
-            <li class="active"><a href="{{ site.baseurl }}{{ page.url }}">{{page.title}}</a></li>
-        {% else %}
-            {% assign crumb_limit = forloop.index | plus: 1 %}
-            {% capture crumb_url %}{% for c in crumbs limit: crumb_limit %}{{ c | append: '/' }}{% endfor %}{% endcapture %}
-            {% capture crumb_with_index %}{{ crumb_url | append: 'index.html' }}{% endcapture %}
-            {% capture current_page %}{{ site.baseurl }}{{ page.url }}{% endcapture %}
-            {% for p in site.pages %}
-                {% if crumb_with_index != current_page and crumb_with_index == p.url %}
-                    <li><a href="{{ crumb_with_index }}">{{ crumb | replace:'-',' ' | capitalize}}</a>
-                {% endif %}
-            {% endfor %}
-        {% endif %}
-    {% endfor %}
-</ol>
-
 <footer class="absolute">
-
-
-
     <div class="grid">
         <h1 style="display: none;"></h1>
         <h1>test</h1>
@@ -74,8 +46,5 @@ test3
         <p>updated on {{ site.time | date: '%d %B  %Y - %H:%M:%S' }}  </p>
         
     </div>
-
-
-  
-  
+    
 </footer>
