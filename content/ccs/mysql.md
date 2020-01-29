@@ -1,6 +1,6 @@
 ---
 layout: default
-title: test
+title: MySQL
 ---
 
 [Home](/RewinedDocs/) /
