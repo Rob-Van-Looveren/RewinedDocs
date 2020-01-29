@@ -3,9 +3,7 @@ layout: default
 title: test
 ---
 
-[Home](/RewinedDocs/) /
-[ccs](/RewinedDocs/content/ccs/index) /
-[ASP.net](/RewinedDocs/content/ccs/asp_dotnet)
+{% include footer.html %}
 
 # ASP.net
 
@@ -61,4 +59,3 @@ sudo apt-get install dotnet-sdk-2.2
 * [Install instructions (Ubuntu 18.04)](https://docs.microsoft.com/nl-nl/dotnet/core/install/linux-package-manager-ubuntu-1804)
 * [Deploy Video tutorial](https://www.youtube.com/watch?v=6VK370-Yk3A)
 
-{% include footer.html %}
