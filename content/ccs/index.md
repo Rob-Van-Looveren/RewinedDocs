@@ -13,6 +13,6 @@ Onderwerpen onder CCS
 * [backup](/RewinedDocs/content/ccs/backupt)
 * [netwerk](/RewinedDocs/content/ccs/netwerk)
 
-datum
-{{ site.time | date: '%B %d, %Y' }}
+Laatst bewerkt op
+{{ site.time | date: '%d %B  %Y' }}
 
