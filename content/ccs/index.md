@@ -14,5 +14,6 @@ Onderwerpen onder CCS
 * [netwerk](/RewinedDocs/content/ccs/netwerk)
 
 Laatst bewerkt op
-{{ site.time | date: '%d %B  %Y - %H : %M : %S' }}
+
+{{ site.time | date: '%d %B  %Y - %H:%M:%S' }}
 
