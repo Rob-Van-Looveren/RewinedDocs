@@ -19,6 +19,6 @@ iets
 
 * [CCS](content/ccs/index)
 
-     * [ASP.net](content/ccs/asp_dotnet)
+     * [ASP.net](content/ccs/asp/asp_dotnet)
      
 {% include footer.html %}
