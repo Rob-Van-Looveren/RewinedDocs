@@ -1,12 +1,14 @@
 ---
 layout: default
-title: html titel
+title: MySQL
 author: schrijver
 ---
 
 {% include nav-breadcrumbs.html %}
 
 # Database
+![MySQL](../../media/logo/mysql.png)
+![phpMyAdmin](../../media/logo/phpmyadmin.jpg)
 ## h2
 ### h3
 
