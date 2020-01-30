@@ -8,7 +8,7 @@ title: CCS
 
 # CCS
 Onderwerpen onder CCS
-* [ASP.net](asp/)
+* [ASP.net](ASP_net/)
 * [mysql](mysql)
 * [backup](backup/)
 * [netwerk](netwerk/)
