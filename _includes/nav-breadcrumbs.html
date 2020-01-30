@@ -7,7 +7,7 @@
 {% endcapture %}
 
 {% assign breadcrumb = url_tree | split: ' ' %}
-
+<div>
     <a href="{{ site.baseurl }}">Home</a>
 {% for item in breadcrumb %}
   {% assign label = item | replace: '-', ' ' | capitalize %}
@@ -21,3 +21,4 @@
     {% endif %}
   </li>
 {% endfor %}
+</div>
