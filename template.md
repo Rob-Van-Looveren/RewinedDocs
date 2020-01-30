@@ -19,8 +19,10 @@ Asp.net is een framework dat draait bovenop het dotnet core framework van Micros
 ### 2de hoofding
 
 #### 3de hoofding
+##### 4de hoofding
 
-### lijsten
+
+## lijsten
 * item
 * item
     * sub item
@@ -34,11 +36,12 @@ Asp.net is een framework dat draait bovenop het dotnet core framework van Micros
     1. sub item
     1. sub item
 
-### links
+## links
 [link.be](www.link.be)
 
 [iets](www.link.be)
 
+## code block
 ```
 Code block
 sudo apt update
@@ -47,12 +50,15 @@ kan heel lange commado's tonen, er wordt indien nodig een horizontale scrollbar 
 
 een ```code blok``` kan ook in een zin.
 
+## tabel
+
 item | waarde
 ----| ---
 Banaan|20
 kiwi|33
 peer| 1
 
+## cursief & bold
 
 _enkele = cursief_
 
@@ -65,7 +71,7 @@ __dubbel = vet__
 *__combinatie van de 2__*  
 _**combinatie van de 2**_
 
-
+## qoute
 
 As Kanye West said:
 
