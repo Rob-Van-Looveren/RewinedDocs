@@ -8,7 +8,7 @@ author: schrijver
 
 # Database
 ![MySQL](../../media/logo/mysql.png)
-![phpMyAdmin](../../media/logo/phpmyadmin.jpg)
+![phpMyAdmin](../../media/logo/phpmyadmin.png)
 ## h2
 ### h3
 
