@@ -34,6 +34,11 @@ Asp.net is een framework dat draait bovenop het dotnet core framework van Micros
     1. sub item
     1. sub item
 
+### links
+[link.be](www.link.be)
+
+[iets](www.link.be)
+
 ```
 Code block
 sudo apt update
@@ -59,3 +64,13 @@ __dubbel = vet__
 
 *__combinatie van de 2__*  
 _**combinatie van de 2**_
+
+
+
+As Kanye West said:
+
+> We're living the future so
+> the present is our past.
+
+
+{% include footer.html %}
