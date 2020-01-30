@@ -32,12 +32,16 @@
         right: 0px;
     }
     .bottom{
-    display: flex;   
+        display: flex;   
      }
 
     .bottom * {
         align-self: flex-end;
+        color: gray;
     }
+
+
+
 </style>
 
 <footer class="absolute">
@@ -46,7 +50,7 @@
         <div class="bottom">
             <div>
                 <h5>geschreven door</h5>
-                <h1>{{page.author}}</h1>
+                <h1 style="margin:0px">{{page.author}}</h1>
             </div>
 
         </div>
