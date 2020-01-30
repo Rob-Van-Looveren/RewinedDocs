@@ -16,7 +16,7 @@ Onderwerpen onder CCS
 
 
 
-
+list
 {% for item in site.articles %}
 {{ item.title }}
 {% endfor %}
