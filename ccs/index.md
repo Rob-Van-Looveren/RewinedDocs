@@ -12,6 +12,7 @@ Onderwerpen onder CCS
 * [mysql](mysql)
 * [backup](backup/)
 * [netwerk](netwerk/)
+* [DNS](DNS/)
 
 
 
