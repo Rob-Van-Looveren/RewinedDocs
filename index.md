@@ -18,6 +18,9 @@ Deze documentatie is opgesteld in markdown en wordt beheer in een repository op 
 ```
 iets
 ```
+* [Markdown voorbeeld](markdown.md)
+* [template](template.md)
+
 
 * [CCS](ccs/)
 * [Iot](iot/)
