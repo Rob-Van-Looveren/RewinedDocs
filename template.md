@@ -40,7 +40,7 @@ sudo apt update
 kan heel lange commado's tonen, er wordt indien nodig een horizontale scrollbar getoont op de web pagine. zou deze zin al lang genoeg zijn?
 ```
 
-een ```code blok kan``` ook in een zin.
+een ```code blok``` kan ook in een zin.
 
 item | waarde
 ----| ---
@@ -48,5 +48,7 @@ Banaan|20
 kiwi|33
 peer| 1
 
-
+:desktop_computer:	
+:floppy_disk:	
+:grinning:	
 {% include footer.html %}
