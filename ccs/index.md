@@ -13,8 +13,11 @@ Onderwerpen onder CCS
 * [backup](/RewinedDocs/content/ccs/backupt)
 * [netwerk](/RewinedDocs/content/ccs/netwerk)
 
-Laatst bewerkt op
 
-{{ site.time | date: '%d %B  %Y - %H:%M:%S' }}
+
+{% for item in site.pizza.articles %}
+{{ item.title }}
+{% endfor %}
+
 
 {% include footer.html %}
