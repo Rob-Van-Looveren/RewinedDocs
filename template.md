@@ -48,9 +48,14 @@ Banaan|20
 kiwi|33
 peer| 1
 
-:desktop_computer:	
-:floppy_disk:	
-:grinning:	
-{% include footer.html %}
 
-_iets_
+_enkele = cursief_
+
+*enkele = cursief*
+
+__dubbel = vet__
+
+**dubbel = vet**
+
+*__combinatie van de 2__*  
+_**combinatie van de 2**_
