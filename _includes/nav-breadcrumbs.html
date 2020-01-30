@@ -8,9 +8,7 @@
 
 {% assign breadcrumb = url_tree | split: ' ' %}
 
-  <li class="breadcrumb-item">
     <a href="{{ site.baseurl }}">Home</a>
-  </li>
 {% for item in breadcrumb %}
   {% assign label = item | replace: '-', ' ' | capitalize %}
   {% assign index = forloop.length | minus: forloop.index %}
