@@ -1,6 +1,7 @@
 ---
 layout: default
 title: RewinedDocs
+Author: John Doe
 ---
 
 {% include nav-breadcrumbs.html %}
