@@ -8,7 +8,7 @@
 
 {% assign breadcrumb = url_tree | split: ' ' %}
 <div>
-    <a href="{{ site.baseurl }}">Home</a>
+    <a href="{{ site.baseurl }}">Home</a>/
 {% for item in breadcrumb %}
   {% assign label = item | replace: '-', ' ' | capitalize %}
   {% assign index = forloop.length | minus: forloop.index %}
@@ -16,7 +16,7 @@
     {% if forloop.last %}
     <span>{{ page.breadcrumb_label | default: label }}</span>
     {% else %}
-    /<a href="{{ site.baseurl }}{{ page_url }}/">{{ label }}</a>/
+    <a href="{{ site.baseurl }}{{ page_url }}/">{{ label }}</a>/
     {% endif %}
 {% endfor %}
 </div>
