@@ -1,10 +1,14 @@
 ---
 layout: default
-title: MySQL
+title: html titel
+author: schrijver
 ---
 
-[Home](/RewinedDocs/) /
-[ccs](/RewinedDocs/content/ccs/index) /
-[MySQL](/RewinedDocs/content/ccs/mysql)
+{% include nav-breadcrumbs.html %}
 
-# MySQL
+# Database
+## h2
+### h3
+
+
+{% include footer.html %}
