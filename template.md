@@ -37,6 +37,8 @@ Asp.net is een framework dat draait bovenop het dotnet core framework van Micros
     1. sub item
 
 ## links
+[home](index.md)
+
 [link.be](www.link.be)
 
 [iets](www.link.be)
