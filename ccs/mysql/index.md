@@ -6,10 +6,12 @@ author: schrijver
 
 {% include nav-breadcrumbs.html %}
 
-# Database
-![MySQL](../../media/logo/mysql.png)
+# MySQL
+![MySQL](../../media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
 ![phpMyAdmin](../../media/logo/phpmyadmin.png)
-## h2
+
+## Wat
+We gebruiken de MySQL database voor dit project, dit is een open-source relationeel database management system.
 ### h3
 
 
