@@ -15,7 +15,8 @@ Onderwerpen onder CCS
 
 
 
-{% for item in site.pizza.articles %}
+
+{% for item in site.articles %}
 {{ item.title }}
 {% endfor %}
 
