@@ -19,8 +19,10 @@ Deze documentatie is opgesteld in markdown en wordt beheer in een repository op 
 iets
 ```
 
-* [CCS](content/ccs/index)
+* [CCS](ccs/)
+* [Iot](iot/)
+* [app](app/)
+* [BI](bi/)
 
-     * [ASP.net](content/ccs/asp/asp_dotnet)
      
 {% include footer.html %}
