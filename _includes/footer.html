@@ -31,12 +31,19 @@
         width:100%;
         right: 0px;
     }
+    .bottom{
+        position: relative;
+    }
+    .bottom * {
+        position: absolute;
+        bottom: 0px;
+    }
 </style>
 
 <footer class="absolute">
     <div class="grid">
         <h1 style="display: none;"></h1>
-        <div>
+        <div class="bottom">
             <h5>geschreven door</h5>
             <h1>{{page.author}}</h1>
         </div>
