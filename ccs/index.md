@@ -8,10 +8,10 @@ title: CCS
 
 # CCS
 Onderwerpen onder CCS
-* [ASP.net](/RewinedDocs/content/ccs/asp_dotnet)
-* [mysql](/RewinedDocs/content/ccs/mysql)
-* [backup](/RewinedDocs/content/ccs/backupt)
-* [netwerk](/RewinedDocs/content/ccs/netwerk)
+* [ASP.net](asp/)
+* [mysql](mysql)
+* [backup](backup/)
+* [netwerk](netwerk/)
 
 
 
