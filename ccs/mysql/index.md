@@ -57,7 +57,6 @@ apt-get install -y phpmyadmin
 
 ### stap 5: Allow Remote connections & fix phpMyAfdmin error
 Andere machines toegang geven tot MySQL Server.
-
 Error in default phpMyAdmin configuratie repareren.
 ```
 echo 'bind-address            = 192.168.3.137' >> /etc/mysql/mysql.conf.d/mysqld.cnf
