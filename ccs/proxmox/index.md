@@ -4,14 +4,11 @@ title: Proxmox
 author: Rob V.L.
 ---
 
-
-
-
 {% include nav-breadcrumbs.html %}
 
 
 
-# ASP.net
+# Proxmox
 
 ![Proxmox](../../media/logo/proxmox.png)
 
