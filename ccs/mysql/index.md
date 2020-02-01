@@ -64,12 +64,11 @@ sudo sed -i "s/|\s*\((count(\$analyzed_sql_results\['select_expr'\]\)/| (\1)/g" 
 sudo service mysql restart
 ```
 
+## Zie ook
+[Back-up](../backup)
 
 
-f
-
-
-f
+## bronnen
 
 
 
