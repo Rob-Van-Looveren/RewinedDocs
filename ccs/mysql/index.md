@@ -15,7 +15,11 @@ We gebruiken de MySQL database voor dit project, dit is een open-source relation
 
 ## Installatie
 Om de installatie van MySQL, phpMyAdmin, en het instellen van de backups te vereenvoudigen hebben we een 'script' opgestelt. Bij het aanmaken van een nieuwe VM kan je eenvoudig de installatie uitvoeren, en bekom je altijd de zelfde installatie/configuratie. Het script bestaat uit verschillende onderdelen die je kan kopieren en in de terminal plakken (en eventueel enter drukken).
- 
 
+### stap 1 : sudo
+```
+Sudo -i
+__password ingeven__
+```
 
 {% include footer.html %}
