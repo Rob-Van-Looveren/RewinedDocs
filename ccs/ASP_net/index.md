@@ -63,6 +63,7 @@ sudo apt-get install dotnet-sdk-2.2
 
 
 ## Zie ook
+[API verbinden met Database](link)
 
 ## Bronnen 
 * [.NET Core 2.2 Download page](https://dotnet.microsoft.com/download/dotnet-core/2.2)
