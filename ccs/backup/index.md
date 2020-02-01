@@ -9,6 +9,9 @@ author: Rob V.L.
 # Backup
 
 ## Proxmox Backup
+
+!(Backup)[/{reponame}/media/proxmox screenshots/backup_1.png]
+
 ## Proxmox Restore
 ## Database Backup
 
