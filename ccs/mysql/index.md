@@ -23,14 +23,13 @@ Sudo -i
 password: *****
 ```
 ### stap 2: MySQL installeren
-
+Installeren van MySQL op non-interactive wijze, root wachtwoord opgegeven via variabele.
 ```
 sudo apt update
 MySQLRootPwd=project
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $MySQLRootPwd"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $MySQLRootPwd "
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
-
 ```
 
 {% include footer.html %}
