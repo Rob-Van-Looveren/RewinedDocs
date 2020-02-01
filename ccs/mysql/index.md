@@ -65,7 +65,7 @@ sudo service mysql restart
 ```
 
 ## Zie ook
-[Back-up](../backup#h3)
+[Back-up MySQL database](../backup#h3)
 
 
 ## bronnen
