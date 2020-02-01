@@ -19,7 +19,7 @@ Om de installatie van MySQL, phpMyAdmin, en het instellen van de backups te vere
 ### stap 1 : sudo
 ```
 Sudo -i
-__password ingeven__
+password: *****
 ```
 
 {% include footer.html %}
