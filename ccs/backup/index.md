@@ -9,6 +9,8 @@ author: Rob V.L.
 # Backup
 
 ## Proxmox Backup
+{ site.RepoName }
+{{ site.RepoName }}
 
 ![Backup](/{ site.RepoName }/media/proxmox screenshots/backup_1.png)
 
