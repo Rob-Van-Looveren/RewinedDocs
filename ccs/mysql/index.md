@@ -42,6 +42,7 @@ sudo mysql -u root -p$MySQLRootPwd -e " GRANT select ON *.* TO 'grafana'@'%';"
 ```
 
 ### Stap 4: phpMyAdmin
+installeren van phpMyAdmin 
 ```
 App_Pwd="project"
 Root_Pwd="project"
@@ -53,6 +54,23 @@ echo "phpmyadmin phpmyadmin/mysql/app-pass password $AppDB_pwd" | debconf-set-se
 echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" | debconf-set-selections
 apt-get install -y phpmyadmin
 ```
+
+### stap 5: Allow Remote connections & fix phpMyAfdmin error
+Andere machines toegang geven tot MySQL Server.
+
+Error in default phpMyAdmin configuratie repareren.
+```
+echo 'bind-address            = 192.168.3.137' >> /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo sed -i "s/|\s*\((count(\$analyzed_sql_results\['select_expr'\]\)/| (\1)/g" /usr/share/phpmyadmin/libraries/sql.lib.php
+sudo service mysql restart
+```
+
+
+
+f
+
+
+f
 
 
 
