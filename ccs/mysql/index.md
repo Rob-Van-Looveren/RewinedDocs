@@ -32,4 +32,28 @@ sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again p
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
 ```
 
+### stap 3: SQL users aanmaken
+users project heeft alle rechten; user grafana heeft enkel lees rechten
+```
+sudo mysql -u root -p$MySQLRootPwd -e "CREATE USER 'project'@'%' IDENTIFIED BY 'project';"
+sudo mysql -u root -p$MySQLRootPwd -e " GRANT ALL PRIVILEGES ON *.* TO 'project'@'%';"
+sudo mysql -u root -p$MySQLRootPwd -e "CREATE USER 'grafana'@'%' IDENTIFIED BY 'grafana';"
+sudo mysql -u root -p$MySQLRootPwd -e " GRANT select ON *.* TO 'grafana'@'%';"
+```
+
+### Stap 4: phpMyAdmin
+```
+App_Pwd="project"
+Root_Pwd="project"
+AppDB_Pwd="project"
+echo "phpmyadmin phpmyadmin/dbconfig-install boolean true" | debconf-set-selections
+echo "phpmyadmin phpmyadmin/app-password-confirm password $App_Pwd" | debconf-set-selections
+echo "phpmyadmin phpmyadmin/mysql/admin-pass password $Root_Pwd" | debconf-set-selections
+echo "phpmyadmin phpmyadmin/mysql/app-pass password $AppDB_pwd" | debconf-set-selections
+echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" | debconf-set-selections
+apt-get install -y phpmyadmin
+```
+
+
+
 {% include footer.html %}
