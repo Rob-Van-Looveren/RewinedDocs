@@ -78,7 +78,7 @@ Laat backup script om het halfuur uitvoeren via crontab/cronjobs
 (crontab -l 2>/dev/null; echo "*/30 * * * * /home/project/script/backup.sh ") | crontab -
 ```
 
-
+### Resultaat 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_4.png)
 
 {% include footer.html %}
