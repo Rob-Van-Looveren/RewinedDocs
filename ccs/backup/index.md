@@ -73,6 +73,6 @@ chmod  +x /home/project/script/backup.sh
 
 
 ```
-(crontab -l 2>/dev/null; echo "*/5 * * * * /home/project/script/backup.sh ") | crontab -
+(crontab -l 2>/dev/null; echo "*/30 * * * * /home/project/script/backup.sh ") | crontab -
 ```
 {% include footer.html %}
