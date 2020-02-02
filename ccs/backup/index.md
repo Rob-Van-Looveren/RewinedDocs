@@ -39,15 +39,18 @@ als alle instellingen naar wens zijn, druk je op oke. Nadien kom je terug op de 
 
 ## Database Backup
 
+commando's als Root uitvoeren
 ```
 sudo -i
 password: ***
 ```
 
+Cifs installeren zodat SMB share gemount kan worden
 ```
 apt install cifs-utils
 ```
 
+SMB mount instellen aan de hand van /etc/fstab
 ```
 echo  '//192.168.3.4/backup /mnt/nas        cifs    credentials=/root/.smbcredentials,vers=1.0,uid=33,gid=33,rw,nounix,iocharset=utf8,file_mode=0777,dir_mode=0777 0 0 '  >> /etc/fstab
 echo 'username=***' >>/root/.smbcredentials
@@ -55,12 +58,11 @@ echo 'password=***'  >>/root/.smbcredentials
 mkdir /mnt/nas
 mount -a
 ```
+
+Backup script aanmaken, maakt backup via mysqldump op smb share
 ```
 mkdir /home/project/script	
 touch /home/project/script/backup.sh
-```
-
-```
 echo ' #!/bin/bash
 date=`date +"%d-%m-%y__%H-%M-%S"`
 naam=database_`echo "$date"`.sql.gz
@@ -71,7 +73,7 @@ mysqldump -u project -pproject --all-databases | gzip > /mnt/nas/DB-backup-4.0/`
 chmod  +x /home/project/script/backup.sh
 ```
 
-
+Laat backup script om het halfuur uitvoeren via crontab/cronjobs
 ```
 (crontab -l 2>/dev/null; echo "*/30 * * * * /home/project/script/backup.sh ") | crontab -
 ```
