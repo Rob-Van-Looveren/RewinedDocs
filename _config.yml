@@ -6,6 +6,7 @@ description: [De plek voor onze documentatie!]
 
 
 RepoName: RewinedDocs
+SiteTitle: RewinedDocs
 
 github:
   is_project_page: false
