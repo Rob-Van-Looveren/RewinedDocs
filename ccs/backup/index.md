@@ -83,3 +83,4 @@ Laat backup script om het halfuur uitvoeren via crontab/cronjobs
 ![Backup](/{{ site.RepoName }}/media/backup/backup_4.png)
 
 {% include footer.html %}
+{% include head.html %}
