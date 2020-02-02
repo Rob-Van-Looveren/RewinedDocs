@@ -36,6 +36,7 @@ als alle instellingen naar wens zijn, druk je op oke. Nadien kom je terug op de 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_3.png)
 
 ## Proxmox Restore
+![Backup](/{{ site.RepoName }}/media/backup/restore_1.png)
 
 ## Database Backup
 
