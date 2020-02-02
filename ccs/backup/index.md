@@ -17,7 +17,7 @@ Via volgende stappen stellen we in dat we dagelijks de VM’s backupen naar een 
 ### Backup planning maken
 Ga naar je proxmox web interface en selecteer 'datacenter' kies dan de optie 'backup'. Nu krijg je een overzicht van bestaande backup planningen, je kan deze bewerken of verwijderen via de actie knoppen bovenaan. Kies hier voor 'Add' om een nieuwe backup planning aan te maken. 
 
-![Backup](/{{ site.RepoName }}/media/proxmox_screenshots/backup_1.png)
+![Backup](/{{ site.RepoName }}/media/backup/backup_1.png)
 
 ### Backup planning instellen
 Het volgende scherm toont alle opties die je kan instellen bij het aanmaken van een backup planning. de belangrijkste zijn hier gemakeerd. 
@@ -28,12 +28,12 @@ Het volgende scherm toont alle opties die je kan instellen bij het aanmaken van 
     * Notification: enkel bij backup fail of bij elk backup event
 * VMs: Alle VM's die je met deze backup planning wilt backuppen. 
 
-![Backup](/{{ site.RepoName }}/media/proxmox_screenshots/backup_2.png)
+![Backup](/{{ site.RepoName }}/media/backup/backup_2.png)
 
 ### Backup planning bevestigen
 als alle instellingen naar wens zijn, druk je op oke. Nadien kom je terug op de overzicht pagina waar je de instellingen kan bekijken.
 
-![Backup](/{{ site.RepoName }}/media/proxmox_screenshots/backup_3.png)
+![Backup](/{{ site.RepoName }}/media/backup/backup_3.png)
 
 ## Proxmox Restore
 
@@ -77,4 +77,8 @@ Laat backup script om het halfuur uitvoeren via crontab/cronjobs
 ```
 (crontab -l 2>/dev/null; echo "*/30 * * * * /home/project/script/backup.sh ") | crontab -
 ```
+
+
+![Backup](/{{ site.RepoName }}/media/backup/backup_4.png)
+
 {% include footer.html %}
