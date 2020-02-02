@@ -16,7 +16,7 @@ Deze documentatie is opgesteld in markdown en wordt beheer in een repository op 
 [Github Pages](https://rob-van-looveren.github.io/RewinedDocs/)
 
 ```
-iets
+git clone https://github.com/Rob-Van-Looveren/RewinedDocs.git
 ```
 * [Markdown voorbeeld](markdown.md)
 * [template](template.md)
