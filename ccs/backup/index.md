@@ -36,8 +36,43 @@ als alle instellingen naar wens zijn, druk je op oke. Nadien kom je terug op de 
 ![Backup](/{{ site.RepoName }}/media/proxmox_screenshots/backup_3.png)
 
 ## Proxmox Restore
+
 ## Database Backup
 
+```
+sudo -i
+password: ***
+```
+
+```
+apt install cifs-utils
+```
+
+```
+echo  '//192.168.3.4/backup /mnt/nas        cifs    credentials=/root/.smbcredentials,vers=1.0,uid=33,gid=33,rw,nounix,iocharset=utf8,file_mode=0777,dir_mode=0777 0 0 '  >> /etc/fstab
+echo 'username=***' >>/root/.smbcredentials
+echo 'password=***'  >>/root/.smbcredentials
+mkdir /mnt/nas
+mount -a
+```
+```
+mkdir /home/project/script	
+touch /home/project/script/backup.sh
+```
+
+```
+echo ' #!/bin/bash
+date=`date +"%d-%m-%y__%H-%M-%S"`
+naam=database_`echo "$date"`.sql.gz
+path="/mnt/nas/DB-backup-4.0/"`echo "$naam"`
+
+mysqldump -u project -pproject --all-databases | gzip > /mnt/nas/DB-backup-4.0/`echo $naam`
+'>>/home/project/script/backup.sh
+chmod  +x /home/project/script/backup.sh
+```
 
 
+```
+(crontab -l 2>/dev/null; echo "*/5 * * * * /home/project/script/backup.sh ") | crontab -
+```
 {% include footer.html %}
