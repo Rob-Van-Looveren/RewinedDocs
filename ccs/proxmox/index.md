@@ -28,7 +28,24 @@ Proxmox VE is een linux based open-source virtualisatie oplossing. In principe i
 
 
 ## Installatie 
-Proxmox is eenvoudig te installeren aan de hand van de [ISO image](https://www.proxmox.com/en/downloads/category/iso-images-pve) die je kan downloaden via de [proxmox website](https://www.proxmox.com/en/)
+Proxmox is eenvoudig te installeren aan de hand van de [ISO image](https://www.proxmox.com/en/downloads/category/iso-images-pve) die je kan downloaden via de [proxmox website](https://www.proxmox.com/en/). De installatie zelf spreekt voor zich en is eenvoudig te voltooiten via de installatie wizard.
+
+### ISO booten
+Je kan de ISO op 2 manieren booten, er zijn namelijk 2 bootmedia; USB of CD/DVD.
+
+#### CD/DVD
+Download de iso op een pc met CD/DVD writer, en plaats een lege CD/DVD in de lezer.
+rechterklik op de gedownloade ISO en kies 'Burn disc Image', kies het juiste station en geeft eventueel een naam in.
+Klik branden en wacht tot branden van CD/DVD is afgelopen.
+
+#### USB
+Voor het maken van een bootable USB maken we gebruik van het programma [BalenaEtcher](https://www.balena.io/etcher/), download dit programma en installeer.
+Open BalenaEtcher na installatie, selecteer je ISO image en kies de USB die je wil gebruiken. Kies daarna voor 'flash' of 'branden' en wacht tot het klaarmaken van de bootable USB is afgerond.
+```
+DIT FORTMATEERD DE USB EN DAARMEE DUS ALLE AANWEZIGE DATA, ZORG DAT JE DE JUISTE USB SELECTEERD
+```
+
+
 ### Repository toevoegen
 ```
 wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
