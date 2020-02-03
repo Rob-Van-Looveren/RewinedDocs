@@ -11,8 +11,10 @@ Onderwerpen onder CCS
 * [ASP.net](ASP_net/)
 * [MySQL](mysql)
 * [Backup](backup/)
-* [netwerk](netwerk/)
+* [Angular](angular/)
+* [Grafana](angular/)
 * [DNS](DNS/)
+* [Proxmox](proxmox/)
 
 
 {% include footer.html %}
