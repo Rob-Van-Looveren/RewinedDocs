@@ -43,11 +43,19 @@ Voor het maken van een bootable USB maken we gebruik van het programma [BalenaEt
 Open BalenaEtcher na installatie, selecteer je ISO image en kies de USB die je wil gebruiken. Kies daarna voor 'flash' of 'branden' en wacht tot het klaarmaken van de bootable USB is afgerond.
 __DIT FORTMATEERD DE USB EN DAARMEE DUS ALLE AANWEZIGE DATA, ZORG DAT JE DE JUISTE USB SELECTEERD__
 
+### Installatie op host
+Plaats de USB of CD/DVD in de host waar je Proxmox wil installeren. Stel de boot-order zo in dat de USB of CD/DVD eerst gekozen wordt in de bootprocess.
+Start de host op en wacht tot het Proxmox logo verschijnt met een keuze menu, kies hierbij 'Install Proxmox VE'.
+
+
+![install](../../media/proxmox/install.gif)
+
+
 ## Zie ook
 [API verbinden met Database](link)
 
 ## Bronnen 
-* [.NET Core 2.2 Download page](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+* [Proxmox install guide](https://pve.proxmox.com/pve-docs/images/screenshot/pve-grub-menu.png)
 * [Install instructions (Ubuntu 18.04)](https://docs.microsoft.com/nl-nl/dotnet/core/install/linux-package-manager-ubuntu-1804)
 * [Deploy Video tutorial](https://www.youtube.com/watch?v=6VK370-Yk3A)
 
