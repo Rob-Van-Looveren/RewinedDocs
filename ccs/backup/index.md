@@ -87,6 +87,6 @@ Laat backup script om het halfuur uitvoeren via crontab/cronjobs
 * [Verbind ASP.NET met database](../)
 
 
-## bronnen
+## Bronnen
 
 {% include footer.html %}

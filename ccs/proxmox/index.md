@@ -14,7 +14,9 @@ author: Rob V.L.
 
 
 ## Wat
-Asp.net is een framework dat draait bovenop het dotnet core framework van Microsoft. Het is crossplatform en kan dus op zowel Windows, Linux als Mac runnen.
+Proxmox VE is een linux based open-source virtualisatie oplossing. In principe is het een debian (Ubuntu) distro met aangepaste kernel waar een viertualisatie omgeving bovenop gebouwd is. De distro is zo aangepast dat het virtuele machines en containers kan draaien in de virtuele omegeving. Daarnaast kan Proxmox deze machines en containers ook beheren, dit kan via de commandline of via een web-interface waar een tal van opties mogenlijk zijn. 
+
+Proxmox wordt gratis aangeboden en heeft een betalende support dienst 
 
 ## Installatie 
 De API is geschreven in .netcore 2.2 en is dus de versie die we installeren 
