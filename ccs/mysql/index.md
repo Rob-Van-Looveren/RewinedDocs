@@ -69,7 +69,7 @@ sudo service mysql restart
 * [Verbind ASP.NET met database](../)
 
 
-## bronnen
+## Bronnen
 
 
 
