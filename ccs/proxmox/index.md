@@ -61,6 +61,7 @@ Na de installatie kan je de web-interface bezoeken via een je browser, via ```ht
 
 Je wordt gevraagt om in te loggen, dit kan met je de username root, en het ingestelde wachtwoord.
 ![install](../../media/proxmox/login.png)
+![install](../../media/proxmox/interface.png)
 
 
 
