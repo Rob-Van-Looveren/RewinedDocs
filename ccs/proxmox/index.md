@@ -16,7 +16,16 @@ author: Rob V.L.
 ## Wat
 Proxmox VE is een linux based open-source virtualisatie oplossing. In principe is het een debian (Ubuntu) distro met aangepaste kernel waar een viertualisatie omgeving bovenop gebouwd is. De distro is zo aangepast dat het virtuele machines en containers kan draaien in de virtuele omegeving. Daarnaast kan Proxmox deze machines en containers ook beheren, dit kan via de commandline of via een web-interface waar een tal van opties mogenlijk zijn. 
 
-Proxmox wordt gratis aangeboden en heeft een betalende support dienst 
+* Proxmox wordt gratis aangeboden en heeft een betalende support dienst.
+* Proxmox VE 6.1 is de recentste versie
+* Eenvoudig te beheren & installeren
+* Bevat veel ingeboude opties zoals 
+    * Backup
+    * live migration
+    * High Availibility
+    * Firewall
+* kan zowel window, mac als linux machines virualiseren
+
 
 ## Installatie 
 De API is geschreven in .netcore 2.2 en is dus de versie die we installeren 
