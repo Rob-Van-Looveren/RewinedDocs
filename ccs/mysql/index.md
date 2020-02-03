@@ -65,8 +65,8 @@ sudo service mysql restart
 ```
 
 ## Zie ook
-[Back-up MySQL database](../backup#Database Backup)
-[Verbind ASP.NET met database](../)
+* [Back-up MySQL database](../backup#Database Backup)
+* [Verbind ASP.NET met database](../)
 
 
 ## bronnen
