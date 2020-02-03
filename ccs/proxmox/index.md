@@ -44,46 +44,7 @@ Open BalenaEtcher na installatie, selecteer je ISO image en kies de USB die je w
 ```
 DIT FORTMATEERD DE USB EN DAARMEE DUS ALLE AANWEZIGE DATA, ZORG DAT JE DE JUISTE USB SELECTEERD
 ```
-
-
-### Repository toevoegen
-```
-wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-```
-
-### Installeren .NET, ASP.net & SDK
-```
-sudo add-apt-repository universe
-sudo apt-get update
-sudo apt-get install apt-transport-https
-sudo apt-get install dotnet-runtime-2.2
-sudo apt-get install aspnetcore-runtime-2.2
-sudo apt-get install dotnet-sdk-2.2
-```
-
-## Uitleg werking a.d.h.v testapp
-* Maak en ga naar nieuwe map
-* Create nieuwe app via ```dotnet new webapp ```
-    * we kiezen het template webapp, dit gebruikt ASP.net
-* Start app via ```dotnet run```
-    * de applicatie draait nu
-    * maar is enkel alleen voor localhost bereikbaar
-    * andere machines kunnen er dus niet naartoe browsen
-* Onderbreek de app via crl + c
-* Open ```Properties/launchSettings.json``` in een editor
-* De regel applicationUrl bepaald de URL, http protocol en poort
-    * verander localhost naar *, zo kan iedere machine de app bereiken 
-    * je kan zelf poorten aanpassen
-    * je kan ook enkel http gebruiken door https te verwijderen
-* start de app opnieuw via ```dotnet run```
-    * Nu kan je met een ander machine aan de applicatie
-
-## Sammengevat
-* ```dotnet new webapp``` maakt app aan
-* ```dotnet new run``` start de applicatie
-* ```Properties/launchSettings.json``` bevat de URL eigenschappen
-
+__DIT FORTMATEERD DE USB EN DAARMEE DUS ALLE AANWEZIGE DATA, ZORG DAT JE DE JUISTE USB SELECTEERD__
 
 ## Zie ook
 [API verbinden met Database](link)
