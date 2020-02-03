@@ -41,9 +41,6 @@ Klik branden en wacht tot branden van CD/DVD is afgelopen.
 #### USB
 Voor het maken van een bootable USB maken we gebruik van het programma [BalenaEtcher](https://www.balena.io/etcher/), download dit programma en installeer.
 Open BalenaEtcher na installatie, selecteer je ISO image en kies de USB die je wil gebruiken. Kies daarna voor 'flash' of 'branden' en wacht tot het klaarmaken van de bootable USB is afgerond.
-```
-DIT FORTMATEERD DE USB EN DAARMEE DUS ALLE AANWEZIGE DATA, ZORG DAT JE DE JUISTE USB SELECTEERD
-```
 __DIT FORTMATEERD DE USB EN DAARMEE DUS ALLE AANWEZIGE DATA, ZORG DAT JE DE JUISTE USB SELECTEERD__
 
 ## Zie ook
