@@ -82,4 +82,11 @@ Laat backup script om het halfuur uitvoeren via crontab/cronjobs
 ### Resultaat 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_4.png)
 
+## Zie ook
+[Back-up MySQL database](../backup#Database Backup)
+[Verbind ASP.NET met database](../)
+
+
+## bronnen
+
 {% include footer.html %}
