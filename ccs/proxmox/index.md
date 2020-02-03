@@ -28,7 +28,7 @@ Proxmox VE is een linux based open-source virtualisatie oplossing. In principe i
 
 
 ## Installatie 
-Proxmox is eenvoudig te installeren aan de hand van de [ISO image](https://www.proxmox.com/en/downloads/category/iso-images-pve) die je kan downloaden via de proxmox website 
+Proxmox is eenvoudig te installeren aan de hand van de [ISO image](https://www.proxmox.com/en/downloads/category/iso-images-pve) die je kan downloaden via de [proxmox website](https://www.proxmox.com/en/)
 ### Repository toevoegen
 ```
 wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
