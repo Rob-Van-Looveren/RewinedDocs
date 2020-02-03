@@ -54,10 +54,10 @@ Start de host op en wacht tot het Proxmox logo verschijnt met een keuze menu.
 * bekijk overzicht met de gemaakte keuzes
 * Voltooi de installatie 
 
-
-
-
 ![install](../../media/proxmox/install.gif)
+
+### Web interface
+Na de installatie kan je de web-interface bezoeken via een je browser, via ```https://IP.Adress:8006```
 
 
 ## Zie ook
