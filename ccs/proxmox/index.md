@@ -45,7 +45,16 @@ __DIT FORTMATEERD DE USB EN DAARMEE DUS ALLE AANWEZIGE DATA, ZORG DAT JE DE JUIS
 
 ### Installatie op host
 Plaats de USB of CD/DVD in de host waar je Proxmox wil installeren. Stel de boot-order zo in dat de USB of CD/DVD eerst gekozen wordt in de bootprocess.
-Start de host op en wacht tot het Proxmox logo verschijnt met een keuze menu, kies hierbij 'Install Proxmox VE'.
+Start de host op en wacht tot het Proxmox logo verschijnt met een keuze menu.
+* kies 'Install Proxmox VE'.
+* Seleteer op welke schijf je Proxmox wil installeren
+* Geef plaats, tijd & toetsenbord instellingen in
+* Stel een wachtwoord voor de root account & geef emailadress op.
+* Stel netwerk informatie in
+* bekijk overzicht met de gemaakte keuzes
+* Voltooi de installatie 
+
+
 
 
 ![install](../../media/proxmox/install.gif)
