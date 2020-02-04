@@ -39,5 +39,6 @@ services.AddDbContext<RewinedContext>(options =>  options.UseMySql(Configuration
 
 ## Bronnen
 * [Nuget page - Pomelo.EntityFrameworkCore.MySql](https://www.nuget.org/packages/Pomelo.EntityFrameworkCore.MySql/2.2.6)
+* [Github Pomelo](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql)
 
 {% include footer.html %}
