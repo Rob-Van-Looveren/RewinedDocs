@@ -1,6 +1,8 @@
 ---
 layout: default
 title: bi
+author: -
+
 ---
 
 {% include nav-breadcrumbs.html %}

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: APP
+author: -
+
 ---
 
 {% include nav-breadcrumbs.html %}

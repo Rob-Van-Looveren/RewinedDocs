@@ -1,6 +1,7 @@
 ---
 layout: default
 title: IoT
+author: -
 ---
 
 {% include nav-breadcrumbs.html %}
