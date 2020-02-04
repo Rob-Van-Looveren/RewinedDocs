@@ -26,7 +26,9 @@ Verander de DefaultConnection string naar volgende indeling en geef de juiste ge
 ### Startup.cs
 in het bestand Startup.json moeten we opgeven dat we met MySQL werken in plaats van een Microsoft SQL database.
 Daarom moeten we bij *'AddDbContext'* de optie *'UseSqlServer'* vervangen door *'UseMySql'*
-
+```
+services.AddDbContext<RewinedContext>(options =>  options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+```
 
 ## Zie ook
 * [Installatie ASP.NET](/{{site.RepoName}}/ccs/ASP_net/)
