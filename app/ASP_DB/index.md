@@ -29,8 +29,8 @@ Daarom moeten we bij *'AddDbContext'* de optie *'UseSqlServer'* vervangen door *
 
 
 ## Zie ook
-* [Installatie ASP.NET](/{{site.RepoName}}/css/ASP_net/)
-* [Installatie MySQL](/{{site.RepoName}}/css/mysql/)
+* [Installatie ASP.NET](/{{site.RepoName}}/ccs/ASP_net/)
+* [Installatie MySQL](/{{site.RepoName}}/ccs/mysql/)
 
 
 ## Bronnen
