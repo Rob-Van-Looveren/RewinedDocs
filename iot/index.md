@@ -8,8 +8,13 @@ author: -
 
 
 # IoT
-Onderwerpen onder CCS
-* iets
-* anders
+Onderwerpen onder IoT
+* Sensoren
+    * temp
+    * potentiometer
+    * ...
+* Sturing
+* python code
+* handleiding opstellen unit
 
 {% include footer.html %}

@@ -9,8 +9,9 @@ author: -
 
 
 # App
-Onderwerpen onder CCS
+Onderwerpen onder App
 * [Database verbinden](ASP_DB)
-* anders
+* Swagger
+* werking code
 
 {% include footer.html %}

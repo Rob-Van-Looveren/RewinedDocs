@@ -9,8 +9,8 @@ author: -
 
 
 # BI
-Onderwerpen onder CCS
-* iets
+Onderwerpen onder BI
+* Grafana handleiding
 * anders
 
 {% include footer.html %}
