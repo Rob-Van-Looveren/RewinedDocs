@@ -34,6 +34,6 @@ Daarom moeten we bij *'AddDbContext'* de optie *'UseSqlServer'* vervangen door *
 
 
 ## Bronnen
-* [Nuget page | Pomelo.EntityFrameworkCore.MySql](https://www.nuget.org/packages/Pomelo.EntityFrameworkCore.MySql/2.2.6)
+* [Nuget page - Pomelo.EntityFrameworkCore.MySql](https://www.nuget.org/packages/Pomelo.EntityFrameworkCore.MySql/2.2.6)
 
 {% include footer.html %}
