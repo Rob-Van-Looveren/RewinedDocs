@@ -1,6 +1,6 @@
 ---
 layout: default
-title: BI
+title: bi
 ---
 
 {% include nav-breadcrumbs.html %}
