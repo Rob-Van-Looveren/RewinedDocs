@@ -63,8 +63,6 @@ Je wordt gevraagt om in te loggen, dit kan met je de username root, en het inges
 ![install](../../media/proxmox/login.png)
 ![install](../../media/proxmox/interface.png)
 
-
-
 ## Zie ook
 [Backup Vm's](../backup)
 

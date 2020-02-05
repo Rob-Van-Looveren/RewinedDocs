@@ -75,5 +75,4 @@ sudo service mysql restart
 * [Remote access debugging](https://www.cyberciti.biz/tips/how-do-i-enable-remote-access-to-mysql-database-server.html)
 
 
-
 {% include footer.html %}
