@@ -13,7 +13,8 @@ Onderwerpen onder CCS
 * [MySQL](mysql)
 * [Backup](backup/)
 * [Angular](angular/)
-* [Grafana](angular/)
+* [Grafana](grafana/)
+* [pfSense](pfSense/)
 * [DNS](DNS/)
 * [Proxmox](proxmox/)
 
