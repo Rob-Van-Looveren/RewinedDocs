@@ -66,11 +66,10 @@ Je wordt gevraagt om in te loggen, dit kan met je de username root, en het inges
 
 
 ## Zie ook
-[API verbinden met Database](link)
+[Backup Vm's](../backup)
 
 ## Bronnen 
-* [Proxmox install guide](https://pve.proxmox.com/pve-docs/images/screenshot/pve-grub-menu.png)
-* [Install instructions (Ubuntu 18.04)](https://docs.microsoft.com/nl-nl/dotnet/core/install/linux-package-manager-ubuntu-1804)
-* [Deploy Video tutorial](https://www.youtube.com/watch?v=6VK370-Yk3A)
-
+* [Proxmox install guide](https://pve.proxmox.com/wiki/Installation)
+* [Installation video tutorial](https://www.youtube.com/watch?v=I-e1_CTa4s0)
+* [Interface overview video](https://www.youtube.com/watch?v=GHzMaTar0fw)
 {% include footer.html %}
