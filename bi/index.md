@@ -1,17 +1,16 @@
 ---
 layout: default
-title: DNS
-author: Rob V.L.
+title: bi
+author: -
+
 ---
 
 {% include nav-breadcrumbs.html %}
 
 
-
-# DNS
-
-## Zie ook
-
-## Bronnen 
+# BI
+Onderwerpen onder BI
+* Grafana handleiding
+* anders
 
 {% include footer.html %}
