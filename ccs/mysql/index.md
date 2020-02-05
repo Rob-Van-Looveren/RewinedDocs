@@ -72,6 +72,7 @@ sudo service mysql restart
 ## Bronnen
 * [Website MySql](https://www.mysql.com/)
 * [Website phpMyAdmin](https://www.phpmyadmin.net/)
+* [Remote access debugging](https://www.cyberciti.biz/tips/how-do-i-enable-remote-access-to-mysql-database-server.html)
 
 
 
