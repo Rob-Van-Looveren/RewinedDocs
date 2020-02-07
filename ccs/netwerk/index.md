@@ -8,10 +8,10 @@ author: schrijver
 
 # Netwerk
 
-VM |int IP| IP
----|---|---
-pfSense | 192.168.3.150 | 10.10.10.1
-Proxy| / | 10.10.10.10
+|VM |int IP| IP|
+|---|---|---|
+|pfSense | 192.168.3.150 | 10.10.10.1|
+|Proxy| / | 10.10.10.10|
  
 
 
