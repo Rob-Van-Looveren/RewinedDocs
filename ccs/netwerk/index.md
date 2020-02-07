@@ -1,12 +1,14 @@
 ---
 layout: default
-title: html titel
+title: Netwerk
 author: schrijver
 ---
 
 {% include nav-breadcrumbs.html %}
 
-# titel
+# Netwerk
+
+
 ## h2
 ### h3
 
