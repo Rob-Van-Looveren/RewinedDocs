@@ -13,6 +13,8 @@ author: schrijver
 | Firewall    | pfSense      | 192.168.3.150 | 10.10.10.1  |
 | Backend     | ASP.net      |iers           | anders      |
 | Frontend    | Angularjs    |               |             |
+| Database    | MySQL        |               |             |
+| Visualisatie| Grafana      |               |             |
 | Proxy       | Apache       | /             | 10.10.10.10 |
 
  
