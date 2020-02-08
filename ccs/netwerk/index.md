@@ -8,10 +8,13 @@ author: schrijver
 
 # Netwerk
 
-|VM |int IP| IP|
-|---|---|---|
-|pfSense | 192.168.3.150 | 10.10.10.1|
-|Proxy| / | 10.10.10.10|
+| VM          | Software     |int IP         | IP          |
+|-------------|--------------|---------------|-------------|
+| Firewall    | pfSense      | 192.168.3.150 | 10.10.10.1  |
+| Backend     | ASP.net      |iers           | anders      |
+| Frontend    | Angularjs    |               |             |
+| Proxy       | Apache       | /             | 10.10.10.10 |
+
  
 
 
