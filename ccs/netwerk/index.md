@@ -6,7 +6,7 @@ author: schrijver
 
 {% include nav-breadcrumbs.html %}
 
-# Netwerk
+## Netwerk
 
 | VM           | Software     | int IP        | IP           |
 |--------------|--------------|---------------|--------------|
@@ -17,8 +17,19 @@ author: schrijver
 | Database     | MySQL        | 192.168.3.103 | 10.10.10.103 |
 | Visualisatie | Grafana      | 192.168.3.104 | 10.10.10.104 |
 
- 
- portforwarding pfSense
+ ## portforwarding Proximus modem
+
+ | Port | VM        | forward IP     | forward Port |
+ |------|-----------|----------------|--------------|
+ | 22   | Proxy     | 10.10.10.10    | 22           |
+ | 3400 | Proxy     | 10.10.10.10    | 80           |
+ | 3400 | API       | 10.10.10.101   | #            |
+ | 3400 | Frontend  | 10.10.10.102   | #            |
+ | 3400 | Database  | 10.10.10.103   | #            |
+ | 3400 | Grafana   | 10.10.10.104   | #            |
+
+
+ ## portforwarding pfSense
 
  | Port | VM        | forward IP     | forward Port |
  |------|-----------|----------------|--------------|
