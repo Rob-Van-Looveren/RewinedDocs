@@ -19,7 +19,7 @@ author: schrijver
 |--------------|--------------|---------------|--------------|
 
 
- ## portforwarding Proximus modem
+ ## Portforwarding Proximus modem
 
  | Port | VM        | forward IP     | forward Port |
  |------|-----------|----------------|--------------|
