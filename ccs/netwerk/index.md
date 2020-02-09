@@ -16,6 +16,8 @@ author: schrijver
 | Frontend     | Angularjs    | 192.168.3.102 | 10.10.10.102 |
 | Database     | MySQL        | 192.168.3.103 | 10.10.10.103 |
 | Visualisatie | Grafana      | 192.168.3.104 | 10.10.10.104 |
+|--------------|--------------|---------------|--------------|
+
 
  ## portforwarding Proximus modem
 
