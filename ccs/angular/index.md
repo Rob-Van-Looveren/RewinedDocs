@@ -35,9 +35,12 @@ sudo apt install -y build-essential
 sudo npm install -g @angular/cli
 ```
 
-### 
+De installatie is nu in orde. Je kan de versie checken met volgend commando: ```ng --version ```
 
-## Zie ook
+## Nieuw project aanmaken
+
+1. Eerst moet je in de root directory komen en een project initialiseren
+![Angular stap 1](../../media/logo/angular_stap1.png)
 
 ## Bronnen 
 
