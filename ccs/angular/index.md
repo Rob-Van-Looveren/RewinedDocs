@@ -39,7 +39,7 @@ De installatie is nu in orde. Je kan de versie checken met volgend commando: ```
 
 ## Nieuw project aanmaken
 
-1. Eerst moet je in de root directory komen en een project initialiseren
+### Eerst moet je in de root directory komen en een project initialiseren
 ```
 cd /var/www/html
 sudo ng new tecmint-app
@@ -49,7 +49,7 @@ Let hier ook op je antwoorden tijdens de prompting:
 
 ![Angular prompting](../../media/logo/angular_prompting.png)
 
-2. Nu is er automatisch een 'application directory' aangemaakt en daar moet je je naar begeven.
+### Nu is er automatisch een 'application directory' aangemaakt en daar moet je je naar begeven.
 ```
 cd tecmint-app
 ls                 # list project files
@@ -58,13 +58,13 @@ ng serve
 Met ‘ng serve’ zal de server de applicatie terug opbouwen en de webpagina herladen indien er veranderingen zijn aangebracht aan de source files.
 Meer informatie over deze tool met ‘ng help’.
 
-3. Om de app via de browser te bereiken, moet poort 4200 openstaan. Indien de firewall actief is, dien je deze aan te passen.
+### Om de app via de browser te bereiken, moet poort 4200 openstaan. Indien de firewall actief is, dien je deze aan te passen.
 ```
 sudo ufw allow 4200/tcp
 sudo ufw reload
 ```
 
-4. Nu kan je via de browser je applicatie bereiken.
+### Nu kan je via de browser je applicatie bereiken.
 ```
 http://localhost:4200
 of http://server-ip:4200
