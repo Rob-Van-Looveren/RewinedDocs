@@ -61,8 +61,6 @@ Password:  admin
 ```
 
 
-## Zie ook
-[API verbinden met Database](link)
 
 ## Bronnen 
 * [Grafana v6.6 Download & installation page](https://grafana.com/docs/grafana/latest/installation/debian/)
