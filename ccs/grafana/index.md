@@ -10,7 +10,7 @@ author: Rob V.L.
 
 # Grafana
 
-![Grafana_logo](../../media/logo/grafana_logo.png)
+                              ![Grafana_logo](../../media/logo/grafana_logo.png)
 
 ## Wat
 
