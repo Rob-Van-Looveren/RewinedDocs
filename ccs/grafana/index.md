@@ -32,7 +32,7 @@ sudo apt-get install -y gnupg2 curl software-properties-common
 curl https://packages.grafana.com/gpg.key | sudo apt-key add –
 sudo add-apt-repository “deb https://packages.grafana.com/oss/deb stable main”
 ```
-Indien je de foutmelding “add-apt-repository command not found” krijgt, kan je dit oplossen via volgende link: https://computingforgeeks.com/how-to-install-add-apt-repository-on-debian-ubuntu/ .
+Indien je de foutmelding “add-apt-repository command not found” krijgt, kan je dit oplossen via volgende link: * [Add repository](https://computingforgeeks.com/how-to-install-add-apt-repository-on-debian-ubuntu/) 
 
 ### Update de apt repositories & installeer Grafana
 ```
@@ -46,6 +46,20 @@ sudo systemctl start grafana-server
 ```
 
 Nu zou de service moeten draaien. Dit kan je controleren met het commando ```systemctl status grafana-server.service```
+
+Je kan er ook voor zorgen dat deze service automatisch wordt gestart bij het opstarten van de server met het commando ```sudo update-rc.d grafana-server defaults```
+
+## Aanvullende stappen
+
+Default gebruikt grafana poort 3000. Ubuntu wordt geïnstalleerd met de ufw firewall. Daarom moet je ervoor zorgen dat deze poort openstaat: ```sudo ufw allow 3000/tcp```
+
+Gebruik het grafana dashboard met host IP adres & poort 3000.
+```
+http://host-ip:3000
+Username: admin
+Password:  admin
+```
+
 
 ## Zie ook
 [API verbinden met Database](link)
