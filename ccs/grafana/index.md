@@ -31,8 +31,21 @@ sudo apt update
 sudo apt-get install -y gnupg2 curl software-properties-common
 curl https://packages.grafana.com/gpg.key | sudo apt-key add –
 sudo add-apt-repository “deb https://packages.grafana.com/oss/deb stable main”
-
 ```
+Indien je de foutmelding “add-apt-repository command not found” krijgt, kan je dit oplossen via volgende link: https://computingforgeeks.com/how-to-install-add-apt-repository-on-debian-ubuntu/ .
+
+### Update de apt repositories & installeer Grafana
+```
+sudo apt-get update
+sudo apt-get -y install grafana
+```
+
+### Start grafana service
+```
+sudo systemctl start grafana-server
+```
+
+Nu zou de service moeten draaien. Dit kan je controleren met het commando ```systemctl status grafana-server.service```
 
 ## Zie ook
 [API verbinden met Database](link)
