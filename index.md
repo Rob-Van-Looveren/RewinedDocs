@@ -11,8 +11,8 @@ author: John doe
 
 ### Welkom
 
-welkom op de documentatie pagina van rewined ookwel RewinedDocs gedoopt.
-Deze documentatie is opgesteld in markdown en wordt beheer in een repository op Github en gehost door
+Welkom op de documentatie pagina van rewined ookwel RewinedDocs gedoopt.
+Deze documentatie is opgesteld in markdown en wordt beheerd in een repository op Github en gehost door
 [Github Pages](https://rob-van-looveren.github.io/RewinedDocs/)
 
 ```
@@ -25,7 +25,7 @@ git clone https://github.com/Rob-Van-Looveren/RewinedDocs.git
 
 * [CCS](ccs/)
 * [Iot](iot/)
-* [app](app/)
+* [App](app/)
 * [BI](bi/)
 
      
