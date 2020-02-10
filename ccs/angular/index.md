@@ -77,4 +77,6 @@ ng serve --host 192.168.3.125 --port 8080
 ## Bronnen 
 
 * [Angular installation page](https://www.tecmint.com/install-angular-cli-on-linux/)
+* [Angular CLI homepage](https://angular.io/cli)
+
 {% include footer.html %}
