@@ -58,6 +58,18 @@ ng serve
 Met ‘ng serve’ zal de server de applicatie terug opbouwen en de webpagina herladen indien er veranderingen zijn aangebracht aan de source files.
 Meer informatie over deze tool met ‘ng help’.
 
+3. Om de app via de browser te bereiken, moet poort 4200 openstaan. Indien de firewall actief is, dien je deze aan te passen.
+```
+sudo ufw allow 4200/tcp
+sudo ufw reload
+```
+
+4. Nu kan je via de browser je applicatie bereiken.
+```
+http://localhost:4200
+of http://server-ip:4200
+```
+
 
 ## Bronnen 
 
