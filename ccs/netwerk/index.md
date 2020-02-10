@@ -6,6 +6,9 @@ author: schrijver
 
 {% include nav-breadcrumbs.html %}
 
+![]((../../media/netwerk/netwerk.png)
+
+
 ## Netwerk
 
 | VM           | Software     | int IP        | IP           |Link|
