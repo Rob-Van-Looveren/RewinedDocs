@@ -42,7 +42,9 @@ author: schrijver
 | 3400 | Grafana   | 10.10.10.104   | #            |
 
 
-## iets anders
+## 
+* disable ipv6
+* setup /etc/resolve
 ### h3
 
 
