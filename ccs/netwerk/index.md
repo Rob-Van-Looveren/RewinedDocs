@@ -6,10 +6,14 @@ author: schrijver
 
 {% include nav-breadcrumbs.html %}
 
-![netwerk]((../../media/netwerk/netwerk.png)
+
 
 
 ## Netwerk
+
+![netwerk]((../../media/netwerk/netwerk.png)
+
+## VMs
 
 | VM           | Software     | int IP        | IP           |Link|
 |--------------|--------------|---------------|--------------|---|
