@@ -17,7 +17,7 @@ Onderwerpen onder CCS
 * [pfSense](pfSense/)
 * [DNS](DNS/)
 * [Proxmox](proxmox/)
-* [Proxmox](netwerk/)
+* [netwerk](netwerk/)
 
 
 {% include footer.html %}
