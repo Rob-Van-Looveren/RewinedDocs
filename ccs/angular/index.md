@@ -69,7 +69,10 @@ sudo ufw reload
 http://localhost:4200
 of http://server-ip:4200
 ```
-
+Je kan zelf ook een host en een poort instellen als je wilt afwijken van de standaardinstellingen. Bijvoorbeeld:
+```
+ng serve --host 192.168.3.125 --port 8080
+```
 
 ## Bronnen 
 
