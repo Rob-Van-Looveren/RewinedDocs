@@ -10,8 +10,7 @@ author: schrijver
 
 
 ## Netwerk
-![netwerk]((../../media/netwerk/netwerk.png)
-![Proxmox](../../media/netwerk/netwerk.png)
+![netwerk](../../media/netwerk/netwerk.png)
 
 
 ## VMs
