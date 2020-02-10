@@ -46,6 +46,7 @@ Let hier ook op je antwoorden tijdens de prompting:
 
 ![Angular prompting](../../media/logo/angular_prompting.png)
 
+
 ## Bronnen 
 
 * [Angular installation page](https://www.tecmint.com/install-angular-cli-on-linux/)
