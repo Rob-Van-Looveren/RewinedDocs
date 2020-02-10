@@ -56,7 +56,7 @@ sudo apt-get install dotnet-sdk-2.2
 * start de app opnieuw via ```dotnet run```
     * Nu kan je met een ander machine aan de applicatie
 
-## Sammengevat
+## Samengevat
 * ```dotnet new webapp``` maakt app aan
 * ```dotnet new run``` start de applicatie
 * ```Properties/launchSettings.json``` bevat de URL eigenschappen
