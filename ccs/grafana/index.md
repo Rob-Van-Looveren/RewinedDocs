@@ -12,12 +12,17 @@ author: Rob V.L.
 
 ![Grafana_logo](../../media/logo/grafana_logo.png)
 
+## Wat
+
+Grafana is een open-sourceplatform voor gegevensbewaking, -analyse en -visualisatie dat wordt geleverd met een webserver waarmee het overal toegankelijk is.
+In de webinterface kunnen gebruikers Grafana-dashboards met panelen maken om statistieken in de loop van de tijd weer te geven.
+
 ## Zie ook
 [API verbinden met Database](link)
 
 ## Bronnen 
 * [Grafana v6.6 Download & installation page](https://grafana.com/docs/grafana/latest/installation/debian/)
-* [Install instructions (Ubuntu 18.04)](https://docs.microsoft.com/nl-nl/dotnet/core/install/linux-package-manager-ubuntu-1804)
-* [Deploy Video tutorial](https://www.youtube.com/watch?v=6VK370-Yk3A)
+* [Grafana what is](https://techexpert.tips/nl/grafana-nl/grafana-monitoring-snmp-apparaten/)
+* [Deploy Video tutorial] (https://www.youtube.com/watch?v=zq_Ft-GJCho)
 
 {% include footer.html %}
