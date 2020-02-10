@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Grafana
-author: Rob V.L.
+author: Evi W.
 ---
 
 {% include nav-breadcrumbs.html %}
