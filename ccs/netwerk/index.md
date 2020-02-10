@@ -6,7 +6,7 @@ author: schrijver
 
 {% include nav-breadcrumbs.html %}
 
-![]((../../media/netwerk/netwerk.png)
+![netwerk]((../../media/netwerk/netwerk.png)
 
 
 ## Netwerk
