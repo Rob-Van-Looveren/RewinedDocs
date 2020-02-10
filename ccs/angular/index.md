@@ -42,6 +42,10 @@ De installatie is nu in orde. Je kan de versie checken met volgend commando: ```
 1. Eerst moet je in de root directory komen en een project initialiseren
 ![Angular stap 1](../../media/logo/angular_stap1.png)
 
+Let hier ook op je antwoorden tijdens de prompting:
+
+![Angular prompting](../../media/logo/angular_prompting.png)
+
 ## Bronnen 
 
 * [Angular installation page](https://www.tecmint.com/install-angular-cli-on-linux/)
