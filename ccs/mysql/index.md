@@ -59,7 +59,7 @@ apt-get install -y phpmyadmin
 Andere machines toegang geven tot MySQL Server.
 Error in default phpMyAdmin configuratie repareren.
 ```
-echo 'bind-address            = 192.168.3.137' >> /etc/mysql/mysql.conf.d/mysqld.cnf
+echo 'bind-address            = 10.10.10.103' >> /etc/mysql/mysql.conf.d/mysqld.cnf
 sudo sed -i "s/|\s*\((count(\$analyzed_sql_results\['select_expr'\]\)/| (\1)/g" /usr/share/phpmyadmin/libraries/sql.lib.php
 sudo service mysql restart
 ```
