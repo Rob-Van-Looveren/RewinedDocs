@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Netwerk
-author: schrijver
+author: Rob V.L.
 ---
 
 {% include nav-breadcrumbs.html %}
@@ -61,6 +61,6 @@ Om de werking van het netwerk duidelijk te maken, geven we graag even volgende t
 
 ## zie ook 
 
-##
+## bronnen 
 
 {% include footer.html %}
