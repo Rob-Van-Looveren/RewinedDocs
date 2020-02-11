@@ -21,7 +21,7 @@ author: Rob V.L.
 Asp.net is een framework dat draait bovenop het dotnet core framework van Microsoft. Het is crossplatform en kan dus op zowel Windows, Linux als Mac runnen.
 
 ## Installatie 
-De API is geschreven in .netcore 2.2 en is dus de versie die we installeren 
+De API is geschreven in .netcore 2.2 en is dus de versie die we installeren. 
 
 ### Repository toevoegen
 ```
@@ -54,7 +54,7 @@ sudo apt-get install dotnet-sdk-2.2
     * je kan zelf poorten aanpassen
     * je kan ook enkel http gebruiken door https te verwijderen
 * start de app opnieuw via ```dotnet run```
-    * Nu kan je met een ander machine aan de applicatie
+    * Nu kan je met een andere machine aan de applicatie
 
 ## Samengevat
 * ```dotnet new webapp``` maakt app aan

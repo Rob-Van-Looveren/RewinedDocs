@@ -14,16 +14,16 @@ author: Rob V.L.
 We gebruiken de MySQL database voor dit project, dit is een open-source relationeel database management system. Daarnaast kunnen we gebruikmaken van de webinterface van phpmyadmin om eenvoudig de data te bekijken, zonder de kennis van SQL queries.
 
 ## Installatie
-Om de installatie van MySQL, phpMyAdmin, en het instellen van de backups te vereenvoudigen hebben we een 'script' opgestelt. Bij het aanmaken van een nieuwe VM kan je eenvoudig de installatie uitvoeren, en bekom je altijd de zelfde installatie/configuratie. Het script bestaat uit verschillende onderdelen die je kan kopieren en in de terminal plakken (en eventueel enter drukken).
+Om de installatie van MySQL, phpMyAdmin, en het instellen van de backups te vereenvoudigen hebben we een 'script' opgestelt. Bij het aanmaken van een nieuwe VM kan je eenvoudig de installatie uitvoeren, en bekom je altijd dezelfde installatie/configuratie. Het script bestaat uit verschillende onderdelen die je kan kopieren en in de terminal plakken (en eventueel enter drukken).
 
 ### stap 1: Sudo rechten
-Tijdelijk overschakkelen naar sudo rechten voor uitvoeren van script. Na invullen van correct wachtwoord veranderd de promt en ga je als Root verder.
+Tijdelijk overschakkelen naar sudo rechten voor uitvoeren van het script. Na invullen van correct wachtwoord verandert de promt en ga je als root verder.
 ```
-Sudo -i
+sudo -i
 password: *****
 ```
 ### stap 2: MySQL installeren
-Installeren van MySQL op non-interactive wijze, root wachtwoord opgegeven via variabele.
+Installeren van MySQL op non-interactieve wijze, root wachtwoord opgegeven via variabele.
 ```
 sudo apt update
 MySQLRootPwd=project
@@ -33,7 +33,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
 ```
 
 ### stap 3: SQL users aanmaken
-users project heeft alle rechten; user grafana heeft enkel lees rechten
+user project heeft alle rechten; user grafana heeft enkel leesrechten
 ```
 sudo mysql -u root -p$MySQLRootPwd -e "CREATE USER 'project'@'%' IDENTIFIED BY 'project';"
 sudo mysql -u root -p$MySQLRootPwd -e " GRANT ALL PRIVILEGES ON *.* TO 'project'@'%';"
