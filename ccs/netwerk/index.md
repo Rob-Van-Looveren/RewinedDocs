@@ -36,12 +36,11 @@ Via [DNS](../DNS) komen alle requests binnen op het publiek IP van de Proximus m
 
 | Port | VM        | forward IP     | forward Port |
 |------|-----------|----------------|--------------|
-| 22   | Proxy     | 10.10.10.10    | 22           |
-| 3400 | Proxy     | 10.10.10.10    | 3400         |
-| 3401 | API       | 10.10.10.101   | 3401         |
-| 3402 | Frontend  | 10.10.10.102   | 3402         |
-| 3403 | Database  | 10.10.10.103   | 3403         |
-| 3404 | Grafana   | 10.10.10.104   | 3404         |
+| 3400 | pfSense   | 192.168.3.100  | 3400         |
+| 3401 | pfSense   | 192.168.3.100  | 3401         |
+| 3402 | pfSense   | 192.168.3.100  | 3402         |
+| 3403 | pfSense   | 192.168.3.100  | 3403         |
+| 3404 | pfSense   | 192.168.3.100  | 3404         |
 
 
 ### Portforwarding pfSense Firewall
