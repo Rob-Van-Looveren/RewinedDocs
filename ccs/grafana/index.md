@@ -63,8 +63,8 @@ Password:  admin
 
 ## Bronnen 
 * [Grafana v6.6 Download & installation page](https://grafana.com/docs/grafana/latest/installation/debian/)
-* [Grafana what is](https://techexpert.tips/nl/grafana-nl/grafana-monitoring-snmp-apparaten/)
+* [Grafana What is](https://techexpert.tips/nl/grafana-nl/grafana-monitoring-snmp-apparaten/)
 * [Deploy Video tutorial](https://www.youtube.com/watch?v=zq_Ft-GJCho)
-* [Ubuntu installation](https://www.fosslinux.com/6406/how-to-install-ubuntu-server-18-04-lts.htm)
+* [Ubuntu Installation](https://www.fosslinux.com/6406/how-to-install-ubuntu-server-18-04-lts.htm)
 
 {% include footer.html %}
