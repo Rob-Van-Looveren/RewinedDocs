@@ -13,19 +13,23 @@ author: schrijver
 ![netwerk](../../media/netwerk/netwerk.png)
 
 
-## VMs
-
-| VM           | Software     | int IP        | IP           |Link|
-|--------------|--------------|---------------|--------------|---|
-| Firewall     | pfSense      | 192.168.3.100 | 10.10.10.1   | |
-| Proxy        | Apache       | /             | 10.10.10.10  |[Web](https://rob-vl.synology.me:3400)|
-| API          | ASP.net      | 192.168.3.101 | 10.10.10.101 |[API](https://rob-vl.synology.me:3401/swagger)|
-| Frontend     | Angularjs    | 192.168.3.102 | 10.10.10.102 |[Front](https://rob-vl.synology.me:3402)|
-| Database     | MySQL        | 192.168.3.103 | 10.10.10.103 |[db](https://rob-vl.synology.me:3403/phpmyadmin)|
-| Visualisatie | Grafana      | 192.168.3.104 | 10.10.10.104 |[grafana](https://rob-vl.synology.me:3404)|
+## Netwerk
+Om de werking van het netwerk duidelijk te maken, geven we graag even volgende toeliching op basis van bovenstaande afbeelding.
 
 
-## Portforwarding Proximus modem
+### VMs
+
+| VM           | Software     | int IP        | IP           |Link                                                    |
+|--------------|--------------|---------------|--------------|--------------------------------------------------------|
+| Firewall     | pfSense      | 192.168.3.100 | 10.10.10.1   |                                                        |
+| Proxy        | Apache       | /             | 10.10.10.10  |[Web](https://rob-vl.synology.me:3400)                  |
+| API          | ASP.net      | 192.168.3.101 | 10.10.10.101 |[API](https://rob-vl.synology.me:3401/swagger)          |
+| Frontend     | Angularjs    | 192.168.3.102 | 10.10.10.102 |[Frontend](https://rob-vl.synology.me:3402)             |
+| Database     | MySQL        | 192.168.3.103 | 10.10.10.103 |[phpmyadmin](https://rob-vl.synology.me:3403/phpmyadmin)|
+| Visualisatie | Grafana      | 192.168.3.104 | 10.10.10.104 |[Grafana](https://rob-vl.synology.me:3404)              |
+
+
+### Portforwarding Proximus modem
 
 | Port | VM        | forward IP     | forward Port |
 |------|-----------|----------------|--------------|
@@ -37,7 +41,7 @@ author: schrijver
 | 3404 | Grafana   | 10.10.10.104   | 3404         |
 
 
-## portforwarding pfSense
+### Portforwarding pfSense Firewall
 
 | Port | VM        | forward IP     | forward Port |
 |------|-----------|----------------|--------------|
@@ -55,5 +59,8 @@ author: schrijver
 * setup /etc/resolve
 ### h3
 
+## zie ook 
+
+##
 
 {% include footer.html %}
