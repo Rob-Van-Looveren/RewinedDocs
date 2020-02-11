@@ -23,10 +23,10 @@ git clone https://github.com/Rob-Van-Looveren/RewinedDocs.git
 
 ----
 
-* [CCS](ccs/)
-* [Iot](iot/)
-* [App](app/)
-* [BI](bi/)
+* [CCS](CCS/)
+* [IoT](IoT/)
+* [APP](APP/)
+* [BI](BI/)
 
      
 {% include footer.html %}
