@@ -15,7 +15,7 @@ author: Rob V.L.
 
 ## Netwerk
 Om de werking van het netwerk duidelijk te maken, geven we graag even volgende toeliching op basis van bovenstaande afbeelding.
-
+Via [DNS](../DNS) komen alle requests binnen op het publiek IP van de Proximus modem, van op de modem moeten alle request toegelaten worden en op de juiste plaats terecht komen.
 
 ### VMs
 

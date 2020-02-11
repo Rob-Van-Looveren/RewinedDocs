@@ -7,7 +7,6 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 
-
 # DNS
 
 ## Zie ook
