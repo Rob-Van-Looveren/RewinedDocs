@@ -18,7 +18,7 @@ In de webinterface kunnen gebruikers Grafana-dashboards met panelen maken om sta
 
 ## Installatie
 
-Hier vind je hoe je deze software installeert. We gaan ervan uit dat je het OS ‘Ubuntu’ reeds hebt geïnstalleerd. Zo niet, moet je eerst deze installatie doen. Onderaan de pagina bij 'Bronnen' vind je een link voor deze installatie.
+Hier vind je hoe je deze software installeert. We gaan ervan uit dat je het OS ‘Ubuntu’ reeds hebt geïnstalleerd. Zo niet, moet je eerst deze installatie doen. Onderaan de pagina bij 'Bronnen' vind je een link naar deze installatie.
 
 ### Ubuntu up to date zetten
 ```
@@ -63,8 +63,8 @@ Password:  admin
 
 ## Bronnen 
 * [Grafana v6.6 Download & installation page](https://grafana.com/docs/grafana/latest/installation/debian/)
-* [Grafana what is](https://techexpert.tips/nl/grafana-nl/grafana-monitoring-snmp-apparaten/)
+* [Grafana What is](https://techexpert.tips/nl/grafana-nl/grafana-monitoring-snmp-apparaten/)
 * [Deploy Video tutorial](https://www.youtube.com/watch?v=zq_Ft-GJCho)
-* [Ubuntu installation](https://www.fosslinux.com/6406/how-to-install-ubuntu-server-18-04-lts.htm)
+* [Ubuntu Installation](https://www.fosslinux.com/6406/how-to-install-ubuntu-server-18-04-lts.htm)
 
 {% include footer.html %}
