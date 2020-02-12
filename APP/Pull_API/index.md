@@ -54,11 +54,15 @@ echo -e "\e[32mDeploying \e[39m"
 dotnet run
 ```
 
+### Github credentials bewaren
+Indien je niet telkens je github credentials wil ingeven kan je ook 1 maal volgend commando ingeven om deze te berwaren.
+Volgende maal credentials worden opgevegen worden deze bewaard en gebruikt voor de volgende keren.
+```git config --global credential.helper store```
+Dit zorgt dat er een ```.git-credentials``` bestand in je home directory aangemaakt waar je gegevens worden opgeslagen.
 Voor de API
 
 
 
-git config --global credential.helper store
 
 ## Zie ook
 
