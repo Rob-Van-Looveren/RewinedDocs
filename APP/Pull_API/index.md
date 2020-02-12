@@ -14,6 +14,8 @@ author: Rob V.L.
 Voor het werken, bewaren en samenwerken aan de code werken we met Github. Om deze code eenvoudig van Github te halen en te deployen maken we gebruik van een script. Dit script zorgt ervoor dat de recentste code van github gedownload wordt en deze klaar gemaakt word voor het deployen. 
 
 ## script
+
+### pull.sh
 ```
 #! Bin/bash
 
@@ -38,6 +40,19 @@ echo -e "\e[33mMove to /home/project/Project-4.0-Backend/Backend and enter 'dotn
 echo -e "\e[33mOr execute bash run.sh\e[39m"
 ```
 
+### run.sh
+```
+#! /bin/bash
+
+echo -e "\e[32mStopping old dotnet processes\e[39m"
+sudo killall -9 dotnet
+
+echo -e "\e[32mMoving to project folder\e[39m"
+cd /home/project/Project-4.0-Backend/Backend/
+
+echo -e "\e[32mDeploying \e[39m"
+dotnet run
+```
 
 Voor de API
 
