@@ -14,6 +14,29 @@ author: Rob V.L.
 Voor het werken, bewaren en samenwerken aan de code werken we met Github. Om deze code eenvoudig van Github te halen en te deployen maken we gebruik van een script. Dit script zorgt ervoor dat de recentste code van github gedownload wordt en deze klaar gemaakt word voor het deployen. 
 
 ## script
+```
+#! Bin/bash
+
+echo -e "\e[32mRemoving old repo\e[39m"
+rm -rf /home/project/Project-4.0-Backend/
+
+echo -e "\e[32mCloning new repo\e[39m"
+git clone https://github.com/BoszS/Project-4.0-Backend.git
+
+cd /home/project/Project-4.0-Backend/Backend/
+
+echo -e "\e[32mChanching developing to production environment\e[39m"
+mv Startup.cs.prod   Startup.cs
+mv appsettings.json.prod appsettings.json
+mv Properties/launchSettings.json.prod Properties/launchSettings.json
+
+echo -e "\e[32mInstalling dotnet dependancy: Pomelo MySQL\e[39m"
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 2.2.6-rc1-final
+
+echo -e "\e[32mDone\e[39m"
+echo -e "\e[33mMove to /home/project/Project-4.0-Backend/Backend and enter 'dotnet run' to deploy\e[39m"
+echo -e "\e[33mOr execute bash run.sh\e[39m"
+```
 
 
 Voor de API
