@@ -11,7 +11,9 @@ author: -
 # App
 Onderwerpen onder App
 * [Database verbinden](ASP_DB)
-* Swagger
+* [Pull script API](Pull_API)
+* [Pull script Angular](Pull_Angular)
+
 * werking code
 
 {% include footer.html %}
