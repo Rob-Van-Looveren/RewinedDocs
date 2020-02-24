@@ -7,6 +7,7 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # Pull Script API
+![bash](../../media/logo/bash.png)
 ![github](../../media/logo/github.png)
 ![git](../../media/logo/git.png)
 
