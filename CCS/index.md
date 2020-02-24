@@ -19,5 +19,11 @@ Onderwerpen onder CCS
 * [Proxmox](proxmox/)
 * [Netwerk](netwerk/)
 
+{% for item in site.CCS %}
+{{ item.title }}
+{% endfor %}
+
+
+
 
 {% include footer.html %}
