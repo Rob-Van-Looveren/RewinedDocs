@@ -11,7 +11,14 @@ author: Rob V.L.
 ![github](../../media/logo/github.png)
 
 ## Pull script
-
+Om de nieuwste versie van onze Angular code online te brengen moeten we enkele stappen uitvoeren. Om dit process te vereenvoudigen maken we gebruik van onderstaant script. Dit script zal dan volgende stappen uitvoeren
+* De oude build omgeving opkuisen en verwijderen
+* Recentste code van github downloaden
+* De juiste userrechten instellen
+* Angular dependancies installeren
+* Aanpassing maken in node_modules
+* Angular code builden of compileren --> Typescript naar javascript
+* De gecompileerde code verplaatsen naar nginx directory 
 
 ```
 #! /bin/bash
