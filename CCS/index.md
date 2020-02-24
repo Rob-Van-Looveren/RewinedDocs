@@ -1,7 +1,7 @@
 ---
 layout: default
 title: CCS
-author: -
+author: iets
 ---
 
 {% include nav-breadcrumbs.html %}
@@ -18,13 +18,6 @@ Onderwerpen onder CCS
 * [DNS](DNS/)
 * [Proxmox](proxmox/)
 * [Netwerk](netwerk/)
-
-## test a
-{{ site }}
-{{ site.CCS.documents }}
-
-
-
 
 
 {% include footer.html %}
