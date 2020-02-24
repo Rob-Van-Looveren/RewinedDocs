@@ -10,14 +10,14 @@ author: Rewined
 # CCS
 Onderwerpen onder CCS
 * [ASP.net](ASP_net/)
-* [MySQL](mysql)
-* [Backup](backup/)
-* [Angular](angular/)
-* [Grafana](grafana/)
+* [MySQL](MySQL)
+* [Angular](Angular/)
+* [Backup](Backup/)
+* [Grafana](Grafana/)
 * [pfSense](pfSense/)
 * [DNS](DNS/)
-* [Proxmox](proxmox/)
-* [Netwerk](netwerk/)
+* [Proxmox](Proxmox/)
+* [Netwerk](Netwerk/)
 
 
 {% include footer.html %}
