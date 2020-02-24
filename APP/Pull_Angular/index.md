@@ -9,7 +9,6 @@ author: Rob V.L.
 # Pull & deploy 
 ![bash](../../media/logo/bash.png)
 ![github](../../media/logo/github.png)
-![bash](../../media/logo/git.png)
 
 ## Pull script
 
