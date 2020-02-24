@@ -20,6 +20,7 @@ Om de nieuwste versie van onze Angular code online te brengen moeten we enkele s
 * Angular code builden of compileren --> Typescript naar javascript
 * De gecompileerde code verplaatsen naar nginx directory 
 
+### Bash script
 ```
 #! /bin/bash
 
@@ -52,7 +53,13 @@ echo -e "\e[32mCopying files to /var/www/html\e[39m"
 sudo cp -r /home/project/Project-4.0-Frontend/dist/Frontend /var/www/html
 ```
 
+
+### Git credentials opslaan
+Standaard zal Linux de opgeven username en wachtwoord niet bewaren. Echter kan je er voor zorgen dat eenmaal de juiste credentials ingeven worden, deze ook worden opgeslagen zodat deze niet elke keer ingegeven moeten worden. Let er wel op dat je credentials dan als tekst bestand in je home directory terecht komen. Door volgend commando in te geven zullen credentials binnen jou linux account worden opgeslagen. 
+
+```
 git config --global credential.helper store
+```
 
 
 ## Zie ook
