@@ -63,7 +63,7 @@ sudo apt-get install dotnet-sdk-2.2
 
 
 ## Zie ook
-* [API verbinden met Database](/{{site.RepoName}}/app/ASP_DB/)
+* [API verbinden met Database](/{{site.RepoName}}/APP/ASP_DB/)
 
 
 ## Bronnen 
