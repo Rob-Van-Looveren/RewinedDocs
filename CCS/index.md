@@ -20,7 +20,9 @@ Onderwerpen onder CCS
 * [Netwerk](netwerk/)
 
 ## test abc
-{{ site.CCS }}
+{{ site }}
+{{ site.documents }}
+
 
 
 
