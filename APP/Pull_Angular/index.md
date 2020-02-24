@@ -63,6 +63,7 @@ git config --global credential.helper store
 
 ## Zie ook
 * [Installatie Angular](/{{site.RepoName}}/CCS/Angular/)
+* [API - Pull & Deploy script](/{{site.RepoName}}/APP/Pull_API/)
 
 ## Bronnen
 * [Credentials opslaan](https://git-scm.com/docs/git-credential-store)
