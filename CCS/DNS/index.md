@@ -8,6 +8,7 @@ author: Rob V.L.
 
 
 # DNS
+Om onze applicatie pubilek 
 
 ## Zie ook
 
