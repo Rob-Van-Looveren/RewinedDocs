@@ -7,7 +7,7 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # ASP.Net verbinden met database
-![phpMyAdmin](../../media/logo/asp_db.png)
+![DBs](../../media/logo/asp_db.png)
 
 
 ## Instellen
@@ -33,8 +33,8 @@ services.AddDbContext<RewinedContext>(options =>  options.UseMySql(Configuration
 ```
 
 ## Zie ook
-* [Installatie ASP.NET](/{{site.RepoName}}/ccs/ASP_net/)
-* [Installatie MySQL](/{{site.RepoName}}/ccs/mysql/)
+* [Installatie ASP.NET](/{{site.RepoName}}/CCS/ASP_net/)
+* [Installatie MySQL](/{{site.RepoName}}/CCS/MySQL/)
 
 
 ## Bronnen

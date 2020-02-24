@@ -1,12 +1,17 @@
 ---
 layout: default
-title: Database Verbinding ASP.NET 
+title: Pull angular 
 author: Rob V.L.
 ---
 
 {% include nav-breadcrumbs.html %}
 
-# Pull script Angular
+# Pull & deploy 
+![bash](../../media/logo/bash.png)
+![bash](../../media/logo/git.png)
+
+## Pull script
+
 
 ```
 #! /bin/bash
