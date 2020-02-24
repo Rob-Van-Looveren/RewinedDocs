@@ -1,21 +1,24 @@
 ---
 layout: default
-title: Database Verbinding ASP.NET 
+title: Pull API 
 author: Rob V.L.
 ---
 
 {% include nav-breadcrumbs.html %}
 
-# Pull Script API
+# Pull & deploy 
 ![bash](../../media/logo/bash.png)
 ![github](../../media/logo/github.png)
 
-## wat
-Voor het werken, bewaren en samenwerken aan de code werken we met Github. Om deze code eenvoudig van Github te halen en te deployen maken we gebruik van een script. Dit script zorgt ervoor dat de recentste code van github gedownload wordt en deze klaar gemaakt word voor het deployen. 
+## Pull script
+Om de nieuwste versie van onze Angular code online te brengen moeten we enkele stappen uitvoeren. Om dit process te vereenvoudigen maken we gebruik van onderstaant script. Dit script zal dan volgende stappen uitvoeren
+* De oude build omgeving opkuisen en verwijderen
+* Recentste code van github downloaden
+* Development omgeving omzetten naar productie 
+* Dotnet dependacy installeren
+* Melding om manueel te deployen of met Run.sh script
 
-## script
-
-### pull.sh
+### Pull script
 ```
 #! Bin/bash
 
@@ -38,9 +41,10 @@ dotnet add package Pomelo.EntityFrameworkCore.MySql --version 2.2.6-rc1-final
 echo -e "\e[32mDone\e[39m"
 echo -e "\e[33mMove to /home/project/Project-4.0-Backend/Backend and enter 'dotnet run' to deploy\e[39m"
 echo -e "\e[33mOr execute bash run.sh\e[39m"
+
 ```
 
-### run.sh
+### Run script
 ```
 #! /bin/bash
 
@@ -54,21 +58,19 @@ echo -e "\e[32mDeploying \e[39m"
 dotnet run
 ```
 
-### Github credentials bewaren
-Indien je niet telkens je github credentials wil ingeven kan je ook 1 maal volgend commando ingeven om deze te berwaren.
-Volgende maal credentials worden opgevegen worden deze bewaard en gebruikt voor de volgende keren.
+### Git credentials opslaan
+Standaard zal Linux de opgeven username en wachtwoord niet bewaren. Echter kan je er voor zorgen dat eenmaal de juiste credentials ingeven worden, deze ook worden opgeslagen zodat deze niet elke keer ingegeven moeten worden. Let er wel op dat je credentials dan als tekst bestand in je home directory terecht komen. Door volgend commando in te geven zullen credentials binnen jou linux account worden opgeslagen. 
+
 ```
 git config --global credential.helper store
 ```
-Dit zorgt dat er een ```.git-credentials``` bestand in je home directory aangemaakt waar je gegevens worden opgeslagen.
-Voor de API
-
-
 
 
 ## Zie ook
-
+* [Installatie ASP.net](/{{site.RepoName}}/CCS/ASP_net/)
 
 ## Bronnen
+* [Credentials opslaan](https://git-scm.com/docs/git-credential-store)
+
 
 {% include footer.html %}
