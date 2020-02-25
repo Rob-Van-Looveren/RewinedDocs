@@ -26,7 +26,7 @@ Een andere en technisch belangrijkere reden is dat we voor het PoC uiteraard gee
 ## Hoe
 Om het probleem van het dynamische IP op te lossen kunnen we gebruik maken van DDNS.
 Dit staat voor Dynamic DNS, en zorgt er voor de DNS server het bijhorende IP van een domeinnaam gaat updaten wanneer dit IP veranderd. Telkens de modem een ander IP adres krijgt van de ISP zal via DDNS het IP adres in DNS ook worden aangepast.
-In ons PoC hebben we gebruik gemaakt van de DDNS service van Synology, aangezien er al een Synology NAS aanwezig is binnen het netwerk met DDNS. Deze NAS decetereed wanneer het publiek IP gewijzigt is en brengt de Synology DNS server op de hoogte van de wijzing en het nieuwe IP adress.  We kunnen dus eenvoudig de zelfde URL gebruiken om het IP te bekomen, ook hebben we meteen een gratis URL.
+In ons PoC hebben we gebruik gemaakt van de DDNS service van Synology, aangezien er al een Synology NAS aanwezig is binnen het netwerk met DDNS. Deze NAS decetereed wanneer het publiek IP gewijzigt is en brengt de Synology DNS server op de hoogte van de wijzing en het nieuwe IP adress. _een andere populaire DDNS provider is noip.com_ We kunnen dus eenvoudig de zelfde URL gebruiken om het IP te bekomen, ook hebben we meteen een gratis URL.
 
 ![DDNS](/{{site.RepoName}}/media/netwerk/ddns.png)
 ![DDNS](/{{site.RepoName}}/media/netwerk/synology-ddns.png)
@@ -34,5 +34,6 @@ In ons PoC hebben we gebruik gemaakt van de DDNS service van Synology, aangezien
 ## Zie ook
 
 ## Bronnen 
+[Synology DDNS](https://www.synology.com/nl-nl/knowledgebase/DSM/help/DSM/AdminCenter/connection_ddns)
 
 {% include footer.html %}
