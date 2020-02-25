@@ -14,7 +14,7 @@ Onderwerpen onder App
 * [Pull script API](Pull_API)
 * [Pull script Angular](Pull_Angular)
 * [Documentation Angular code](/{{site.RepoName}}/APP/documentation/overview.html)
-* yolo ik neuk jullie allemaal de moeder
+* yolo ik neuk 
 
 * werking code
 
