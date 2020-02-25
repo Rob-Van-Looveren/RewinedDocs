@@ -7,16 +7,9 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # MySQL
-<<<<<<< HEAD
+
 ![MySQL](/{{ site.RepoName }}/media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
 ![phpMyAdmin](/{{ site.RepoName }}/media/logo/phpmyadmin.png)
-=======
-
-Welkom op de informatiepagina van MySQL. 
-
-![MySQL](../../media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
-![phpMyAdmin](../../media/logo/phpmyadmin.png)
->>>>>>> 89018591b0ae41c822871e58e56ae1d39aa0edc0
 
 ## Wat
 We gebruiken de MySQL database voor dit project. Dit is een open-source relationeel database management system. Daarnaast kunnen we gebruikmaken van de webinterface van phpmyadmin om eenvoudig de data te bekijken, zonder de kennis van SQL queries.
