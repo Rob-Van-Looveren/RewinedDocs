@@ -22,6 +22,8 @@ Elk deel wordt toegelicht en is erop gericht dat u vrij eenvoudig zelf aan de sl
 * [Grafana](Grafana/)
 * [PfSense](pfSense/)
 * [DNS](DNS/)
+* [Proxy](Proxy/)
+* [SSL](SSL/)
 * [Proxmox](Proxmox/)
 * [Netwerk](Netwerk/)
 
