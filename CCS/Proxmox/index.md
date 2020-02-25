@@ -69,7 +69,7 @@ U wordt gevraagd om in te loggen. Dit kan met de username 'root' en het ingestel
 [Backup Vm's](/{{ site.RepoName }}/CCS/Backup)
 
 ## Bronnen 
-* [Proxmox install guide](https://pve.proxmox.com/wiki/Installation)
+* [Proxmox installation guide](https://pve.proxmox.com/wiki/Installation)
 * [Installation video tutorial](https://www.youtube.com/watch?v=I-e1_CTa4s0)
 * [Interface overview video](https://www.youtube.com/watch?v=GHzMaTar0fw)
 {% include footer.html %}
