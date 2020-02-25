@@ -19,7 +19,7 @@ Welkom op de informatiepagina van ASP.net.
 Asp.net is een framework dat draait bovenop het dotnet core framework van Microsoft. Het is crossplatform en kan dus op zowel Windows, Linux als Mac runnen.
 
 ## Installatie 
-De API is geschreven in .netcore 2.2 en is dus de versie die we installeren. 
+De API is geschreven in .netcore 2.2 en dit is dus de versie die u gaat installeren. 
 
 ### Repository toevoegen
 ```
@@ -40,19 +40,19 @@ sudo apt-get install dotnet-sdk-2.2
 ## Uitleg werking a.d.h.v testapp
 * Maak en ga naar nieuwe map
 * Create nieuwe app via ```dotnet new webapp ```
-    * we kiezen het template webapp, dit gebruikt ASP.net
+    * u kiest het template webapp, dit gebruikt ASP.net
 * Start app via ```dotnet run```
     * de applicatie draait nu
     * maar is enkel alleen voor localhost bereikbaar
     * andere machines kunnen er dus niet naartoe browsen
-* Onderbreek de app via ctrl + c
+* Onderbreek de app via 'ctrl + c'
 * Open ```Properties/launchSettings.json``` in een editor
-* De regel 'applicationUrl' bepaald de URL, http protocol en poort
+* De regel 'applicationUrl' bepaalt de URL, http protocol en poort
     * verander localhost naar *, zo kan iedere machine de app bereiken 
-    * je kan zelf poorten aanpassen
-    * je kan ook enkel http gebruiken door https te verwijderen
-* start de app opnieuw via ```dotnet run```
-    * Nu kan je met een andere machine aan de applicatie
+    * u kunt zelf poorten aanpassen
+    * u kunt ook enkel http gebruiken door https te verwijderen
+* Start de app opnieuw via ```dotnet run```
+    * nu kunt u met een andere machine aan de applicatie
 
 ## Samengevat
 * ```dotnet new webapp``` maakt app aan
