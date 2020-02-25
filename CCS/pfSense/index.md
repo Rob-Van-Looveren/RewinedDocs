@@ -42,6 +42,8 @@ De firewall VM heeft 2 netwerk interfaces toegewezen krijgen binnen Proxmox. Bin
 
 ![pfSense](../../media/pfSense/proxmox-network.png)
 
+* Fysieke interface eno3 is niet aangesloten*
+
 
 De eerste interface zullen we beschouwen als de WAN interface, deze koppelen we aan een fysieke inteface van de Proxmox omgeving. De LAN interface voegen we nadien toe, deze linken we niet aan een fysieke interface en is dus enkel virtueel aanwezig. Enkel VM's die 
 
