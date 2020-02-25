@@ -13,6 +13,7 @@ Onderwerpen onder App
 * [Database verbinden](ASP_DB)
 * [Pull script API](Pull_API)
 * [Pull script Angular](Pull_Angular)
+* [Documentation Angular code](/{{site.RepoName}}/APP/documentation/)
 
 * werking code
 
