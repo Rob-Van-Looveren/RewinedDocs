@@ -66,7 +66,7 @@ sudo service mysql restart
 ```
 
 ## Zie ook
-* [Back-up MySQL database](/{{ site.RepoName }}/CCS/backup#Database-Backup)
+* [Back-up MySQL database](/{{ site.RepoName }}/CCS/Backup#Database-Backup)
 * [API verbinden met Database](/{{ site.RepoName }}/APP/ASP_DB/)
 
 
