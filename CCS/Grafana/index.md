@@ -10,13 +10,14 @@ author: Evi W.
 
 # Grafana
 
-Welkom! Deze pagina toont u de stappen die nodig zijn om Grafana te installeren.
+Welkom op de informatiepagina van Grafana.
 
 ![Grafana_logo](../../media/logo/grafana_logo.png)
 
 ## Wat
 
 Grafana is een open-sourceplatform voor gegevensbewaking, -analyse en -visualisatie en wordt geleverd met een webserver waardoor het overal toegankelijk is.
+
 In de webinterface kunnen gebruikers Grafana-dashboards met panelen maken om statistieken in de loop van de tijd weer te geven.
 
 ## Installatie
@@ -49,7 +50,7 @@ sudo systemctl start grafana-server
 
 Nu zou de service moeten draaien. Dit kunt u controleren met het commando ```systemctl status grafana-server.service```
 
-U kan er ook voor zorgen dat deze service automatisch wordt gestart bij het opstarten van de server met het commando ```sudo update-rc.d grafana-server defaults```
+U kunt er ook voor zorgen dat deze service automatisch wordt gestart bij het opstarten van de server met het commando ```sudo update-rc.d grafana-server defaults```
 
 ## Aanvullende stappen
 
