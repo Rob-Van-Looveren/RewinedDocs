@@ -11,7 +11,7 @@ author: John doe
 
 ### Welkom
 
-Welkom op de documentatiepagina van Rewined ook wel RewinedDocs gedoopt.
+Welkom op de documentatiepagina van Rewined, ook wel RewinedDocs genoemd.
 Deze documentatie is opgesteld in markdown en wordt beheerd in een repository op Github en gehost door
 [Github Pages](https://rob-van-looveren.github.io/RewinedDocs/)
 
