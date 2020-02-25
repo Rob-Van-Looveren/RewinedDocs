@@ -12,7 +12,7 @@ author: Rob V.L.
 Welkom op de pagina die alles toelicht over DNS en de werking ervan.
 
 
-Om onze applicatie publiek bereikbaar te maken hebben we natuurlijk en Url nodig, daar we niet graag telkens een ip adress ingeven 
+Om onze applicatie publiek bereikbaar te maken hebben we natuurlijk en Url nodig, daar het niet handig is om steeds een ip adres in te geven. 
 
 lololol
 
