@@ -8,7 +8,11 @@ author: -
 
 
 # IoT
-Onderwerpen onder IoT
+
+Welkom!
+
+Op deze pagina vindt u een overzicht van de verschillende onderdelen met betrekking tot het IoT-gedeelte.
+
 * Sensoren
     * temp
     * potentiometer

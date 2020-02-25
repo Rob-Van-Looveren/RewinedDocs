@@ -15,7 +15,7 @@ Welkom op de informatiepagina van MySQL.
 ![phpMyAdmin](/{{ site.RepoName }}/media/logo/phpmyadmin.png)
 
 ## Wat
-We gebruiken de MySQL database voor dit project. Dit is een open-source relationeel database management system. Daarnaast kunnen we gebruikmaken van de webinterface van phpmyadmin om eenvoudig de data te bekijken, zonder de kennis van SQL queries.
+Voor dit project werd gekozen om te werken met de MySQL database. Dit is een open-source relationeel database management system. Daarnaast kunt u gebruikmaken van de webinterface van phpmyadmin om eenvoudig de data te bekijken, zonder de kennis van SQL queries.
 
 ## Installatie
 Om de installatie van MySQL, phpMyAdmin en het instellen van de back-ups te vereenvoudigen, hebben we een 'script' opgesteld. Bij het aanmaken van een nieuwe VM kunt u eenvoudig de installatie uitvoeren en bekomt u altijd dezelfde installatie/configuratie. Het script bestaat uit verschillende onderdelen die u kunt kopiëren en in de terminal plakken (en eventueel enter drukken).
