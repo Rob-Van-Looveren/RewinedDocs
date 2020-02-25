@@ -44,8 +44,8 @@ De eerste interface zullen we beschouwen als de WAN interface, deze koppelen we 
 
 
 ## Zie ook
-* [Configuratie Rules](/{{site.RepoName}}/CSS/pfSense/Config)
-* [API verbinden met Database](/{{site.RepoName}}/APP/ASP_DB/)
+* [Configuratie Rules](/{{site.RepoName}}/CCS/pfSense/Config)
+* [Netwerk](/{{site.RepoName}}/CCS/Netwerk/)
 
 ## Bronnen 
 * [pfSense in Proxmox guide ](https://docs.netgate.com/pfsense/en/latest/virtualization/virtualizing-pfsense-with-proxmox.html)
