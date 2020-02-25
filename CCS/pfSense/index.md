@@ -28,7 +28,7 @@ De installatie van pfSense is eenvoudig te doorlopen, wat wel voor enige verwari
 * Accepteer de voorwaarden en kies install
 * Volg de default settings en installeer
 * Na de installatie en heropstarten moet je de interfaces instellen via de CLI
-    * via optie 1 stel je de WAN en LAN interfaces in
+    * via optie 1 stel je de WAN en LAN interfaces in (Kan via MAC address, identificeren, zie onder VM Netwerk Settings)
     * via optie 2 kan je installen welke IP's of DHCP settings de interfaces krijgen
         ![pfSense](../../media/pfSense/menu.png)
 
@@ -45,10 +45,10 @@ De firewall VM heeft 2 netwerk interfaces toegewezen krijgen binnen Proxmox. Bin
 _Fysieke interface eno3 is niet aangesloten op de Proxmox server_
 
 ### VM netwerk settings
-Op de pfSense VM moeten we 2 netwerk interfaces toewijzen
+Op de pfSense VM moeten we 2 netwerk interfaces toewijzen:
 * 1 WAN Interface ```vmbr0```
 * 1 LAN Interface ```vmbr2```
-
+Hier kan je ook de bijhorende Mac addressen bekijken om te bepalen welke interface je binnen pfSense moet instellen als WAN of LAN.
 ![pfSense](../../media/pfSense/vm-network.png)
 
 
