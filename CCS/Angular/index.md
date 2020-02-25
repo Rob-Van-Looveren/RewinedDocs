@@ -10,13 +10,15 @@ author: Evi W.
 
 # Angular
 
+Welkom bij de documentatie over Angular. Hier vindt u alle stappen die nodig zijn om dit platform te installeren.
+
 ![Angular logo](../../media/logo/angular.png)
 
 ## Wat
 
-Angular is een open-source front-end applicatie-ontwikkelings platform dat gebruikt wordt om mobiele en webapplicaties te bouwen. Het is ideaal voor kleine en grotere applicaties. 
+Angular is een open-source front-end applicatie-ontwikkelingsplatform dat gebruikt wordt om mobiele en webapplicaties te bouwen. Het is ideaal voor kleine en grotere applicaties. 
 
-Belangrijk in gebruik is de Angular CLI; hieronder vind je alle stappen terug voor de volledige installatie.
+Belangrijk voor het gebruiken van Angular, is de Angular CLI. In de volgende stappen wordt dit geïmplementeerd.
 
 ## Installatie
 
