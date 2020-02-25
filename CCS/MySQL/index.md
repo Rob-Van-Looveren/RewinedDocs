@@ -7,8 +7,8 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # MySQL
-![MySQL](../../media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
-![phpMyAdmin](../../media/logo/phpmyadmin.png)
+![MySQL](/{{ site.RepoName }}/media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
+![phpMyAdmin](/{{ site.RepoName }}/media/logo/phpmyadmin.png)
 
 ## Wat
 We gebruiken de MySQL database voor dit project, dit is een open-source relationeel database management system. Daarnaast kunnen we gebruikmaken van de webinterface van phpmyadmin om eenvoudig de data te bekijken, zonder de kennis van SQL queries.
@@ -65,8 +65,8 @@ sudo service mysql restart
 ```
 
 ## Zie ook
-* [Back-up MySQL database](../backup#Database-Backup)
-* [API verbinden met Database](/{{site.RepoName}}/app/ASP_DB/)
+* [Back-up MySQL database](/{{ site.RepoName }}/CCS/backup#Database-Backup)
+* [API verbinden met Database](/{{ site.RepoName }}/app/ASP_DB/)
 
 
 ## Bronnen

@@ -11,8 +11,8 @@ author: Rob V.L.
 
 Welkom op de informatiepagina van ASP.net.
 
-![ASP.net](../../media/logo/asp.net.png)
-![ASP.net](../../media/logo/dotnet.png)
+![ASP.net](/{{site.RepoName}}/media/logo/asp.net.png)
+![ASP.net](/{{site.RepoName}}/media/logo/dotnet.png)
 
 
 ## Wat

@@ -94,7 +94,7 @@ Laat back-up script om het halfuur uitvoeren via crontab/cronjobs
 ![Backup](/{{ site.RepoName }}/media/backup/backup_4.png)
 
 ## Zie ook
-* [Back-up MySQL database](../backup#Database-Backup)
+* [Back-up MySQL database](/{{ site.RepoName }}/CCS/backup#Database-Backup)
 * [Verbind ASP.NET met database](../)
 
 

@@ -10,12 +10,12 @@ author: Rob V.L.
 
 
 ## Netwerk
-![netwerk](../../media/netwerk/netwerk.png)
+![netwerk](/{{ site.RepoName }}/media/netwerk/netwerk.png)
 
 
 ## Netwerk
 Om de werking van het netwerk duidelijk te maken, geven we graag even volgende toeliching op basis van bovenstaande afbeelding.
-Via [DNS](../DNS) komen alle requests binnen op het publiek IP van de Proximus modem, van op de modem moeten alle request toegelaten worden en op de juiste plaats terechtkomen. Via poortnummers en portforwarding gaan we de requests doorsturen naar de juiste plaats. Dit gebeurt op 3 plaatsen namelijk 
+Via [DNS](/{{ site.RepoName }}/CCS/DNS) komen alle requests binnen op het publiek IP van de Proximus modem, van op de modem moeten alle request toegelaten worden en op de juiste plaats terechtkomen. Via poortnummers en portforwarding gaan we de requests doorsturen naar de juiste plaats. Dit gebeurt op 3 plaatsen namelijk 
 * Proximus modem (naar pfsense)
 * pfSense (naar proxy)
 * proxy (naar juiste VM)
