@@ -20,7 +20,7 @@ Elk deel wordt toegelicht en is erop gericht dat u vrij eenvoudig zelf aan de sl
 * [Angular](Angular/)
 * [Backup](Backup/)
 * [Grafana](Grafana/)
-* [pfSense](pfSense/)
+* [PfSense](pfSense/)
 * [DNS](DNS/)
 * [Proxmox](Proxmox/)
 * [Netwerk](Netwerk/)
