@@ -9,6 +9,7 @@ author: Rob V.L.
 
 # Netwerk interfacess
 ![Netplan](/{{ site.RepoName }}/media/logo/netplan.png)
+![Ethernet](/{{ site.RepoName }}/media/logo/ethernet.png)
 
 ## Interfaces instellen  
 Er zijn 3 instellingen die we moeten maken, aanpassen.
