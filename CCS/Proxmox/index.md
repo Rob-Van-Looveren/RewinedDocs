@@ -59,7 +59,7 @@ Start de host op en wacht tot het Proxmox logo verschijnt met een keuzemenu.
 ![install](/{{ site.RepoName }}/media/proxmox/install.gif)
 
 ### Webinterface
-Na de installatie kunt u de web-interface bezoeken via uw browser, via ```https://IP.Adress:8006```.
+Na de installatie kunt u de webinterface bezoeken via uw browser, via ```https://IP.Adress:8006```.
 
 U wordt gevraagd om in te loggen. Dit kan met de username 'root' en het ingestelde wachtwoord.
 ![install](/{{ site.RepoName }}/media/proxmox/login.png)
