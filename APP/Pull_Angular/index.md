@@ -7,8 +7,8 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # Pull & deploy 
-![bash](../../media/logo/bash.png)
-![github](../../media/logo/github.png)
+![bash](/{{ site.RepoName }}/media/logo/bash.png)
+![github](/{{ site.RepoName }}//media/logo/github.png)
 
 ## Pull script
 Om de nieuwste versie van onze Angular code online te brengen moeten we enkele stappen uitvoeren. Om dit process te vereenvoudigen maken we gebruik van onderstaant script. Dit script zal dan volgende stappen uitvoeren

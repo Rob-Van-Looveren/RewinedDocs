@@ -7,7 +7,7 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # ASP.Net verbinden met database
-![DBs](../../media/logo/asp_db.png)
+![DBs](/{{ site.RepoName }}/media/logo/asp_db.png)
 
 
 ## Instellen

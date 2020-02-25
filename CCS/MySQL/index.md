@@ -7,22 +7,30 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # MySQL
+<<<<<<< HEAD
 ![MySQL](/{{ site.RepoName }}/media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
 ![phpMyAdmin](/{{ site.RepoName }}/media/logo/phpmyadmin.png)
+=======
+
+Welkom op de informatiepagina van MySQL. 
+
+![MySQL](../../media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
+![phpMyAdmin](../../media/logo/phpmyadmin.png)
+>>>>>>> 89018591b0ae41c822871e58e56ae1d39aa0edc0
 
 ## Wat
-We gebruiken de MySQL database voor dit project, dit is een open-source relationeel database management system. Daarnaast kunnen we gebruikmaken van de webinterface van phpmyadmin om eenvoudig de data te bekijken, zonder de kennis van SQL queries.
+We gebruiken de MySQL database voor dit project. Dit is een open-source relationeel database management system. Daarnaast kunnen we gebruikmaken van de webinterface van phpmyadmin om eenvoudig de data te bekijken, zonder de kennis van SQL queries.
 
 ## Installatie
-Om de installatie van MySQL, phpMyAdmin, en het instellen van de backups te vereenvoudigen hebben we een 'script' opgestelt. Bij het aanmaken van een nieuwe VM kan je eenvoudig de installatie uitvoeren, en bekom je altijd dezelfde installatie/configuratie. Het script bestaat uit verschillende onderdelen die je kan kopieren en in de terminal plakken (en eventueel enter drukken).
+Om de installatie van MySQL, phpMyAdmin, en het instellen van de back-ups te vereenvoudigen hebben we een 'script' opgesteld. Bij het aanmaken van een nieuwe VM kunt u eenvoudig de installatie uitvoeren en bekomt u altijd dezelfde installatie/configuratie. Het script bestaat uit verschillende onderdelen die u kunt kopiëren en in de terminal plakken (en eventueel enter drukken).
 
-### stap 1: Sudo rechten
-Tijdelijk overschakkelen naar sudo rechten voor uitvoeren van het script. Na invullen van correct wachtwoord verandert de promt en ga je als root verder.
+### Stap 1: sudo rechten
+U kunt best tijdelijk overschakelen naar 'sudo rechten' voor het uitvoeren van het script. Na invullen van correct wachtwoord verandert de prompt en ga je als root verder.
 ```
 sudo -i
 password: *****
 ```
-### stap 2: MySQL installeren
+### Stap 2: MySQL installeren
 Installeren van MySQL op non-interactieve wijze, root wachtwoord opgegeven via variabele.
 ```
 sudo apt update
@@ -32,7 +40,7 @@ sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again p
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
 ```
 
-### stap 3: SQL users aanmaken
+### Stap 3: SQL users aanmaken
 user project heeft alle rechten; user grafana heeft enkel leesrechten
 ```
 sudo mysql -u root -p$MySQLRootPwd -e "CREATE USER 'project'@'%' IDENTIFIED BY 'project';"
@@ -55,7 +63,7 @@ echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" | debconf
 apt-get install -y phpmyadmin
 ```
 
-### stap 5: Allow Remote connections & fix phpMyAfdmin error
+### Stap 5: Allow Remote connections & fix phpMyAdmin error
 Andere machines toegang geven tot MySQL Server.
 Error in default phpMyAdmin configuratie repareren.
 ```
