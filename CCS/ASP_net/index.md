@@ -4,11 +4,7 @@ title: ASP.NET
 author: Rob V.L.
 ---
 
-
-
-
 {% include nav-breadcrumbs.html %}
-
 
 
 # ASP.net
