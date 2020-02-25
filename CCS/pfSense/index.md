@@ -51,6 +51,8 @@ Op de pfSense VM moeten we 2 netwerk interfaces toewijzen:
 Hier kan je ook de bijhorende Mac addressen bekijken om te bepalen welke interface je binnen pfSense moet instellen als WAN of LAN.
 ![pfSense](../../media/pfSense/vm-network.png)
 
+### pfSense Settings
+
 
 
 
