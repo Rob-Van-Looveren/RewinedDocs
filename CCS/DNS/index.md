@@ -40,7 +40,7 @@ _Synology Diskstation configuratiescherm_
 
 
 ## Zie ook
-[Netwerk](/{{site.RepoName}}/CCS/netwerk)
+[Netwerk](/{{site.RepoName}}/CCS/Netwerk)
 
 
 ## Bronnen 
