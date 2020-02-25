@@ -6,8 +6,10 @@ author: Rob V.L.
 
 {% include nav-breadcrumbs.html %}
 
-g
+
 # ASP.net
+
+Welkom! Op deze pagina vindt u alle stappen die nodig zijn om het framework 'ASP.net' te installeren.
 
 ![ASP.net](../../media/logo/asp.net.png)
 ![ASP.net](../../media/logo/dotnet.png)
@@ -43,9 +45,9 @@ sudo apt-get install dotnet-sdk-2.2
     * de applicatie draait nu
     * maar is enkel alleen voor localhost bereikbaar
     * andere machines kunnen er dus niet naartoe browsen
-* Onderbreek de app via crl + c
+* Onderbreek de app via ctrl + c
 * Open ```Properties/launchSettings.json``` in een editor
-* De regel applicationUrl bepaald de URL, http protocol en poort
+* De regel 'applicationUrl' bepaald de URL, http protocol en poort
     * verander localhost naar *, zo kan iedere machine de app bereiken 
     * je kan zelf poorten aanpassen
     * je kan ook enkel http gebruiken door https te verwijderen

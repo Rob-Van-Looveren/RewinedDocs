@@ -9,7 +9,7 @@ author: John doe
 # Rewined Documentation
 ![Rewined](media/logo/rewined_logo_s.png)
 
-### Welkom
+### Welkom!
 
 Welkom op de documentatiepagina van Rewined, ook wel RewinedDocs genoemd.
 Deze documentatie is opgesteld in markdown en wordt beheerd in een repository op Github en gehost door
