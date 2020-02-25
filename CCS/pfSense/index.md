@@ -37,7 +37,7 @@ De installatie van pfSense is eenvoudig te doorlopen, wat wel voor enige verwari
 
 
 ## Zie ook
-* [configuratie rules ](/config)
+* [configuratie rules ](config)
 
 ## Bronnen 
 * [pfSense in Proxmox guide ](https://docs.netgate.com/pfsense/en/latest/virtualization/virtualizing-pfsense-with-proxmox.html)
