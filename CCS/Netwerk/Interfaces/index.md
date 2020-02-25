@@ -11,7 +11,9 @@ author: Rob V.L.
 ![Netplan](/{{ site.RepoName }}/media/logo/netplan.png)
 
 ## Interfaces instellen  
-_**IP adressen**_
+Er zijn 3 instellingen die we moeten maken, aanpassen.
+
+**IP adressen**
 
 Via netplan worden de IP instellingen geconfigureerd, in het bestand /etc/netplan/*.yaml
 Hieronder vind je een voorbeeld van een configuratie.
@@ -33,7 +35,7 @@ network:
 ```
 Nadien kan je via de commando's ```netplan generate``` en ``` netplan apply``` de wijzigen doorvoeren
 
-_**IPv6 uitschakelen**_
+**IPv6 uitschakelen**
 
 In onze opstelling worden geen IPv6 addressen gebruikt en mag IPv6 dus uitgeschakkeld worden.
 Dit is eerder om alles duidelijk en overzichtelijk te houden, maar heeft niet echt een technisch voordeel.
@@ -52,7 +54,8 @@ net.ipv6.conf.ens19.disable_ipv6 = 1
 * run het commando ```sudo sysctl -p```
 
 
-_**/etc/resolv.conf instellen**_
+**/etc/resolv.conf instellen**
+
 Om er voor te zorgen dat domaintranslations goed gebeuren moeten we volgende dingen doen
 * /etc/systemd/resolved.conf instellen
 * /etc/resolv.conf verwijderen
@@ -61,10 +64,6 @@ Om er voor te zorgen dat domaintranslations goed gebeuren moeten we volgende din
     * ```sudo ln -s /run/systemd/resolve/resolv.conf  /etc/resolv.conf```    
 * Service herstarten 
     * ```Sudo service systemd-resoved restart```
-
-
-
-
 
 ## zie ook 
 [Netwerk](/{{ site.RepoName }}/CCS/Netwerk)
