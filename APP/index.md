@@ -1,8 +1,7 @@
 ---
 layout: default
 title: APP
-author: -
-
+author: Rewined
 ---
 
 {% include nav-breadcrumbs.html %}
