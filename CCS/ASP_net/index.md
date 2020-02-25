@@ -19,7 +19,7 @@ Welkom op de informatiepagina van ASP.net.
 Asp.net is een framework dat draait bovenop het dotnet core framework van Microsoft. Het is crossplatform en kan dus op zowel Windows, Linux als Mac runnen.
 
 ## Installatie 
-De API is geschreven in .netcore 2.2 en dit is dus de versie die u gaat installeren. 
+De API is geschreven in .netcore 2.2 en dit is de versie die u gaat installeren. 
 
 ### Repository toevoegen
 ```
