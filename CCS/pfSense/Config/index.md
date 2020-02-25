@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Configuratie pfSense
+title: Configuratie pfSense Rules
 author: Rob V.L.
 ---
 
@@ -14,9 +14,11 @@ Om er voor te zorgen dat niet al het verkeer wordt geblokeerd door de firewall, 
 
 ![pfSense](../../../media/pfSense/rules.png)
 
-
+Op bovenstaande screenshot zie je de aanwezige regels die bepalen welk verkeer wordt tegelaten en geforward wordt naar de ingestelde IP's en Ports.
 
 ## Zie ook
+* [Installatie pfSense](/{{site.RepoName}}/CCS/pfSense/)
+* [Netwerk](/{{site.RepoName}}/CCS/Netwerk/)
 
 ## Bronnen 
 * [pfSense in Proxmox guide ](https://docs.netgate.com/pfsense/en/latest/virtualization/virtualizing-pfsense-with-proxmox.html)
