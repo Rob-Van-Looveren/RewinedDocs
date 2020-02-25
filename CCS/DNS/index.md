@@ -14,11 +14,9 @@ Welkom op de informatiepagina van DNS.
 ![DNS](/{{site.RepoName}}/media/logo/dns.png)
 ![WWW](/{{site.RepoName}}/media/logo/www.png)
 
-=======
 ## Wat
 DNS staat voor Domain Name System. Het zorgt ervoor dat een domeinnaam naar een IP adres vertaald wordt.
 Zonder DNS zouden we enkel IP's kunnen gebruiken. Daarom is het beter om domeinnamen te gebruiken. Deze zijn veel handiger in gebruik en zijn makkelijk te onthouden voor de gebruikers. 
->>>>>>> c354384d6819ee9090ec4670a285c5eaba1c28e3
 
 ## Waarom
 Aangezien we het dashboard via het publieke internet willen bereiken willen we dus een eenvoudige url kunnen gebruiken. 
