@@ -30,7 +30,7 @@ In ons PoC hebben we gebruik gemaakt van de DDNS service van Synology, aangezien
 
 ![DDNS](/{{site.RepoName}}/media/netwerk/synology-ddns.png)
 _Synology online status_
-_
+
 ![DDNS](/{{site.RepoName}}/media/netwerk/ddns.png)
 _Synology Diskstation configuratiescherm_
 
