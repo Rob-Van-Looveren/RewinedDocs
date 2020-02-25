@@ -8,6 +8,7 @@ author: Rob V.L.
 
 # Firewall Rules
 ![pfSense](../../../media/logo/pfSense.png)
+![rules](../../../media/logo/rules.png)
 
 ## Wat
 Om er voor te zorgen dat niet al het verkeer wordt geblokeerd door de firewall, moeten we enkel regels definieren. Deze regels verklaren wel verkeer toegelaten is van buitenaf, in dit geval http(s) queries naar de Proxy VM.
