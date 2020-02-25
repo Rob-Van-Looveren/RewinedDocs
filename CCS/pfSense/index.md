@@ -32,7 +32,7 @@ De installatie van pfSense is eenvoudig te doorlopen, wat wel voor enige verwari
     * via optie 2 kan je installen welke IP's of DHCP settings de interfaces krijgen
 * Nadien kan je via de LAN kant de web-interface bereiken via het IP van de LAN interface
 ![pfSense](../../media/pfSense/menu.png)
-
+![pfSense](../../media/pfSense/interface.png)
 
 
 
