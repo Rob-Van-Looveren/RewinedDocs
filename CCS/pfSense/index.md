@@ -47,8 +47,8 @@ _Fysieke interface eno3 is niet aangesloten op de Proxmox server_
 ### VM netwerk settings
 Op de pfSense VM moeten we 2 netwerk interfaces toewijzen
 * 1 WAN Interface ```vmbr0```
-* 1 LAN Interface ```vmbr2
-```
+* 1 LAN Interface ```vmbr2```
+
 ![pfSense](../../media/pfSense/vm-network.png)
 
 
