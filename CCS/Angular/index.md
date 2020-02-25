@@ -37,21 +37,21 @@ sudo apt install -y build-essential
 sudo npm install -g @angular/cli
 ```
 
-De installatie is nu in orde. Je kan de versie checken met volgend commando: ```ng --version ```
+De installatie is nu in orde. U kan de versie checken met volgend commando: ```ng --version ```
 
 ## Nieuw project aanmaken
 
-### Eerst moet je in de root directory komen en een project initialiseren
+### Eerst moet u in de root directory komen en een project initialiseren
 ```
 cd /var/www/html
 sudo ng new tecmint-app
 ```
 
-Let hier ook op je antwoorden tijdens de prompting:
+Let hier ook op uw antwoorden tijdens de prompting:
 
 ![Angular prompting](../../media/logo/angular_prompting.png)
 
-### Nu is er automatisch een 'application directory' aangemaakt en daar moet je je naar begeven.
+### Nu is er automatisch een 'application directory' aangemaakt en daar moet u zich naar begeven.
 ```
 cd tecmint-app
 ls                 # list project files
@@ -60,18 +60,18 @@ ng serve
 Met ‘ng serve’ zal de server de applicatie terug opbouwen en de webpagina herladen indien er veranderingen zijn aangebracht aan de source files.
 Meer informatie over deze tool met ‘ng help’.
 
-### Om de app via de browser te bereiken, moet poort 4200 openstaan. Indien de firewall actief is, dien je deze aan te passen.
+### Om de app via de browser te bereiken, moet poort 4200 openstaan. Indien de firewall actief is, dient u deze aan te passen.
 ```
 sudo ufw allow 4200/tcp
 sudo ufw reload
 ```
 
-### Nu kan je via de browser je applicatie bereiken.
+### Nu kunt u via de browser uw applicatie bereiken.
 ```
 http://localhost:4200
 of http://server-ip:4200
 ```
-Je kan zelf ook een host en een poort instellen als je wilt afwijken van de standaardinstellingen. Bijvoorbeeld:
+U kan zelf ook een host en een poort instellen als u wilt afwijken van de standaardinstellingen. Bijvoorbeeld:
 ```
 ng serve --host 192.168.3.125 --port 8080
 ```
