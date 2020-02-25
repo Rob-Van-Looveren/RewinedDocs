@@ -7,12 +7,10 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # Back-up
-![backup](/{{site.RepoName}}/media/logo/backup.png) &nbsp;&nbsp;
-![db backup](/{{site.RepoName}}/media/logo/db_backup.png)
-
 Welkom op de informatiepagina van 'Back-up'.
 
-Deze pagina toont u alle informatie omtrent het maken van back-ups.
+![backup](/{{site.RepoName}}/media/logo/backup.png) &nbsp;&nbsp;
+![db backup](/{{site.RepoName}}/media/logo/db_backup.png)
 
 ## Waarom?
 De reden om back-ups te plannen is redelijk voor de hand liggend. Het is simpelweg een garantie dat uw gegevens niet definitief verloren gaan wanneer het systeem ergens crasht.

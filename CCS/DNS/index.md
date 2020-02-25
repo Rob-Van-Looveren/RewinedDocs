@@ -8,12 +8,13 @@ author: Rob V.L.
 
 
 # DNS
-![DNS](/{{site.RepoName}}/media/logo/dns.png)
-![WWW](/{{site.RepoName}}/media/logo/www.png)
 
 Welkom op de informatiepagina van DNS.
 
-Waarom DNS? Om onze applicatie publiek bereikbaar te maken hebben we natuurlijk en Url nodig, daar het niet handig is om steeds een ip adres in te geven. 
+![DNS](/{{site.RepoName}}/media/logo/dns.png)
+![WWW](/{{site.RepoName}}/media/logo/www.png)
+
+Waarom DNS? Om uw applicatie publiek bereikbaar te maken, hebt u natuurlijk en Url nodig. Het is niet handig om steeds een ip adres in te geven. 
 
 lololol
 

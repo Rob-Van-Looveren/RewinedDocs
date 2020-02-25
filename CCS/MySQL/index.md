@@ -8,6 +8,8 @@ author: Rob V.L.
 
 # MySQL
 
+Welkom op de informatiepagina van MySQL.
+
 ![MySQL](/{{ site.RepoName }}/media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
 ![phpMyAdmin](/{{ site.RepoName }}/media/logo/phpmyadmin.png)
 
