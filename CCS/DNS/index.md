@@ -36,15 +36,12 @@ _Synology online status_
 _Synology Diskstation configuratiescherm_
 ![DDNS](/{{site.RepoName}}/media/netwerk/ddns.png)
 
-
-
-
 ## Zie ook
-[Netwerk](/{{site.RepoName}}/CCS/Netwerk)
+* [Netwerk](/{{site.RepoName}}/CCS/Netwerk)
 
 
 ## Bronnen 
-[Synology DDNS](https://www.synology.com/nl-nl/knowledgebase/DSM/help/DSM/AdminCenter/connection_ddns)
-[DDNS Explained](https://www.lifewire.com/definition-of-dynamic-dns-816294)
+* [Synology DDNS](https://www.synology.com/nl-nl/knowledgebase/DSM/help/DSM/AdminCenter/connection_ddns)
+* [DDNS Explained](https://www.lifewire.com/definition-of-dynamic-dns-816294)
 
 {% include footer.html %}
