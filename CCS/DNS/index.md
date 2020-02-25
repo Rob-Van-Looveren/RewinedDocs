@@ -45,5 +45,6 @@ _Synology Diskstation configuratiescherm_
 
 ## Bronnen 
 [Synology DDNS](https://www.synology.com/nl-nl/knowledgebase/DSM/help/DSM/AdminCenter/connection_ddns)
+[DDNS Explained](https://www.lifewire.com/definition-of-dynamic-dns-816294)
 
 {% include footer.html %}
