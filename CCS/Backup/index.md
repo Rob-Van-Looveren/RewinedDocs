@@ -6,50 +6,50 @@ author: Rob V.L.
 
 {% include nav-breadcrumbs.html %}
 
-# Backup
+# Back-up
 
-Welkom!
+Welkom op de informatiepagina van 'Back-up'.
 
-Deze pagina toont u alle informatie omtrent het maken van backups.
+Deze pagina toont u alle informatie omtrent het maken van back-ups.
 
 ## Waarom?
-De reden om backups te plannen is redelijk voor de hand liggend. Het is simpelweg een garantie dat uw gegevens niet definitief verloren gaan wanneer het systeem ergens crasht.
+De reden om back-ups te plannen is redelijk voor de hand liggend. Het is simpelweg een garantie dat uw gegevens niet definitief verloren gaan wanneer het systeem ergens crasht.
 
-Hierbij gaat het niet enkel om de data op zich, maar ook om het behoud van uw opstelling en applicatie. Een backup maken heeft ook betrekking op het garanderen van een server met de nodige services. 
+Hierbij gaat het niet enkel om de data op zich, maar ook om het behoud van uw opstelling en applicatie. Een back-up maken heeft ook betrekking op het garanderen van een server met de nodige services. 
 
 ## Voordeel?
-Het nemen van een backup zorgt ervoor dat alle resources kunnen hersteld worden indien er grote fouten zijn opgetreden en de services niet meer functioneren. De data zelf kan ook via deze weg gewaarborgd worden.
+Het nemen van een back-up zorgt ervoor dat alle resources kunnen hersteld worden indien er grote fouten zijn opgetreden en de services niet meer functioneren. De data zelf kan ook via deze weg gewaarborgd worden.
 
-## Proxmox Backup
-Proxmox heeft de optie om backups in te plannen en automatisch uit te voeren.
-Via volgende stappen stellen we in dat we dagelijks de VM’s backuppen naar een lokale NAS die onafhankelijk is van de Proxmox omgeving. 
+## Proxmox back-up
+Proxmox heeft de optie om back-ups in te plannen en automatisch uit te voeren.
+Via de volgende stappen stelt u in dat u dagelijks de VM’s back-upt naar een lokale NAS die onafhankelijk is van de Proxmox omgeving. 
 
-### Backup planning maken
-Ga naar uw proxmox web interface en selecteer 'datacenter', kies dan de optie 'backup'. Nu krijgt u een overzicht van bestaande backup planningen. U kunt deze bewerken of verwijderen via de actieknoppen bovenaan. Kies hier voor 'Add' om een nieuwe backup planning aan te maken. 
+### Back-up planning maken
+Ga naar uw proxmox webinterface en selecteer 'datacenter', kies daarna de optie 'backup'. Nu krijgt u een overzicht van bestaande back-up planningen. U kunt deze bewerken of verwijderen via de actieknoppen bovenaan. Kies hier voor 'Add' om een nieuwe back-up planning aan te maken. 
 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_1.png)
 
-### Backup planning instellen
-Het volgende scherm toont alle opties die u kan instellen bij het aanmaken van een backup planning. De belangrijkste zijn hier gemarkeerd. 
+### Back-up planning instellen
+Het volgende scherm toont alle opties die u kan instellen bij het aanmaken van een back-up planning. De belangrijkste opties zijn hier gemarkeerd. 
 
-* Storage: waar u de backups gaat opslaan, in dit geval een NAS smb share
-* Day: op welke dagen van de week u de backup wilt uitvoeren
-* Hour: op welk uur u de backup wilt uitvoeren
-* Mail: email adress om op de hoogte gehouden te worden
-    * Notification: enkel bij backup fail of bij elk backup event
-* VMs: alle VM's die u met deze backup planning wilt backuppen. 
+* Storage: waar u de back-ups gaat opslaan, in dit geval een NAS smb share
+* Day: op welke dagen van de week u de back-up wilt uitvoeren
+* Hour: op welk uur u de back-up wilt uitvoeren
+* Mail: e-mailadres om op de hoogte gehouden te worden
+    * Notification: enkel bij back-up fail of bij elk back-up event
+* VMs: alle VM's die u met deze back-up planning wilt back-uppen. 
 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_2.png)
 
-### Backup planning bevestigen
+### Back-up planning bevestigen
 Als alle instellingen naar wens zijn, drukt u op 'oke'. Nadien komt u terug op de overzichtspagina waar u de instellingen kan bekijken.
 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_3.png)
 
-## Proxmox Restore
+## Proxmox restore
 ![Backup](/{{ site.RepoName }}/media/backup/restore_1.png)
 
-## Database Backup
+## Database back-up
 
 Commando's als Root uitvoeren
 ```
@@ -71,7 +71,7 @@ mkdir /mnt/nas
 mount -a
 ```
 
-Backup script aanmaken, maakt backup via mysqldump op smb share
+Back-up script aanmaken; deze maakt back-up via mysqldump op smb share
 ```
 mkdir /home/project/script	
 touch /home/project/script/backup.sh
@@ -85,7 +85,7 @@ mysqldump -u project -pproject --all-databases | gzip > /mnt/nas/DB-backup-4.0/`
 chmod  +x /home/project/script/backup.sh
 ```
 
-Laat backup script om het halfuur uitvoeren via crontab/cronjobs
+Laat back-up script om het halfuur uitvoeren via crontab/cronjobs
 ```
 (crontab -l 2>/dev/null; echo "*/30 * * * * /home/project/script/backup.sh ") | crontab -
 ```
