@@ -64,7 +64,7 @@ Je wordt gevraagt om in te loggen, dit kan met je de username root, en het inges
 ![install](/{{ site.RepoName }}/media/proxmox/interface.png)
 
 ## Zie ook
-[Backup Vm's](/{{ site.RepoName }}/CCS/backup)
+[Backup Vm's](/{{ site.RepoName }}/CCS/Backup)
 
 ## Bronnen 
 * [Proxmox install guide](https://pve.proxmox.com/wiki/Installation)
