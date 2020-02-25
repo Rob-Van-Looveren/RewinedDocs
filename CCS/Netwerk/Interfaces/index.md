@@ -11,7 +11,8 @@ author: Rob V.L.
 ![Netplan](/{{ site.RepoName }}/media/logo/netplan.png)
 
 ## Interfaces instellen  
-*__ IP adressen __*
+_** IP adressen **_
+
 Via netplan worden de IP instellingen geconfigureerd, in het bestand /etc/netplan/*.yaml
 Hieronder vind je een voorbeeld van een configuratie.
 ```
@@ -32,7 +33,8 @@ network:
 ```
 Nadien kan je via de commando's ```netplan generate``` en ``` netplan apply``` de wijzigen doorvoeren
 
-*__ IPv6 uitschakelen __*
+_** IPv6 uitschakelen **_
+
 In onze opstelling worden geen IPv6 addressen gebruikt en mag IPv6 dus uitgeschakkeld worden.
 Dit is eerder om alles duidelijk en overzichtelijk te houden, maar heeft niet echt een technisch voordeel.
 * open /etc/sysctl.conf in nano
