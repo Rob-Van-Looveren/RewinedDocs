@@ -9,13 +9,15 @@ author: Rob V.L.
 
 
 
-## Netwerk
+# Netwerk
+Welkom op de informatiepagina van Netwerk. Hier vindt u meteen het netwerkschema van de opstelling van de netwerkomgeving.
+
 ![netwerk](../../media/netwerk/netwerk.png)
 
 
-## Netwerk
+## Werking netwerk
 Om de werking van het netwerk duidelijk te maken, geven we graag even volgende toeliching op basis van bovenstaande afbeelding.
-Via [DNS](../DNS) komen alle requests binnen op het publiek IP van de Proximus modem, van op de modem moeten alle request toegelaten worden en op de juiste plaats terechtkomen. Via poortnummers en portforwarding gaan we de requests doorsturen naar de juiste plaats. Dit gebeurt op 3 plaatsen namelijk 
+Via [DNS](../DNS) komen alle requests binnen op het publiek IP van de Proximus modem. Op de modem moeten alle request toegelaten worden en op de juiste plaats terechtkomen. Via poortnummers en portforwarding gaan we de requests doorsturen naar de juiste plaats. Dit gebeurt op 3 plaatsen namelijk 
 * Proximus modem (naar pfsense)
 * pfSense (naar proxy)
 * proxy (naar juiste VM)
@@ -24,7 +26,7 @@ Via [DNS](../DNS) komen alle requests binnen op het publiek IP van de Proximus m
 
 | VM           | Software     | int IP        | IP           |Link                                                    |
 |--------------|--------------|---------------|--------------|--------------------------------------------------------|
-| Firewall     | pfSense      | 192.168.3.100 | 10.10.10.1   |                                                        |
+| Firewall     | PfSense      | 192.168.3.100 | 10.10.10.1   |                                                        |
 | Proxy        | Apache       | /             | 10.10.10.10  |[Web](https://rob-vl.synology.me:3400)                  |
 | API          | ASP.net      | 192.168.3.101 | 10.10.10.101 |[API](https://rob-vl.synology.me:3401/swagger)          |
 | Frontend     | Angularjs    | 192.168.3.102 | 10.10.10.102 |[Frontend](https://rob-vl.synology.me:3402)             |
