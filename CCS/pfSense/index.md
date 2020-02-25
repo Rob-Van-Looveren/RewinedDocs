@@ -50,6 +50,7 @@ Op de pfSense VM moeten we 2 netwerk interfaces toewijzen:
 * 1 LAN Interface ```vmbr2```
 
 ![pfSense](../../media/pfSense/vm-network.png)
+
 Hier kan je ook de bijhorende Mac addressen bekijken om te bepalen welke interface je binnen pfSense moet instellen als WAN of LAN.
 
 ### pfSense Settings
