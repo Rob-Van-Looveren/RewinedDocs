@@ -12,12 +12,12 @@ Welkom op de informatiepagina van 'Back-up'.
 ![backup](/{{site.RepoName}}/media/logo/backup.png) &nbsp;&nbsp;
 ![db backup](/{{site.RepoName}}/media/logo/db_backup.png)
 
-## Waarom?
+## Waarom
 De reden om back-ups te plannen is redelijk voor de hand liggend. Het is simpelweg een garantie dat uw gegevens niet definitief verloren gaan wanneer het systeem ergens crasht.
 
 Hierbij gaat het niet enkel om de data op zich, maar ook om het behoud van uw opstelling en applicatie. Een back-up maken heeft ook betrekking op het garanderen van een server met de nodige services. 
 
-## Voordeel?
+## Voordeel
 Het nemen van een back-up zorgt ervoor dat alle resources kunnen hersteld worden indien er grote fouten zijn opgetreden en de services niet meer functioneren. De data zelf kan ook via deze weg gewaarborgd worden.
 
 ## Proxmox back-up
