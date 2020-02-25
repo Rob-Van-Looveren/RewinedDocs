@@ -15,8 +15,6 @@ Welkom op de informatiepagina van Netwerk. Hier vindt u meteen het netwerkschema
 ## Netwerk
 ![netwerk](/{{ site.RepoName }}/media/netwerk/netwerk.png)
 
-
-
 ## Werking netwerk
 Om de werking van het netwerk duidelijk te maken, geven we graag even volgende toeliching op basis van bovenstaande afbeelding.
 
@@ -61,12 +59,9 @@ Via [DNS](/{{ site.RepoName }}/CCS/DNS) komen alle requests binnen op het publie
 | 3404 | Proxy     | 10.10.10.10    | 3404         |
 
 
-## 
-* disable ipv6
-* setup /etc/resolve
-### h3
 
 ## zie ook 
+[Interface VM instellen ](/{{ site.RepoName }}/CCS/Netwerk/Interfaces)
 
 ## bronnen 
 
