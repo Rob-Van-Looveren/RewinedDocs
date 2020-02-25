@@ -30,8 +30,9 @@ De installatie van pfSense is eenvoudig te doorlopen, wat wel voor enige verwari
 * Na de installatie en heropstarten moet je de interfaces instellen via de CLI
     * via optie 1 stel je de WAN en LAN interfaces in
     * via optie 2 kan je installen welke IP's of DHCP settings de interfaces krijgen
+        ![pfSense](../../media/pfSense/menu.png)
+
 * Nadien kan je via de LAN kant de web-interface bereiken via het IP van de LAN interface
-![pfSense](../../media/pfSense/menu.png)
 ![pfSense](../../media/pfSense/interface.png)
 
 
