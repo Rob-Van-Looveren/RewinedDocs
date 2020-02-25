@@ -47,7 +47,7 @@ sudo apt-get -y install grafana
 sudo systemctl start grafana-server
 ```
 
-Nu zou de service moeten draaien. Dit kan u controleren met het commando ```systemctl status grafana-server.service```
+Nu zou de service moeten draaien. Dit kunt u controleren met het commando ```systemctl status grafana-server.service```
 
 U kan er ook voor zorgen dat deze service automatisch wordt gestart bij het opstarten van de server met het commando ```sudo update-rc.d grafana-server defaults```
 

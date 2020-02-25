@@ -10,7 +10,7 @@ author: Evi W.
 
 # Angular
 
-Welkom bij de documentatie over Angular. Hier vindt u alle stappen die nodig zijn om dit platform te installeren.
+Welkom op de informatiepagina van Angular. 
 
 ![Angular logo](../../media/logo/angular.png)
 

@@ -9,7 +9,7 @@ author: Rob V.L.
 
 # ASP.net
 
-Welkom! Op deze pagina vindt u alle stappen die nodig zijn om het framework 'ASP.net' te installeren.
+Welkom op de informatiepagina van ASP.net.
 
 ![ASP.net](../../media/logo/asp.net.png)
 ![ASP.net](../../media/logo/dotnet.png)
