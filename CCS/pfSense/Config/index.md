@@ -7,8 +7,8 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # Firewall Rules
-![pfSense](../../../media/logo/pfSense.png)
-![rules](../../../media/logo/rules.png)
+![pfSense](/{{site.RepoName}}/media/logo/pfSense.png)
+![rules](/{{site.RepoName}}/media/logo/rules.png)
 
 ## Wat
 Om er voor te zorgen dat niet al het verkeer wordt geblokeerd door de firewall, moeten we enkel regels definieren. Deze regels verklaren wel verkeer toegelaten is van buitenaf, in dit geval http(s) queries naar de Proxy VM.
@@ -26,7 +26,7 @@ Via de web interface kunnen we de regels instellen op eenvoudige wijze.
     * Het is handig als je ook een beschrijving meegeeft
 * klik save en reload/refresh de configuration.
 
-![pfSense](../../../media/pfSense/rules.png)
+![pfSense](/{{site.RepoName}}/media/pfSense/rules.png)
 
 Op bovenstaande screenshot zie je de aanwezige regels die bepalen welk verkeer wordt tegelaten en geforward wordt naar de ingestelde IP's en Ports.
 
