@@ -35,6 +35,19 @@ Nadien kan je via de commando's ```netplan generate``` en ``` netplan apply``` d
 *__ IPv6 uitschakelen __*
 In onze opstelling worden geen IPv6 addressen gebruikt en mag IPv6 dus uitgeschakkeld worden.
 Dit is eerder om alles duidelijk en overzichtelijk te houden, maar heeft niet echt een technisch voordeel.
+* open /etc/sysctl.conf in nano
+* voeg volgende lijnen toe
+```
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+```
+* Voeg vervolgens nog 1 lijn toe per interface
+```
+net.ipv6.conf.ens18.disable_ipv6 = 1
+net.ipv6.conf.ens19.disable_ipv6 = 1
+```
+* run het commando ```sudo sysctl -p```
 
 
 
