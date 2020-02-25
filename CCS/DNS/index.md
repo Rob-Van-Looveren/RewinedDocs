@@ -29,13 +29,15 @@ Dit staat voor Dynamic DNS, en zorgt er voor de DNS server het bijhorende IP van
 In ons PoC hebben we gebruik gemaakt van de DDNS service van Synology, aangezien er al een Synology NAS aanwezig is binnen het netwerk met DDNS. Deze NAS decetereed wanneer het publiek IP gewijzigt is en brengt de Synology DNS server op de hoogte van de wijzing en het nieuwe IP adress. _een andere populaire DDNS provider is noip.com_ We kunnen dus eenvoudig de zelfde URL gebruiken om het IP te bekomen, ook hebben we meteen een gratis URL.
 
 ![DDNS](/{{site.RepoName}}/media/netwerk/synology-ddns.png)
-_Synology online status
+_Synology online status_
 _
 ![DDNS](/{{site.RepoName}}/media/netwerk/ddns.png)
 _Synology Diskstation configuratiescherm_
 
 
 ## Zie ook
+[Netwerk](/{{site.RepoName}}/CCS/netwerk)
+
 
 ## Bronnen 
 [Synology DDNS](https://www.synology.com/nl-nl/knowledgebase/DSM/help/DSM/AdminCenter/connection_ddns)
