@@ -48,11 +48,19 @@ _Fysieke interface eno3 is niet aangesloten op de Proxmox server_
 Op de pfSense VM moeten we 2 netwerk interfaces toewijzen:
 * 1 WAN Interface ```vmbr0```
 * 1 LAN Interface ```vmbr2```
+
 ![pfSense](../../media/pfSense/vm-network.png)
 Hier kan je ook de bijhorende Mac addressen bekijken om te bepalen welke interface je binnen pfSense moet instellen als WAN of LAN.
 
-
 ### pfSense Settings
+Binnen pfSense moeten we één instelling wijzigen om de werking binnen een virtuele omgeving te garanderen en optimalizeren. Deze instelling kan je via de Web-interface aanpassen onder; 
+* Systeem > Advanced 
+* Tabblad Networking
+* Onderaan de pagina > Disable hardware checksum offload
+![pfSense](../../media/pfSense/checksum.png)
+
+
+Schakkel deze optie aan, dit zorgt er voor dat de checksum niet door de netwerk kaart gebeurdt, maat door de VM zelf. Moest dit op de netwerkkaart zelf gebeuren kan dit voor problemen zorgen door incompatible drivers en zo voort.
 
 
 
