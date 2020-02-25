@@ -6,28 +6,27 @@ author: Rob V.L.
 
 {% include nav-breadcrumbs.html %}
 
-# ASP.Net verbinden met database
+# ASP.net verbinden met database
 ![DBs](/{{ site.RepoName }}/media/logo/asp_db.png)
 
 
 ## Instellen
-Om te verbinden met de database moeten we de ASP.net code van onze API nog aanpassen en een extra dotnet package installeren. Na deze 3 wijzigingen kan de API met database verbinden.
+Om te verbinden met de database moet de ASP.net code van de API nog aangepast worden en een extra dotnet package geïnstalleerd worden. Na deze 3 wijzigingen kan de API met de database verbinden.
 
-### package installeren
-Ga naar de map waar je project staat en via dotnet add package installeren we het volgende packet 'Pomelo.EntityFrameworkCore.MySql versie 2.2.6'. Dit packet zorgt ervoor dat het DOTNET framework met de mysql database kan communiceren.
+### Package installeren
+Ga naar de map waar uw project staat en installeer via 'dotnet add package' het volgende pakket: 'Pomelo.EntityFrameworkCore.MySql versie 2.2.6'. Dit pakket zorgt ervoor dat het DOTNET framework met de MySQL database kan communiceren.
 ```
 dotnet add package Pomelo.EntityFrameworkCore.MySql --version 2.2.6-rc1-final
 ```
-### appsettings.json
-in het bestand appsettings.json moeten we opgeven met welke database we gaan verbinden. 
-Verander de DefaultConnection string naar volgende indeling en geef de juiste gegevens op.
+### Appsettings.json
+In het bestand 'appsettings.json' moet u opgeven met welke database u gaat verbinden. 
+Verander de DefaultConnection string naar de volgende indeling en geef de juiste gegevens op.
 ```
 "DefaultConnection": "server=192.168.3.130;port=3306;database=Rewined;uid=***;password=***"
 ```
-
 ### Startup.cs
-in het bestand Startup.json moeten we opgeven dat we met MySQL werken in plaats van een Microsoft SQL database.
-Daarom moeten we bij *'AddDbContext'* de optie *'UseSqlServer'* vervangen door *'UseMySql'*
+In het bestand 'Startup.json' moet u opgeven dat u met MySQL werkt in plaats van met een Microsoft SQL database.
+Daarom moet u bij *'AddDbContext'* de optie *'UseSqlServer'* vervangen door *'UseMySql'*.
 ```
 services.AddDbContext<RewinedContext>(options =>  options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
 ```
