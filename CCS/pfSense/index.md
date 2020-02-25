@@ -32,7 +32,7 @@ De installatie zelf verloopt via een aantal stappen:
 * Maak een nieuwe VM in Proxmox met ISO gemount en start de VM
 * Accepteer de voorwaarden en kies 'install'
 * Volg de default settings en installeer
-<<<<<<< HEAD
+
 * Na de installatie en het heropstarten, moet u de interfaces instellen via de CLI
     * via optie 1 stelt u de WAN en LAN interfaces in (dit kan via MAC address, identificeren, zie onder 'VM Netwerk Settings')
     * via optie 2 kunt u instellen welke IP's of DHCP settings de interfaces krijgen

@@ -35,7 +35,7 @@ sudo apt-get install -y gnupg2 curl software-properties-common
 curl https://packages.grafana.com/gpg.key | sudo apt-key add –
 sudo add-apt-repository “deb https://packages.grafana.com/oss/deb stable main”
 ```
-Indien u de foutmelding “add-apt-repository command not found” krijgt, kan u dit oplossen via volgende link: * [Add repository](https://computingforgeeks.com/how-to-install-add-apt-repository-on-debian-ubuntu/) 
+Indien u de foutmelding “add-apt-repository command not found” krijgt, kan u dit oplossen via volgende link: [Add repository](https://computingforgeeks.com/how-to-install-add-apt-repository-on-debian-ubuntu/) 
 
 ### Update de apt repositories & installeer Grafana
 ```
