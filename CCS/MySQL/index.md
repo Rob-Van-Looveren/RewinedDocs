@@ -27,7 +27,7 @@ sudo -i
 password: *****
 ```
 ### Stap 2: MySQL installeren
-Installeren van MySQL op non-interactieve wijze, root wachtwoord opgegeven via variabele.
+installeren van MySQL op non-interactieve wijze, root wachtwoord opgegeven via variabele
 ```
 sudo apt update
 MySQLRootPwd=project
@@ -60,8 +60,8 @@ apt-get install -y phpmyadmin
 ```
 
 ### Stap 5: Allow Remote connections & fix phpMyAdmin error
-Andere machines toegang geven tot MySQL Server.
-Error in default phpMyAdmin configuratie repareren.
+andere machines toegang geven tot MySQL Server
+error in default phpMyAdmin configuratie repareren
 ```
 echo 'bind-address            = 10.10.10.103' >> /etc/mysql/mysql.conf.d/mysqld.cnf
 sudo sed -i "s/|\s*\((count(\$analyzed_sql_results\['select_expr'\]\)/| (\1)/g" /usr/share/phpmyadmin/libraries/sql.lib.php
