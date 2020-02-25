@@ -14,7 +14,7 @@ Welkom op de informatiepagina van pfSense.
 ![pfSense](../../media/logo/pfSense.png)
 
 ## Wat
-PfSense is een gratis en open-source firewall gebaseerd op FreeBDS distro's. Je kan de firewall op fysieke als ook op virtuele machines installeren en runnen. Na de installatie kan je de firewall beheren via een eenvoudige web-interface. PfSense firewall heeft een tal van opties om netwerken te beveiligen, onder andere:
+PfSense is een gratis en open-source firewall gebaseerd op FreeBDS distro's. U kunt de firewall op fysieke als ook op virtuele machines installeren en runnen. Na de installatie kunt u de firewall beheren via een eenvoudige web-interface. PfSense firewall heeft een tal van opties om netwerken te beveiligen, onder andere:
 
 * DPI (Deep packet inspection)
 * Intrusion Detection System
