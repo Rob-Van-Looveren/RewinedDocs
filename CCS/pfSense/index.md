@@ -57,6 +57,7 @@ Binnen pfSense moeten we één instelling wijzigen om de werking binnen een virt
 * Systeem > Advanced 
 * Tabblad Networking
 * Onderaan de pagina > Disable hardware checksum offload
+
 ![pfSense](../../media/pfSense/checksum.png)
 
 
