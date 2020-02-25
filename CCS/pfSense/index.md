@@ -64,9 +64,6 @@ Binnen pfSense moeten we één instelling wijzigen om de werking binnen een virt
 
 Schakkel deze optie aan, dit zorgt er voor dat de checksum niet door de netwerk kaart gebeurdt, maat door de VM zelf. Moest dit op de netwerkkaart zelf gebeuren kan dit voor problemen zorgen door incompatible drivers en zo voort.
 
-
-
-
 ## Zie ook
 * [Configuratie Rules](/{{site.RepoName}}/CCS/pfSense/Config)
 * [Netwerk](/{{site.RepoName}}/CCS/Netwerk/)
@@ -74,6 +71,5 @@ Schakkel deze optie aan, dit zorgt er voor dat de checksum niet door de netwerk 
 ## Bronnen 
 * [pfSense in Proxmox guide ](https://docs.netgate.com/pfsense/en/latest/virtualization/virtualizing-pfsense-with-proxmox.html)
 * [pfSense installation guide ](https://docs.netgate.com/pfsense/en/latest/install/installing-pfsense.html)
-
 
 {% include footer.html %}

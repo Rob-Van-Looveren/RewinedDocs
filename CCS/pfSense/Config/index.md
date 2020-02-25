@@ -22,7 +22,7 @@ Via de web interface kunnen we de regels instellen op eenvoudige wijze.
     * Duid het juiste transport protocol aan; TCP, UDP of TCP/UDP
     * Geef inkomende poort nummer in bij ```Destination port range```
     * Geef het forwarding IP bij ```Redirect Target IP```
-    * Geef de uitgaande port nummer in bij ````Redirect Target Ports``` 
+    * Geef de uitgaande port nummer in bij ```Redirect Target Ports``` 
     * Het is handig als je ook een beschrijving meegeeft
 * klik save en reload/refresh de configuration.
 
