@@ -11,24 +11,24 @@ author: Rob V.L.
 ![rules](/{{site.RepoName}}/media/logo/rules.png)
 
 ## Wat
-Om er voor te zorgen dat niet al het verkeer wordt geblokeerd door de firewall, moeten we enkel regels definieren. Deze regels verklaren wel verkeer toegelaten is van buitenaf, in dit geval http(s) queries naar de Proxy VM.
+Om ervoor te zorgen dat niet al het verkeer wordt geblokkeerd door de firewall, moet u enkele regels definiëren. Deze regels verklaren dat er wel verkeer toegelaten is van buitenaf. In dit geval http(s) queries naar de Proxy VM.
 
 ## Regels instellen 
-Via de web interface kunnen we de regels instellen op eenvoudige wijze.
+Via de webinterface kunt u de regels instellen op een eenvoudige wijze.
 * Kies Firewall in het menu bovenaan
-* kies vervolgens voor de optie NAT (Network address Translation)
-* Standaard kom je op het tabblad portforwarding uit
-* kies onderaan 'Add' om een nieuwe regel in te stellen
-    * Duid het juiste transport protocol aan; TCP, UDP of TCP/UDP
-    * Geef inkomende poort nummer in bij ```Destination port range```
-    * Geef het forwarding IP bij ```Redirect Target IP```
-    * Geef de uitgaande port nummer in bij ```Redirect Target Ports``` 
-    * Het is handig als je ook een beschrijving meegeeft
-* klik save en reload/refresh de configuration.
+* Kies vervolgens voor de optie NAT (Network address Translation)
+* Standaard komt u op het tabblad 'portforwarding' uit
+* Kies onderaan 'Add' om een nieuwe regel in te stellen
+    * duid het juiste transport protocol aan; TCP, UDP of TCP/UDP
+    * geef de inkomende poortnummer in bij ```Destination port range```
+    * geef het forwarding IP bij ```Redirect Target IP```
+    * geef de uitgaande poortnummer in bij ```Redirect Target Ports``` 
+    * het is handig als u ook een beschrijving meegeeft
+* Klik save en reload/refresh de configuration.
 
 ![pfSense](/{{site.RepoName}}/media/pfSense/rules.png)
 
-Op bovenstaande screenshot zie je de aanwezige regels die bepalen welk verkeer wordt tegelaten en geforward wordt naar de ingestelde IP's en Ports.
+Op bovenstaande screenshot ziet u de aanwezige regels die bepalen welk verkeer wordt toegelaten en geforward wordt naar de ingestelde IP's en ports.
 
 
 ## Zie ook
