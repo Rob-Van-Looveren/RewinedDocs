@@ -10,12 +10,11 @@ author: Rob V.L.
 
 # Proxy
 
-Welkom op de informatiepagina van Proxmox.
-
 ![apache](/{{ site.RepoName }}//media/logo/apache.png)
 
 ## Wat
 llalaa nfojefb zqdiqd zand qdxqidokfn qijzidzkdn 
+
 ![apache](/{{ site.RepoName }}//media/netwerk/proxy.png)
 
 
