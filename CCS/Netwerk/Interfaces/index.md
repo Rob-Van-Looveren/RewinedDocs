@@ -7,8 +7,11 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 
-# Interfaces instellen op VM
+# Netwerk interfacess
 ![Netplan](/{{ site.RepoName }}/media/logo/netplan.png)
+
+## Interfaces instellen  
+IP addressen 
 
 * disable ipv6
 * setup /etc/resolve
