@@ -10,6 +10,7 @@ author: Rob V.L.
 
 Welkom op de informatiepagina van MySQL.
 
+
 ![MySQL](/{{ site.RepoName }}/media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
 ![phpMyAdmin](/{{ site.RepoName }}/media/logo/phpmyadmin.png)
 
