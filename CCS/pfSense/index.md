@@ -8,11 +8,15 @@ author: Rob V.L.
 
 
 
-# pfSense
+# PfSense
+
+Welkom op de informatiepagina van pfSense.
+
 ![pfSense](../../media/logo/pfSense.png)
 
 ## Wat
-pfSense is een gratis en open-source firewall gebasseerd op FreeBDS distro's. Je kan de firewall op fysieke als ook virtuele machines installeren en runnen. Na de installatie kan je de firewall beheren via een eenvoudige web-interface. pfSense firewall heeft een tal van opties om netwerken te beveiligen, onderandere
+PfSense is een gratis en open-source firewall gebaseerd op FreeBDS distro's. Je kan de firewall op fysieke als ook op virtuele machines installeren en runnen. Na de installatie kan je de firewall beheren via een eenvoudige web-interface. PfSense firewall heeft een tal van opties om netwerken te beveiligen, onder andere:
+
 * DPI (Deep packet inspection)
 * Intrusion Detection System
 * Intrusion Prevention System
@@ -22,39 +26,44 @@ pfSense is een gratis en open-source firewall gebasseerd op FreeBDS distro's. Je
 * Additional applications en features  
 
 ## Installatie 
-De installatie van pfSense is eenvoudig te doorlopen, wat wel voor enige verwaringen kan veroorzaken is de virtualaisiatie dat voor een extra laag van abstractie zorgt. Het belangrijkste is het juist toewijzen van de netwerk interfaces, namelijk de WAN aan de WAN kant en niet omgekeerd. De installatie zelf verloop via een aantal stappen
+De installatie van pfSense is vrij eenvoudig te doorlopen. Wat wel voor enige verwarring kan zorgen, is de virtualisatie. Dit geeft een extra laag van abstractie. Het belangrijkste is het juist toewijzen van de netwerkinterfaces, namelijk de WAN aan de WAN-kant en niet omgekeerd. 
+
+De installatie zelf verloopt via een aantal stappen:
 * Download de recenste stabiele versie als ISO file via de [website](https://www.pfsense.org/download/)
-* Maak een nieuwe VM in Proxmox met ISO gemount, en start de VM
-* Accepteer de voorwaarden en kies install
+* Maak een nieuwe VM in Proxmox met ISO gemount en start de VM
+* Accepteer de voorwaarden en kies 'install'
 * Volg de default settings en installeer
-* Na de installatie en heropstarten moet je de interfaces instellen via de CLI
-    * via optie 1 stel je de WAN en LAN interfaces in (Kan via MAC address, identificeren, zie onder VM Netwerk Settings)
-    * via optie 2 kan je installen welke IP's of DHCP settings de interfaces krijgen
+* Na de installatie en het heropstarten, moet u de interfaces instellen via de CLI
+    * via optie 1 stelt u de WAN en LAN interfaces in (dit kan via MAC address, identificeren, zie onder 'VM Netwerk Settings')
+    * via optie 2 kunt u instellen welke IP's of DHCP settings de interfaces krijgen
         ![pfSense](../../media/pfSense/menu.png)
 
-* Nadien kan je via de LAN kant de web-interface bereiken via het IP van de LAN interface
+* Nadien kunt u via de LAN-kant de webinterface bereiken via het IP adres van de LAN-interface
 ![pfSense](../../media/pfSense/interface.png)
 
 ## Proxmox bijkomende instellingen
-Om de installatie en correcte werking van pfSense te garanderen moeten we volgende de volgende netwerk instellingen in proxmox maken. Nadien moeten we ook binnen pfSense nog een optie aanpassen om de virtuele werking te garanderen. 
+Om de installatie en correcte werking van pfSense te garanderen, moet u de hierna volgende netwerkinstellingen in Proxmox maken. Nadien moet u ook binnen pfSense nog een optie aanpassen om de virtuele werking te garanderen. 
 
 ### Proxmox network settings
-De firewall VM heeft 2 netwerk interfaces toegewezen krijgen binnen Proxmox. Binnen Proxmox moeten we 2 netwerken hebben, het eerste netwerk zullen we als het WAN netwerk gebruiken. Hiervoor kunnen we het default aanwezige netwerk gebruiken ```vmbr0```, dit is dus een netwerk dat fysiek op de Proxmox omgeving aangesloten is. Voor het LAN netwerk moeten we binnen Proxmox een 2de netwerk aanmaken ```vmbr2```, echter koppelen we hier geen fysieke interface aan. Het is dus een netwerk dat enkel virtueel aanwezig is binnen de Proxmox omgeving. Enkel VM's met een interface van dit netwerk zijn verbonden met dit netwerk. 
+De firewall VM heeft 2 netwerkinterfaces toegewezen gekregen binnen Proxmox. In de Proxmox-omgeving moeten er 2 netwerken zijn. 
+Het eerste netwerk zal als het WAN-netwerk dienen. Hiervoor kunt u het default aanwezige netwerk gebruiken ```vmbr0```. Dit is dus een netwerk dat fysiek op de Proxmox-omgeving aangesloten is. 
+
+Voor het LAN-netwerk moet u binnen Proxmox een 2de netwerk aanmaken ```vmbr2```. Hier wordt echter geen fysieke interface aan gekoppeld. Het is dus een netwerk dat enkel virtueel aanwezig is binnen de Proxmox-omgeving. Enkel VM's met een interface van dit netwerk zijn ook verbonden met dit netwerk. 
 
 ![pfSense](../../media/pfSense/proxmox-network.png)
 _Fysieke interface eno3 is niet aangesloten op de Proxmox server_
 
 ### VM netwerk settings
-Op de pfSense VM moeten we 2 netwerk interfaces toewijzen:
+Op de pfSense VM moet u 2 netwerkinterfaces toewijzen:
 * 1 WAN Interface ```vmbr0```
 * 1 LAN Interface ```vmbr2```
 
 ![pfSense](../../media/pfSense/vm-network.png)
 
-Hier kan je ook de bijhorende Mac addressen bekijken om te bepalen welke interface je binnen pfSense moet instellen als WAN of LAN.
+Hier kunt u ook de bijhorende Mac addressen bekijken om te bepalen welke interface u binnen pfSense moet instellen als WAN of LAN.
 
-### pfSense Settings
-Binnen pfSense moeten we één instelling wijzigen om de werking binnen een virtuele omgeving te garanderen en optimalizeren. Deze instelling kan je via de Web-interface aanpassen onder; 
+### PfSense settings
+Binnen pfSense moet u één instelling wijzigen om de werking binnen een virtuele omgeving te garanderen en optimaliseren. Deze instelling kunt u via de webinterface aanpassen onder: 
 * Systeem > Advanced 
 * Tabblad Networking
 * Onderaan de pagina > Disable hardware checksum offload
@@ -62,7 +71,7 @@ Binnen pfSense moeten we één instelling wijzigen om de werking binnen een virt
 ![pfSense](../../media/pfSense/checksum.png)
 
 
-Schakkel deze optie aan, dit zorgt er voor dat de checksum niet door de netwerk kaart gebeurdt, maat door de VM zelf. Moest dit op de netwerkkaart zelf gebeuren kan dit voor problemen zorgen door incompatible drivers en zo voort.
+Schakel deze optie aan. Dit zorgt ervoor dat de checksum niet door de netwerkkaart gebeurt, maar door de VM zelf. Moest dit op de netwerkkaart zelf gebeuren, kan dit voor problemen zorgen door incompatibele drivers enzovoort.
 
 ## Zie ook
 * [Configuratie Rules](/{{site.RepoName}}/CCS/pfSense/Config)
