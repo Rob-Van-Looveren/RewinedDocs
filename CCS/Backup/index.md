@@ -10,7 +10,7 @@ author: Rob V.L.
 
 Welkom!
 
-Deze pagina toont alle informatie omtrent het maken van backups.
+Deze pagina toont u alle informatie omtrent het maken van backups.
 
 ## Waarom?
 De reden om backups te plannen is redelijk voor de hand liggend. Het is simpelweg een garantie dat uw gegevens niet definitief verloren gaan wanneer het systeem ergens crasht.
@@ -25,24 +25,24 @@ Proxmox heeft de optie om backups in te plannen en automatisch uit te voeren.
 Via volgende stappen stellen we in dat we dagelijks de VM’s backuppen naar een lokale NAS die onafhankelijk is van de Proxmox omgeving. 
 
 ### Backup planning maken
-Ga naar je proxmox web interface en selecteer 'datacenter', kies dan de optie 'backup'. Nu krijg je een overzicht van bestaande backup planningen, je kan deze bewerken of verwijderen via de actieknoppen bovenaan. Kies hier voor 'Add' om een nieuwe backup planning aan te maken. 
+Ga naar uw proxmox web interface en selecteer 'datacenter', kies dan de optie 'backup'. Nu krijgt u een overzicht van bestaande backup planningen. U kunt deze bewerken of verwijderen via de actieknoppen bovenaan. Kies hier voor 'Add' om een nieuwe backup planning aan te maken. 
 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_1.png)
 
 ### Backup planning instellen
-Het volgende scherm toont alle opties die je kan instellen bij het aanmaken van een backup planning. De belangrijkste zijn hier gemarkeerd. 
+Het volgende scherm toont alle opties die u kan instellen bij het aanmaken van een backup planning. De belangrijkste zijn hier gemarkeerd. 
 
-* Storage: waar je de backups gaat opslaan, in dit geval een NAS smb share
-* Day: op welke dagen van de week je de backup wilt uitvoeren
-* Hour: op welk uur je de backup wilt uitvoeren
+* Storage: waar u de backups gaat opslaan, in dit geval een NAS smb share
+* Day: op welke dagen van de week u de backup wilt uitvoeren
+* Hour: op welk uur u de backup wilt uitvoeren
 * Mail: email adress om op de hoogte gehouden te worden
     * Notification: enkel bij backup fail of bij elk backup event
-* VMs: alle VM's die je met deze backup planning wilt backuppen. 
+* VMs: alle VM's die u met deze backup planning wilt backuppen. 
 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_2.png)
 
 ### Backup planning bevestigen
-Als alle instellingen naar wens zijn, druk je op 'oke'. Nadien kom je terug op de overzichtspagina waar je de instellingen kan bekijken.
+Als alle instellingen naar wens zijn, drukt u op 'oke'. Nadien komt u terug op de overzichtspagina waar u de instellingen kan bekijken.
 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_3.png)
 
