@@ -52,7 +52,7 @@ net.ipv6.conf.ens19.disable_ipv6 = 1
 * run het commando ```sudo sysctl -p```
 
 
-_**IPv6 uitschakelen**_
+_**etc/resolv instellen**_
 
 
 
