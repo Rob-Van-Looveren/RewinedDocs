@@ -14,5 +14,4 @@ Onderwerpen onder App
 * [Pull script Angular](Pull_Angular)
 * [Documentatie Angular code - Compodoc](/{{site.RepoName}}/APP/documentation.html)
 
-
 {% include footer.html %}

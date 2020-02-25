@@ -9,6 +9,13 @@ author: Rob V.L.
 
 
 # pfSense
+![pfSense](../../media/logo/pfSense.png)
+
+## Wat
+pfSense is een opensource 
+
+## Installatie 
+
 
 ## Zie ook
 
