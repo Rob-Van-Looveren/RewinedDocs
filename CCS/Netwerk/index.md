@@ -9,15 +9,24 @@ author: Rob V.L.
 
 
 
+<<<<<<< HEAD
 # Netwerk
 Welkom op de informatiepagina van Netwerk. Hier vindt u meteen het netwerkschema van de opstelling van de netwerkomgeving.
 
 ![netwerk](../../media/netwerk/netwerk.png)
+=======
+## Netwerk
+![netwerk](/{{ site.RepoName }}/media/netwerk/netwerk.png)
+>>>>>>> 4877bf4a8deec63de6c2e890f5a58dee0c6a495f
 
 
 ## Werking netwerk
 Om de werking van het netwerk duidelijk te maken, geven we graag even volgende toeliching op basis van bovenstaande afbeelding.
+<<<<<<< HEAD
 Via [DNS](../DNS) komen alle requests binnen op het publiek IP van de Proximus modem. Op de modem moeten alle request toegelaten worden en op de juiste plaats terechtkomen. Via poortnummers en portforwarding gaan we de requests doorsturen naar de juiste plaats. Dit gebeurt op 3 plaatsen namelijk 
+=======
+Via [DNS](/{{ site.RepoName }}/CCS/DNS) komen alle requests binnen op het publiek IP van de Proximus modem, van op de modem moeten alle request toegelaten worden en op de juiste plaats terechtkomen. Via poortnummers en portforwarding gaan we de requests doorsturen naar de juiste plaats. Dit gebeurt op 3 plaatsen namelijk 
+>>>>>>> 4877bf4a8deec63de6c2e890f5a58dee0c6a495f
 * Proximus modem (naar pfsense)
 * pfSense (naar proxy)
 * proxy (naar juiste VM)

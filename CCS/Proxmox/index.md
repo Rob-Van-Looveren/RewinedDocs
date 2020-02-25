@@ -10,7 +10,7 @@ author: Rob V.L.
 
 # Proxmox
 
-![Proxmox](../../media/logo/proxmox.png)
+![Proxmox](/{{ site.RepoName }}//media/logo/proxmox.png)
 
 
 ## Wat
@@ -54,17 +54,17 @@ Start de host op en wacht tot het Proxmox logo verschijnt met een keuze menu.
 * bekijk overzicht met de gemaakte keuzes
 * Voltooi de installatie 
 
-![install](../../media/proxmox/install.gif)
+![install](/{{ site.RepoName }}/media/proxmox/install.gif)
 
 ### Web interface
 Na de installatie kan je de web-interface bezoeken via een je browser, via ```https://IP.Adress:8006```
 
 Je wordt gevraagt om in te loggen, dit kan met je de username root, en het ingestelde wachtwoord.
-![install](../../media/proxmox/login.png)
-![install](../../media/proxmox/interface.png)
+![install](/{{ site.RepoName }}/media/proxmox/login.png)
+![install](/{{ site.RepoName }}/media/proxmox/interface.png)
 
 ## Zie ook
-[Backup Vm's](../backup)
+[Backup Vm's](/{{ site.RepoName }}/CCS/Backup)
 
 ## Bronnen 
 * [Proxmox install guide](https://pve.proxmox.com/wiki/Installation)

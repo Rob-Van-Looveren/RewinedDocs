@@ -8,10 +8,8 @@ author: Rob V.L.
 
 # MySQL
 
-Welkom op de informatiepagina van MySQL. 
-
-![MySQL](../../media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
-![phpMyAdmin](../../media/logo/phpmyadmin.png)
+![MySQL](/{{ site.RepoName }}/media/logo/mysql.png) &nbsp;&nbsp;&nbsp;
+![phpMyAdmin](/{{ site.RepoName }}/media/logo/phpmyadmin.png)
 
 ## Wat
 We gebruiken de MySQL database voor dit project. Dit is een open-source relationeel database management system. Daarnaast kunnen we gebruikmaken van de webinterface van phpmyadmin om eenvoudig de data te bekijken, zonder de kennis van SQL queries.
@@ -68,8 +66,8 @@ sudo service mysql restart
 ```
 
 ## Zie ook
-* [Back-up MySQL database](../backup#Database-Backup)
-* [API verbinden met Database](/{{site.RepoName}}/app/ASP_DB/)
+* [Back-up MySQL database](/{{ site.RepoName }}/CCS/Backup#Database-Backup)
+* [API verbinden met Database](/{{ site.RepoName }}/APP/ASP_DB/)
 
 
 ## Bronnen

@@ -8,11 +8,16 @@ author: Rob V.L.
 
 
 
+<<<<<<< HEAD
 # PfSense
 
 Welkom op de informatiepagina van pfSense.
 
 ![pfSense](../../media/logo/pfSense.png)
+=======
+# pfSense
+![pfSense](/{{ site.RepoName }}/media/logo/pfSense.png)
+>>>>>>> 4877bf4a8deec63de6c2e890f5a58dee0c6a495f
 
 ## Wat
 PfSense is een gratis en open-source firewall gebaseerd op FreeBDS distro's. Je kan de firewall op fysieke als ook op virtuele machines installeren en runnen. Na de installatie kan je de firewall beheren via een eenvoudige web-interface. PfSense firewall heeft een tal van opties om netwerken te beveiligen, onder andere:
@@ -33,6 +38,7 @@ De installatie zelf verloopt via een aantal stappen:
 * Maak een nieuwe VM in Proxmox met ISO gemount en start de VM
 * Accepteer de voorwaarden en kies 'install'
 * Volg de default settings en installeer
+<<<<<<< HEAD
 * Na de installatie en het heropstarten, moet u de interfaces instellen via de CLI
     * via optie 1 stelt u de WAN en LAN interfaces in (dit kan via MAC address, identificeren, zie onder 'VM Netwerk Settings')
     * via optie 2 kunt u instellen welke IP's of DHCP settings de interfaces krijgen
@@ -40,6 +46,15 @@ De installatie zelf verloopt via een aantal stappen:
 
 * Nadien kunt u via de LAN-kant de webinterface bereiken via het IP adres van de LAN-interface
 ![pfSense](../../media/pfSense/interface.png)
+=======
+* Na de installatie en heropstarten moet je de interfaces instellen via de CLI
+    * via optie 1 stel je de WAN en LAN interfaces in (Kan via MAC address, identificeren, zie onder VM Netwerk Settings)
+    * via optie 2 kan je installen welke IP's of DHCP settings de interfaces krijgen
+        ![pfSense](/{{ site.RepoName }}//media/pfSense/menu.png)
+
+* Nadien kan je via de LAN kant de web-interface bereiken via het IP van de LAN interface
+![pfSense](/{{ site.RepoName }}//media/pfSense/interface.png)
+>>>>>>> 4877bf4a8deec63de6c2e890f5a58dee0c6a495f
 
 ## Proxmox bijkomende instellingen
 Om de installatie en correcte werking van pfSense te garanderen, moet u de hierna volgende netwerkinstellingen in Proxmox maken. Nadien moet u ook binnen pfSense nog een optie aanpassen om de virtuele werking te garanderen. 
@@ -50,7 +65,7 @@ Het eerste netwerk zal als het WAN-netwerk dienen. Hiervoor kunt u het default a
 
 Voor het LAN-netwerk moet u binnen Proxmox een 2de netwerk aanmaken ```vmbr2```. Hier wordt echter geen fysieke interface aan gekoppeld. Het is dus een netwerk dat enkel virtueel aanwezig is binnen de Proxmox-omgeving. Enkel VM's met een interface van dit netwerk zijn ook verbonden met dit netwerk. 
 
-![pfSense](../../media/pfSense/proxmox-network.png)
+![pfSense](/{{ site.RepoName }}/media/pfSense/proxmox-network.png)
 _Fysieke interface eno3 is niet aangesloten op de Proxmox server_
 
 ### VM netwerk settings
@@ -58,7 +73,7 @@ Op de pfSense VM moet u 2 netwerkinterfaces toewijzen:
 * 1 WAN Interface ```vmbr0```
 * 1 LAN Interface ```vmbr2```
 
-![pfSense](../../media/pfSense/vm-network.png)
+![pfSense](/{{ site.RepoName }}/media/pfSense/vm-network.png)
 
 Hier kunt u ook de bijhorende Mac addressen bekijken om te bepalen welke interface u binnen pfSense moet instellen als WAN of LAN.
 
@@ -68,14 +83,14 @@ Binnen pfSense moet u één instelling wijzigen om de werking binnen een virtuel
 * Tabblad Networking
 * Onderaan de pagina > Disable hardware checksum offload
 
-![pfSense](../../media/pfSense/checksum.png)
+![pfSense](/{{ site.RepoName }}/media/pfSense/checksum.png)
 
 
 Schakel deze optie aan. Dit zorgt ervoor dat de checksum niet door de netwerkkaart gebeurt, maar door de VM zelf. Moest dit op de netwerkkaart zelf gebeuren, kan dit voor problemen zorgen door incompatibele drivers enzovoort.
 
 ## Zie ook
-* [Configuratie Rules](/{{site.RepoName}}/CCS/pfSense/Config)
-* [Netwerk](/{{site.RepoName}}/CCS/Netwerk/)
+* [Configuratie Rules](/{{ site.RepoName }}/CCS/pfSense/Config)
+* [Netwerk](/{{ site.RepoName }}/CCS/Netwerk/)
 
 ## Bronnen 
 * [pfSense in Proxmox guide ](https://docs.netgate.com/pfsense/en/latest/virtualization/virtualizing-pfsense-with-proxmox.html)

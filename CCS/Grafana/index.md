@@ -12,7 +12,7 @@ author: Evi W.
 
 Welkom op de informatiepagina van Grafana.
 
-![Grafana_logo](../../media/logo/grafana_logo.png)
+![Grafana_logo](/{{ site.RepoName }}/media/logo/grafana_logo.png)
 
 ## Wat
 

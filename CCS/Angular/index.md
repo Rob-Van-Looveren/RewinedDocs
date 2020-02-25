@@ -12,7 +12,7 @@ author: Evi W.
 
 Welkom op de informatiepagina van Angular. 
 
-![Angular logo](../../media/logo/angular.png)
+![Angular logo](/{{ site.RepoName }}/media/logo/angular.png)
 
 ## Wat
 
@@ -49,7 +49,7 @@ sudo ng new tecmint-app
 
 Let hier ook op uw antwoorden tijdens de prompting:
 
-![Angular prompting](../../media/logo/angular_prompting.png)
+![Angular prompting](/{{ site.RepoName }}/media/logo/angular_prompting.png)
 
 ### Nu is er automatisch een 'application directory' aangemaakt en daar moet u zich naar begeven.
 ```

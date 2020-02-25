@@ -7,6 +7,8 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # Back-up
+![backup](/{{site.RepoName}}/media/logo/backup.png) &nbsp;&nbsp;
+![db backup](/{{site.RepoName}}/media/logo/db_backup.png)
 
 Welkom op de informatiepagina van 'Back-up'.
 
@@ -94,7 +96,7 @@ Laat back-up script om het halfuur uitvoeren via crontab/cronjobs
 ![Backup](/{{ site.RepoName }}/media/backup/backup_4.png)
 
 ## Zie ook
-* [Back-up MySQL database](../backup#Database-Backup)
+* [Back-up MySQL database](/{{ site.RepoName }}/CCS/backup#Database-Backup)
 * [Verbind ASP.NET met database](../)
 
 

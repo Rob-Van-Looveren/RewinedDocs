@@ -8,6 +8,8 @@ author: Rob V.L.
 
 
 # DNS
+![DNS](/{{site.RepoName}}/media/logo/dns.png)
+![WWW](/{{site.RepoName}}/media/logo/www.png)
 
 Welkom op de informatiepagina van DNS.
 
