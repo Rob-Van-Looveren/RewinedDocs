@@ -7,7 +7,7 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # Back-up
-![backup](/{{site.RepoName}}/media/logo/backup.png)
+![backup](/{{site.RepoName}}/media/logo/backup.png) &nbsp;&nbsp;
 ![db backup](/{{site.RepoName}}/media/logo/db_backup.png)
 
 Welkom op de informatiepagina van 'Back-up'.
