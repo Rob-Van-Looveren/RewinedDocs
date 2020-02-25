@@ -11,11 +11,11 @@ author: Rob V.L.
 ![github](/{{ site.RepoName }}/media/logo/github.png)
 
 ## Pull script
-Om de nieuwste versie van onze Angular code online te brengen moeten we enkele stappen uitvoeren. Om dit process te vereenvoudigen maken we gebruik van onderstaant script. Dit script zal dan volgende stappen uitvoeren
+Om de nieuwste versie van de Angular code online te brengen, moet u enkele stappen uitvoeren. Om dit process te vereenvoudigen kunt u  gebruikmaken van onderstaand script. Dit script zal de volgende stappen uitvoeren:
 * De oude build omgeving opkuisen en verwijderen
 * Recentste code van github downloaden
 * Development omgeving omzetten naar productie 
-* Dotnet dependacy installeren
+* Dotnet dependacies installeren
 * Melding om manueel te deployen of met Run.sh script
 
 ### Pull script
@@ -59,7 +59,7 @@ dotnet run
 ```
 
 ### Git credentials opslaan
-Standaard zal Linux de opgeven username en wachtwoord niet bewaren. Echter kan je er voor zorgen dat eenmaal de juiste credentials ingeven worden, deze ook worden opgeslagen zodat deze niet elke keer ingegeven moeten worden. Let er wel op dat je credentials dan als tekst bestand in je home directory terecht komen. Door volgend commando in te geven zullen credentials binnen jou linux account worden opgeslagen. 
+Standaard zal Linux de opgegeven username en wachtwoord niet bewaren. Echter kunt u ervoor zorgen dat, eenmaal de juiste credentials ingegeven worden, deze ook worden opgeslagen zodat deze niet elke keer ingegeven moeten worden. Let er wel op dat uw credentials dan als tekstbestand in je home directory terechtkomen. Door volgend commando in te geven zullen credentials binnen uw Linux account worden opgeslagen. 
 
 ```
 git config --global credential.helper store
