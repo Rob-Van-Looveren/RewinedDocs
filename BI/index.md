@@ -59,7 +59,17 @@ Eerst klikt u in het menu p het + icoontje. Vervolgens kiest u voor 'new dashboa
 Een nieuw paneel zal verschijnen. Wanneer u op 'choose visualisation' klikt, kunt u de keuze maken tussen een reeks grafieken om uw data te tonen. Als u deze selecteert, zullen er allerlei opties verschijnen om de grafiek verder te personaliseren.
 
 Als u met uw eigen data source wilt werken, moet u op het linkse icoontje klikken:
-![Grafana-source](/{{site.RepoName}}/media/bi/grafana-source.JPG)
+![Grafana-source](/{{site.RepoName}}/media/bi/grafana-source.JPG). Vervolgens kiest u in het Query veld in de drop down list de data source die je net aangemaakt hebt.
+
+De app zal er als volgt uitzien:
+
+![Grafana-query](/{{site.RepoName}}/media/bi/grafana-query.png)
+
+Je kan deze blokken slepen en toevoegen om zo het achterliggende SQL-script aan te passen. In het project hebben we ervoor gekozen om dit zelf te schrijven. Dit kunt u doen door onderaan op de blok 'Edit SQL' te klikken. Nu kunt u aan de hand van SQL queries de grafiek aanpassen. Bijvoorbeeld:
+
+![Grafana-sql](/{{site.RepoName}}/media/bi/grafana-sql.png)
+
+
 
 
 
