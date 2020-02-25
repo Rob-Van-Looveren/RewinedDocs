@@ -26,7 +26,7 @@ Proxmox heeft de optie om back-ups in te plannen en automatisch uit te voeren.
 Via de volgende stappen stelt u in dat u dagelijks de VM’s back-upt naar een lokale NAS die onafhankelijk is van de Proxmox omgeving. 
 
 ### Back-up planning maken
-Ga naar uw proxmox webinterface en selecteer 'datacenter', kies daarna de optie 'backup'. Nu krijgt u een overzicht van bestaande back-up planningen. U kunt deze bewerken of verwijderen via de actieknoppen bovenaan. Kies hier voor 'Add' om een nieuwe back-up planning aan te maken. 
+Ga naar uw Proxmox webinterface en selecteer 'datacenter'. Kies daarna de optie 'backup'. Nu krijgt u een overzicht van bestaande back-up planningen. U kunt deze bewerken of verwijderen via de actieknoppen bovenaan. Kies hier voor 'Add' om een nieuwe back-up planning aan te maken. 
 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_1.png)
 
@@ -37,7 +37,7 @@ Het volgende scherm toont alle opties die u kan instellen bij het aanmaken van e
 * Day: op welke dagen van de week u de back-up wilt uitvoeren
 * Hour: op welk uur u de back-up wilt uitvoeren
 * Mail: e-mailadres om op de hoogte gehouden te worden
-    * Notification: enkel bij back-up fail of bij elk back-up event
+    * notification: enkel bij back-up fail of bij elk back-up event
 * VMs: alle VM's die u met deze back-up planning wilt back-uppen. 
 
 ![Backup](/{{ site.RepoName }}/media/backup/backup_2.png)

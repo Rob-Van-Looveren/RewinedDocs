@@ -7,17 +7,11 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 
-
-<<<<<<< HEAD
 # PfSense
 
 Welkom op de informatiepagina van pfSense.
 
 ![pfSense](../../media/logo/pfSense.png)
-=======
-# pfSense
-![pfSense](/{{ site.RepoName }}/media/logo/pfSense.png)
->>>>>>> 4877bf4a8deec63de6c2e890f5a58dee0c6a495f
 
 ## Wat
 PfSense is een gratis en open-source firewall gebaseerd op FreeBDS distro's. Je kan de firewall op fysieke als ook op virtuele machines installeren en runnen. Na de installatie kan je de firewall beheren via een eenvoudige web-interface. PfSense firewall heeft een tal van opties om netwerken te beveiligen, onder andere:
@@ -46,15 +40,6 @@ De installatie zelf verloopt via een aantal stappen:
 
 * Nadien kunt u via de LAN-kant de webinterface bereiken via het IP adres van de LAN-interface
 ![pfSense](../../media/pfSense/interface.png)
-=======
-* Na de installatie en heropstarten moet je de interfaces instellen via de CLI
-    * via optie 1 stel je de WAN en LAN interfaces in (Kan via MAC address, identificeren, zie onder VM Netwerk Settings)
-    * via optie 2 kan je installen welke IP's of DHCP settings de interfaces krijgen
-        ![pfSense](/{{ site.RepoName }}//media/pfSense/menu.png)
-
-* Nadien kan je via de LAN kant de web-interface bereiken via het IP van de LAN interface
-![pfSense](/{{ site.RepoName }}//media/pfSense/interface.png)
->>>>>>> 4877bf4a8deec63de6c2e890f5a58dee0c6a495f
 
 ## Proxmox bijkomende instellingen
 Om de installatie en correcte werking van pfSense te garanderen, moet u de hierna volgende netwerkinstellingen in Proxmox maken. Nadien moet u ook binnen pfSense nog een optie aanpassen om de virtuele werking te garanderen. 
