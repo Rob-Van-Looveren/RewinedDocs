@@ -12,6 +12,7 @@ author: Rob V.L.
 ## Wat
 Om er voor te zorgen dat niet al het verkeer wordt geblokeerd door de firewall, moeten we enkel regels definieren. Deze regels verklaren wel verkeer toegelaten is van buitenaf, in dit geval http(s) queries naar de Proxy VM.
 
+![pfSense](../../../media/logo/rules.png)
 
 
 
