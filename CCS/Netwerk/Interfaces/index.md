@@ -66,10 +66,10 @@ Om er voor te zorgen dat domaintranslations goed gebeuren moeten we volgende din
 * Service herstarten 
     * ```Sudo service systemd-resoved restart```
 
-## zie ook 
+## Zie ook 
 * [Netwerk](/{{ site.RepoName }}/CCS/Netwerk)
 
-## bronnen 
+## Bronnen 
 * [Netplan Examples](https://netplan.io/examples)
 * [IPv6 Disable guide](https://www.configserverfirewall.com/ubuntu-linux/ubuntu-disable-ipv6/)
 

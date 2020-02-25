@@ -35,6 +35,10 @@ Via [DNS](/{{ site.RepoName }}/CCS/DNS) komen alle requests binnen op het publie
 | Visualisatie | Grafana      | 192.168.3.104 | 10.10.10.104 |[Grafana](https://rob-vl.synology.me:3404)              |
 
 
+## Forwarding voorbeeld 
+![forwarding](/{{ site.RepoName }}/media/netwerk/forwarding.png)
+
+
 ### Portforwarding Proximus modem
 
 | Port | VM        | forward IP     | forward Port |
@@ -59,12 +63,11 @@ Via [DNS](/{{ site.RepoName }}/CCS/DNS) komen alle requests binnen op het publie
 | 3404 | Proxy     | 10.10.10.10    | 3404         |
 
 
-
-## zie ook 
+## Zie ook 
 [Interface VM instellen](/{{ site.RepoName }}/CCS/Netwerk/Interfaces)
 [DNS](/{{ site.RepoName }}/CCS/DNS)
 
-## bronnen 
+## Bronnen 
 [What is Portforwarding](https://www.lifewire.com/what-is-port-forwarding-2483494)
 
 {% include footer.html %}
