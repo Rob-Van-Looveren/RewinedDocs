@@ -8,7 +8,11 @@ author: Rewined
 
 
 # App
-Onderwerpen onder App
+
+Welkom!
+
+Op deze pagina vindt u een overzicht van de verschillende onderdelen met betrekking tot het bouwen van de applicatie.
+
 * [Database verbinden](ASP_DB)
 * [Pull script API](Pull_API)
 * [Pull script Angular](Pull_Angular)

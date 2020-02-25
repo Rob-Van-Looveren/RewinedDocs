@@ -18,10 +18,10 @@ Welkom op de informatiepagina van MySQL.
 We gebruiken de MySQL database voor dit project. Dit is een open-source relationeel database management system. Daarnaast kunnen we gebruikmaken van de webinterface van phpmyadmin om eenvoudig de data te bekijken, zonder de kennis van SQL queries.
 
 ## Installatie
-Om de installatie van MySQL, phpMyAdmin, en het instellen van de back-ups te vereenvoudigen hebben we een 'script' opgesteld. Bij het aanmaken van een nieuwe VM kunt u eenvoudig de installatie uitvoeren en bekomt u altijd dezelfde installatie/configuratie. Het script bestaat uit verschillende onderdelen die u kunt kopiëren en in de terminal plakken (en eventueel enter drukken).
+Om de installatie van MySQL, phpMyAdmin en het instellen van de back-ups te vereenvoudigen, hebben we een 'script' opgesteld. Bij het aanmaken van een nieuwe VM kunt u eenvoudig de installatie uitvoeren en bekomt u altijd dezelfde installatie/configuratie. Het script bestaat uit verschillende onderdelen die u kunt kopiëren en in de terminal plakken (en eventueel enter drukken).
 
 ### Stap 1: sudo rechten
-U kunt best tijdelijk overschakelen naar 'sudo rechten' voor het uitvoeren van het script. Na invullen van correct wachtwoord verandert de prompt en ga je als root verder.
+U kunt best tijdelijk overschakelen naar 'sudo rechten' voor het uitvoeren van het script. Na invullen van het correcte wachtwoord verandert de prompt en ga je als root verder.
 ```
 sudo -i
 password: *****
