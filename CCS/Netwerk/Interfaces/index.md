@@ -11,7 +11,7 @@ author: Rob V.L.
 ![Netplan](/{{ site.RepoName }}/media/logo/netplan.png)
 
 ## Interfaces instellen  
-*__IP adressen __*
+*__ IP adressen __*
 Via netplan worden de IP instellingen geconfigureerd, in het bestand /etc/netplan/*.yaml
 Hieronder vind je een voorbeeld van een configuratie.
 ```
@@ -32,6 +32,12 @@ network:
 ```
 Nadien kan je via de commando's ```netplan generate``` en ``` netplan apply``` de wijzigen doorvoeren
 
+*__ IPv6 uitschakelen __*
+In onze opstelling worden geen IPv6 addressen gebruikt en mag IPv6 dus uitgeschakkeld worden.
+Dit is eerder om alles duidelijk en overzichtelijk te houden, maar heeft niet echt een technisch voordeel.
+
+
+
 
 
 * disable ipv6
@@ -40,5 +46,7 @@ Nadien kan je via de commando's ```netplan generate``` en ``` netplan apply``` d
 ## zie ook 
 
 ## bronnen 
+https://netplan.io/examples
+https://www.configserverfirewall.com/ubuntu-linux/ubuntu-disable-ipv6/
 
 {% include footer.html %}
