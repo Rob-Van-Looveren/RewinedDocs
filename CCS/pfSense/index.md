@@ -35,10 +35,17 @@ De installatie van pfSense is eenvoudig te doorlopen, wat wel voor enige verwari
 * Nadien kan je via de LAN kant de web-interface bereiken via het IP van de LAN interface
 ![pfSense](../../media/pfSense/interface.png)
 
+## Proxmox bijkomende instellingen
+Om de installatie en correcte werking van pfSense te garanderen moeten we volgende de volgende netwerk instellingen in proxmox maken. Nadien moeten we ook binnen pfSense nog een optie aanpassen om de virtuele werking te garanderen. 
+
+De firewall VM heeft 2 netwerk interfaces toegewezen krijgen binnen Proxmox. Binnen Proxmox moeten we 2 netwerken hebben, het eerste netwerk zullen we als het WAN netwerk gebruiken. Hiervoor kunnen we het default aanwezige netwerk gebruiken, dit is dus een netwerk dat fysiek op de Proxmox omgeving aangesloten is. Voor het LAN netwerk moeten we binnen Proxmox een 2de netwerk aanmaken, echter koppelen we hier geen fysieke interface aan. Het is dus een netwerk dat enkel virtueel aanwezig is binnen de Proxmox omgeving. Enkel VM's met een interface van dit netwerk zijn verbonden met dit netwerk. 
+
+De eerste interface zullen we beschouwen als de WAN interface, deze koppelen we aan een fysieke inteface van de Proxmox omgeving. De LAN interface voegen we nadien toe, deze linken we niet aan een fysieke interface en is dus enkel virtueel aanwezig. Enkel VM's die 
 
 
 ## Zie ook
-* [Configuratie rules ](config)
+* [Configuratie Rules](/{{site.RepoName}}/CSS/pfSense/Config)
+* [API verbinden met Database](/{{site.RepoName}}/APP/ASP_DB/)
 
 ## Bronnen 
 * [pfSense in Proxmox guide ](https://docs.netgate.com/pfsense/en/latest/virtualization/virtualizing-pfsense-with-proxmox.html)
