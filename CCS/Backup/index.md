@@ -7,8 +7,8 @@ author: Rob V.L.
 {% include nav-breadcrumbs.html %}
 
 # Back-up
-![DNS](/{{site.RepoName}}/media/logo/backup.png)
-![WWW](/{{site.RepoName}}/media/logo/db_backup.png)
+![backup](/{{site.RepoName}}/media/logo/backup.png)
+![db backup](/{{site.RepoName}}/media/logo/db_backup.png)
 
 Welkom op de informatiepagina van 'Back-up'.
 
