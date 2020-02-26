@@ -23,8 +23,13 @@ Om te beginnen moeten we het bestaande certificaat exporteren van de Synology NA
 
 ![Cert](/{{ site.RepoName }}//media/netwerk/certificaat.png)
 
-Vervolgens maken we een map aan op de proxy server waar we het certificaat en keys gaan opslaan. We hebben ervoor gekozen om deze in de map /var/www/cert te plaatsen 
+Vervolgens maken we een map aan op de proxy server waar we het certificaat en keys gaan opslaan. We hebben ervoor gekozen voor volgende locatie. 
 ```sudo mkdir /var/www/cert/```
+Nadien plaatsen we de bestanden in op deze locatie, en geven we apache lees rechten.
+Het overzetten kan zowel via FTP, of door de inhoud te kopieren en te plakken binnen een SSH sessie.
+Om snel leesrechten te geven kunnen we ```sudo chmod +r /var/www/cert/* ``` gebruiken
+
+
 ![keys](/{{ site.RepoName }}//media/netwerk/keys.png)
 ![Cert](/{{ site.RepoName }}//media/netwerk/tree.png)
 
