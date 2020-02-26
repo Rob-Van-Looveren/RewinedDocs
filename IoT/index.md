@@ -23,7 +23,7 @@ Hier ziet u het schema dat een demo opstelling weergeeft. Elk vat heeft een eige
 
 Met behulp van dit schema, kunt u de applicatie al testen.
 
-![Iot-schema](/{{site.RepoName}}/media/iot/iot-schema1.jpg)
+![Iot-schema](/{{site.RepoName}}/media/iot/IoT-schema1.jpg)
 
 _Hier ziet u hoe u alles dient aan te sluiten op de Raspberry Pi._
 
