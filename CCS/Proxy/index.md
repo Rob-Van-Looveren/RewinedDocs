@@ -48,8 +48,8 @@ Om deze proxy-werking te bereiken gebruiken we een Apache Webserver, waar we ter
 
 
 ## Zie ook
-[Netwerk](/{{ site.RepoName }}/CCS/Netwerk)
-[Netwerk](/{{ site.RepoName }}/CCS/SSL)
+* [Netwerk](/{{ site.RepoName }}/CCS/Netwerk)
+* [SSL](/{{ site.RepoName }}/CCS/SSL)
 
 ## Bronnen 
 * []()

@@ -66,6 +66,8 @@ Via [DNS](/{{ site.RepoName }}/CCS/DNS) komen alle requests binnen op het publie
 ## Zie ook 
 * [Interface VM instellen](/{{ site.RepoName }}/CCS/Netwerk/Interfaces)
 * [DNS](/{{ site.RepoName }}/CCS/DNS)
+* [Proxy](/{{ site.RepoName }}/CCS/Proxy)
+
 
 ## Bronnen 
 * [What is Portforwarding](https://www.lifewire.com/what-is-port-forwarding-2483494)
