@@ -20,7 +20,7 @@ git clone https://github.com/Rob-Van-Looveren/RewinedDocs.git
 ```
 
 * [Handleiding applicatie](/{{ site.RepoName }}/media/handleiding.pdf)
-* [Installatie in grote lijnen ](/{{ site.RepoName }}/install.md)
+* [Installatie in grote lijnen ](/{{ site.RepoName }}/install.html)
 * Installatie en configuratie vind je onder onderstaande items
 
 
