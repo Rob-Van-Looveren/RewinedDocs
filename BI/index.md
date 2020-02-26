@@ -26,56 +26,56 @@ Om deze aan te maken, werd een SQL script gemaakt. We tonen in het volgende gede
 ### SQL code aanmaken tabellen
 
 CREATE TABLE Druif(
-    DruifID INT NOT NULL AUTO_INCREMENT,
-    Naam VARCHAR(255),
-	Kloontype VARCHAR(255),
-	Leeftijd int,
-	Perceel VARCHAR(255),
-	CONSTRAINT PK_Druif PRIMARY KEY(DruifID)
+    DruifID INT NOT NULL AUTO_INCREMENT,<br/>
+    Naam VARCHAR(255),<br/>
+	Kloontype VARCHAR(255),<br/>
+	Leeftijd int,<br/>
+	Perceel VARCHAR(255),<br/>
+	CONSTRAINT PK_Druif PRIMARY KEY(DruifID)<br/>
 );
 
 
 CREATE TABLE Programma(
-    ProgrammaID INT NOT NULL AUTO_INCREMENT,
-    Pmax VARCHAR(255),
-    Inhoud VARCHAR(255),
-    Naam VARCHAR(255),
-    CONSTRAINT PK_Programma PRIMARY KEY(ProgrammaID)
+    ProgrammaID INT NOT NULL AUTO_INCREMENT,<br/>
+    Pmax VARCHAR(255),<br/>
+    Inhoud VARCHAR(255),<br/>
+    Naam VARCHAR(255),<br/>
+    CONSTRAINT PK_Programma PRIMARY KEY(ProgrammaID)<br/>
 );
 
 CREATE TABLE RaspberryPi(
-	RaspberryPiID INT NOT NULL AUTO_INCREMENT,
-	Naam VARCHAR(255),
-	Wachtwoord VARCHAR(255),
-	InGebruik BOOLEAN,
-	CONSTRAINT PK_RaspberryPi PRIMARY KEY(RaspberryPiID)
+	RaspberryPiID INT NOT NULL AUTO_INCREMENT,<br/>
+	Naam VARCHAR(255),<br/>
+	Wachtwoord VARCHAR(255),<br/>
+	InGebruik BOOLEAN,<br/>
+	CONSTRAINT PK_RaspberryPi PRIMARY KEY(RaspberryPiID)<br/>
 );
 
 CREATE TABLE Vat(
-    VatID INT NOT NULL AUTO_INCREMENT,
-    Naam VARCHAR(255),
-    Oogst VARCHAR(255),
-    Gekneusd BOOLEAN,
-    ProgrammaID INT,
-    DruifID INT,
-    Nummer INT,
-	RaspberryPiID INT,
-	IsActief BOOLEAN,
-	Locatie VARCHAR(255),
-	TypeVatID INT,
-	Koelmantel BOOLEAN,
-	MateriaalID INT,
-	Mangat BOOLEAN,
-	SoortWijnID INT,
-	Jaar INT,
-    CONSTRAINT PK_Vat PRIMARY KEY(VatID),
-    CONSTRAINT FK_Vat_Programma FOREIGN KEY(ProgrammaID) REFERENCES Programma(ProgrammaID),
-    CONSTRAINT FK_Vat_Druif FOREIGN KEY(DruifID) REFERENCES Druif(DruifID),
-	CONSTRAINT FK_Vat_RaspberryPi FOREIGN KEY(RaspberryPiID) REFERENCES RaspberryPi(RaspberryPiID),
-	CONSTRAINT FK_Vat_TypeVat FOREIGN KEY(TypeVatID) REFERENCES TypeVat(TypeVatID),
-	CONSTRAINT FK_Vat_Materiaal FOREIGN KEY(MateriaalID) REFERENCES Materiaal(MateriaalID),
-	CONSTRAINT FK_Vat_Soortwijn FOREIGN KEY(SoortWijnID) REFERENCES SoortWijn(SoortWijnID)
-);
+    VatID INT NOT NULL AUTO_INCREMENT,<br/>
+    Naam VARCHAR(255),<br/>
+    Oogst VARCHAR(255),<br/>
+    Gekneusd BOOLEAN,<br/>
+    ProgrammaID INT,<br/>
+    DruifID INT,<br/>
+    Nummer INT,<br/>
+	RaspberryPiID INT,<br/>
+	IsActief BOOLEAN,<br/>
+	Locatie VARCHAR(255),<br/>
+	TypeVatID INT,<br/>
+	Koelmantel BOOLEAN,<br/>
+	MateriaalID INT,<br/>
+	Mangat BOOLEAN,<br/>
+	SoortWijnID INT,<br/>
+	Jaar INT,<br/>
+    CONSTRAINT PK_Vat PRIMARY KEY(VatID),<br/>
+    CONSTRAINT FK_Vat_Programma FOREIGN KEY(ProgrammaID) REFERENCES Programma(ProgrammaID),<br/>
+    CONSTRAINT FK_Vat_Druif FOREIGN KEY(DruifID) REFERENCES Druif(DruifID),<br/>
+	CONSTRAINT FK_Vat_RaspberryPi FOREIGN KEY(RaspberryPiID) REFERENCES RaspberryPi(RaspberryPiID),<br/>
+	CONSTRAINT FK_Vat_TypeVat FOREIGN KEY(TypeVatID) REFERENCES TypeVat(TypeVatID),<br/>
+	CONSTRAINT FK_Vat_Materiaal FOREIGN KEY(MateriaalID) REFERENCES Materiaal(MateriaalID),<br/>
+	CONSTRAINT FK_Vat_Soortwijn FOREIGN KEY(SoortWijnID) REFERENCES SoortWijn(SoortWijnID)<br/>
+);<br/>
 
 CREATE TABLE TypeVat(
 	TypeVatID INT NOT NULL AUTO_INCREMENT,
