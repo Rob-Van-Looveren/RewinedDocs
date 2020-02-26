@@ -43,7 +43,11 @@ Eerst moet u de laatste versie van Raspbian downloaden en mounten op uw SD kaart
 * [Raspbian downloaden](https://www.raspberry.org/downloads/raspbian).
 Wanneer u deze op uw SD kaart hebt gezet, kan de ethernet- en powerkabel aangesloten worden aan uw PC en uw Raspberry Pi.
 
-Nu kan je de Raspberry Pi updaten en gereed maken voor het verdere gebruik van de omgeving. Verbinding maken met de Raspberry Pi kan met programma's zoals Putty of MobaXterm. Dit doet u door het IP adres van de Raspberry Pi in te geven. De standaard username is 'raspberry' en het standaard wachtwoord is 'pi'. 
+Nu kan je de Raspberry Pi updaten en gereed maken voor het verdere gebruik van de omgeving. Verbinding maken met de Raspberry Pi kan met programma's zoals Putty of MobaXterm. Dit doet u door het IP adres van de Raspberry Pi in te geven. 
+Indien u niet weet hoe dit adres te weten, kan u via volgende link methodes vinden om dit op te zoeken:
+[Raspberry Pi IP adress ](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
+
+De standaard username is 'raspberry' en het standaard wachtwoord is 'pi'. 
 
 Wanneer dit gelukt is, komt u in een terminal terecht waar u Linux commando's kunt doorgeven aan de Raspberry Pi.
 
