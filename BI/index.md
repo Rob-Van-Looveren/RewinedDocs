@@ -70,6 +70,11 @@ Je kan deze blokken slepen en toevoegen om zo het achterliggende SQL-script aan 
 
 ![Grafana-sql](/{{site.RepoName}}/media/bi/grafana-sql.png)
 
+Verder op de knop van general kunt u de naam en descriptie van deze grafiek aanpassen.
+
+![Grafana-general](/{{site.RepoName}}/media/bi/grafana-general.png)
+
+Wanneer je een paneel toevoegt of bewerkt, is het altijd belangrijk om alles op te slaan door rechtsboven de pagina op het volgende icoon te klikken: ![Grafana-opslaan](/{{site.RepoName}}/media/bi/grafana-opslaan.png)
 
 
 
@@ -77,8 +82,6 @@ Je kan deze blokken slepen en toevoegen om zo het achterliggende SQL-script aan 
 
 
 
-
-* Grafana handleiding
 
 
 {% include footer.html %}
