@@ -46,7 +46,7 @@ Wanneer dit gelukt is, komt u in een terminal terecht waar u Linux commando's ku
 
 Omdat de Raspberry Pi niet automatisch met wifi verbonden is, is het gemakkelijk om bij de eerste setup via een ethernetkabel de Raspberry Pi te configureren. Hiervoor moet u naar uw netwerkinstellingen gaan op uw PC en de wifi delen met de ethernetpoort waar de Raspberry Pi op aangesloten is.
 
-![iot-adapter](/{{site.RepoName}}/media/iot/iot-adapter.JPG)
+![iot-adapter](/{{site.RepoName}}/media/iot/iot-adapter2.png)
 
 _Later kunt u ervoor kiezen om de Raspberry Pi draadloos in te stellen._
 
