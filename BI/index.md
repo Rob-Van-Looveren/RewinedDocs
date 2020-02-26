@@ -88,6 +88,8 @@ We hebben voor ons project bewust gekozen voor Grafana omdat deze het zeer eenvo
 Er zal een nieuw venster te zien zijn met verschillende opties om het paneel te delen. Kies hier bovenaan voor de optie 'embed'. De code die tevoorschijn komt, kan rechtstreeks in het html-gedeelte van de website gekopieerd worden zoals hieronder getoond. De huidige instellingen van dit paneel zullen allemaal mee overgedragen worden naar het paneel in de web applicatie. Het zal dus ook updaten om dezelfde ingestelde intervallen.
 ![Grafana-delen](/{{site.RepoName}}/media/bi/grafana-delen.png)
 
+![Grafana-web](/{{site.RepoName}}/media/bi/grafana-web.png)
+
 
 
 
