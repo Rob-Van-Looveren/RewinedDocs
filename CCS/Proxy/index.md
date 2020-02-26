@@ -13,7 +13,11 @@ author: Rob V.L.
 ![apache](/{{ site.RepoName }}//media/logo/apache.png)
 
 ## Wat
-llalaa nfojefb zqdiqd zand qdxqidokfn qijzidzkdn 
+Een proxy server is een tussenliggende server die de requests behandeld en verwerkt.
+In onze opstelling werken met een reverse proxy, dit heeft als voordeel dat we op 1 machine alle requests kunnen beheren en sturen. 
+Aangezien alle requets op de proxy uitkomen is dit ook de plaats waar we [SSL](/{{ site.RepoName }}//CCS/SSL)
+ configureren, en dus HTTPS gebruiken in plaats van http.
+
 
 ![apache](/{{ site.RepoName }}//media/netwerk/proxy.png)
 
