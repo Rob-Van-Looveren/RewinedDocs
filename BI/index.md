@@ -25,16 +25,294 @@ Om deze aan te maken, werd een SQL script gemaakt. We tonen hier het gedeelte om
 
 Volgende SQL code zorgt voor de aanmaak van de tabellen:
 
-![sql1](/{{site.RepoName}}/media/bi/sql1.JPG)
-![sql2](/{{site.RepoName}}/media/bi/sql2.JPG)
+CREATE TABLE Druif(
+    DruifID INT NOT NULL AUTO_INCREMENT,
+    Naam VARCHAR(255),
+	Kloontype VARCHAR(255),
+	Leeftijd int,
+	Perceel VARCHAR(255),
+	CONSTRAINT PK_Druif PRIMARY KEY(DruifID)
+);
+
+
+CREATE TABLE Programma(
+    ProgrammaID INT NOT NULL AUTO_INCREMENT,
+    Pmax VARCHAR(255),
+    Inhoud VARCHAR(255),
+    Naam VARCHAR(255),
+    CONSTRAINT PK_Programma PRIMARY KEY(ProgrammaID)
+);
+
+CREATE TABLE RaspberryPi(
+	RaspberryPiID INT NOT NULL AUTO_INCREMENT,
+	Naam VARCHAR(255),
+	Wachtwoord VARCHAR(255),
+	InGebruik BOOLEAN,
+	CONSTRAINT PK_RaspberryPi PRIMARY KEY(RaspberryPiID)
+);
+
+CREATE TABLE Vat(
+    VatID INT NOT NULL AUTO_INCREMENT,
+    Naam VARCHAR(255),
+    Oogst VARCHAR(255),
+    Gekneusd BOOLEAN,
+    ProgrammaID INT,
+    DruifID INT,
+    Nummer INT,
+	RaspberryPiID INT,
+	IsActief BOOLEAN,
+	Locatie VARCHAR(255),
+	TypeVatID INT,
+	Koelmantel BOOLEAN,
+	MateriaalID INT,
+	Mangat BOOLEAN,
+	SoortWijnID INT,
+	Jaar INT,
+    CONSTRAINT PK_Vat PRIMARY KEY(VatID),
+    CONSTRAINT FK_Vat_Programma FOREIGN KEY(ProgrammaID) REFERENCES Programma(ProgrammaID),
+    CONSTRAINT FK_Vat_Druif FOREIGN KEY(DruifID) REFERENCES Druif(DruifID),
+	CONSTRAINT FK_Vat_RaspberryPi FOREIGN KEY(RaspberryPiID) REFERENCES RaspberryPi(RaspberryPiID),
+	CONSTRAINT FK_Vat_TypeVat FOREIGN KEY(TypeVatID) REFERENCES TypeVat(TypeVatID),
+	CONSTRAINT FK_Vat_Materiaal FOREIGN KEY(MateriaalID) REFERENCES Materiaal(MateriaalID),
+	CONSTRAINT FK_Vat_Soortwijn FOREIGN KEY(SoortWijnID) REFERENCES SoortWijn(SoortWijnID)
+);
+
+CREATE TABLE TypeVat(
+	TypeVatID INT NOT NULL AUTO_INCREMENT,
+	Naam VARCHAR (255),
+	CONSTRAINT PK_TypeVat PRIMARY KEY(TypeVatID)
+)
+
+CREATE TABLE Materiaal(
+	MateriaalID INT NOT NULL AUTO_INCREMENT,
+	Naam VARCHAR (255),
+	CONSTRAINT PK_Materiaal PRIMARY KEY(MateriaalID)
+)
+
+CREATE TABLE SoortWijn(
+	SoortWijnID INT NOT NULL AUTO_INCREMENT,
+	Naam VARCHAR (255),
+	CONSTRAINT PK_SoortWijn PRIMARY KEY(SoortWijnID)
+)
+
+CREATE TABLE Gebruiker(
+    PersoonID INT NOT NULL AUTO_INCREMENT,
+    Naam VARCHAR(255),
+    Wachtwoord VARCHAR(255),
+    Email VARCHAR(255),
+    TelNummer VARCHAR(255),
+    IsAdmin BOOLEAN,
+    CONSTRAINT PK_Gebruiker PRIMARY KEY(PersoonID)
+);
+
+
+CREATE TABLE SoortActie(
+    SoortActieID INT NOT NULL AUTO_INCREMENT,
+    Naam VARCHAR(255),
+    CONSTRAINT PK_SoortActie PRIMARY KEY(SoortActieID)
+);
+
+
+CREATE TABLE Actie(
+    ActieID INT NOT NULL AUTO_INCREMENT,
+    Naam VARCHAR(255),
+    Tijdstempel DATETIME,
+    VatID INT,
+    GebruikerID INT,
+    SoortActieID INT,
+    Notitie TEXT,
+    CONSTRAINT PK_Actie PRIMARY KEY(ActieID),
+    CONSTRAINT FK_Actie_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
+    CONSTRAINT FK_Actie_Gebruiker FOREIGN KEY(GebruikerID) REFERENCES Gebruiker(PersoonID),
+    CONSTRAINT FK_Actie_SoortActie FOREIGN KEY(SoortActieID) REFERENCES SoortActie(SoortActieID)
+);
+
+
+CREATE TABLE SoortMeting(
+    SoortMetingID INT NOT NULL AUTO_INCREMENT,
+    Naam VARCHAR(255),
+    CONSTRAINT PK_SoortMeting PRIMARY KEY(SoortMetingID)
+);
+
+
+CREATE TABLE ManueleMeting(
+    ManueleMetingID INT NOT NULL AUTO_INCREMENT,
+	Tijdstempel DATETIME,
+    GebruikerID INT,
+    VatID INT,
+    SoortMetingID INT,
+    Waarde DOUBLE,
+    CONSTRAINT PK_ManueleMeting PRIMARY KEY(ManueleMetingID),
+    CONSTRAINT FK_ManueleMeting_Gebruiker FOREIGN KEY(GebruikerID) REFERENCES Gebruiker(PersoonID),
+    CONSTRAINT FK_ManueleMeting_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
+    CONSTRAINT FK_ManueleMeting_SoortMeting FOREIGN KEY(SoortMetingID) REFERENCES SoortMeting(SoortMetingID)
+);
+
+
+CREATE TABLE Sensor(
+    SensorID INT NOT NULL AUTO_INCREMENT,
+    Naam VARCHAR(255),
+    SoortMetingID INT,
+    CONSTRAINT PK_Sensor PRIMARY KEY(SensorID),
+    CONSTRAINT FK_Sensor_SoortMeting FOREIGN KEY(SoortMetingID) REFERENCES SoortMeting(SoortMetingID)
+);
+
+
+CREATE TABLE AutomatischeMeting(
+    AutomatischeMetingID INT NOT NULL AUTO_INCREMENT,
+    Tijdstempel DATETIME,
+    VatID INT,
+    SensorID INT,
+    waarde DOUBLE,
+    CONSTRAINT PK_AutomatischeMeting PRIMARY KEY(AutomatischeMetingID),
+    CONSTRAINT FK_AutomatischeMeting_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
+    CONSTRAINT FK_AutomatischeMeting_Sensor FOREIGN KEY(SensorID) REFERENCES Sensor(SensorID)
+);
+
+
+
+CREATE TABLE AlarmWaarde(
+    AlarmWaardeID INT NOT NULL AUTO_INCREMENT,
+    SensorID INT,
+    VatID INT,
+    Drempel DOUBLE,
+    CONSTRAINT PK_AlarmWaarde PRIMARY KEY(AlarmWaardeID),
+    CONSTRAINT FK_AlarmWaare_Sensor FOREIGN KEY(SensorID) REFERENCES Sensor(SensorID)
+);
+
+
+CREATE TABLE SoortAlarm(
+    SoortAlarmID INT NOT NULL AUTO_INCREMENT,
+    Naam VARCHAR(255),
+    CONSTRAINT PK_SoortAlarm PRIMARY KEY(SoortAlarmID)
+);
+
+
+CREATE TABLE AlarmGebruiker(
+    AlarmGebruikerID INT NOT NULL AUTO_INCREMENT,
+    AlarmWaardeID INT,
+    SoortAlarmID INT,
+    vatID INT,
+    GebruikerID INT,
+	IsVerzondenSms BOOLEAN,
+	IsVerzondenEmail BOOLEAN,
+    CONSTRAINT PK_AlarmGebruiker PRIMARY KEY(AlarmGebruikerID),
+    CONSTRAINT FK_AlarmGebruiker_AlarmWaarde FOREIGN KEY(AlarmWaardeID) REFERENCES AlarmWaarde(AlarmWaardeID),
+    CONSTRAINT FK_AlarmGebruiker_SoortAlarm FOREIGN KEY(SoortAlarmID) REFERENCES SoortAlarm(SoortAlarmID),
+    CONSTRAINT FK_AlarmGebruiker_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
+    CONSTRAINT FK_AlarmGebruiker_Gebruiker FOREIGN KEY(GebruikerID) REFERENCES Gebruiker(PersoonID)
+);
+
 _U kan deze gebruiken om zelf uw eigen tabellen aan te maken._
 
 Wanneer de tabellen zijn aangemaakt, kunt u er al testdata inzetten. Zo kan u delen van de applicatie testen zonder dat het gedeelte van de sensoren ingesteld moet zijn.
 
 Volgende SQL code zorgt voor het invoeren van testdata:
 
-![sql3](/{{site.RepoName}}/media/bi/sql3.JPG)
-![sql4](/{{site.RepoName}}/media/bi/sql4.JPG)
+INSERT
+INTO
+    Gebruiker(
+        Naam,
+        Wachtwoord,
+        Email,
+        TelNummer,
+        IsAdmin
+    )
+VALUES(
+    "Admin",
+    "Admin123",
+    "Admin@live.com",
+    "0483666666",
+    TRUE
+),(
+    "WijnBoer",
+    "wijnboer123",
+    "wijnboer@live.com",
+    "0483555555",
+    FALSE
+);
+
+
+INSERT
+INTO
+    SoortAlarm
+VALUES(1, "SMS"),(2, "Email");
+
+
+INSERT
+INTO
+    SoortMeting(Naam)
+VALUES("temperatuur"),("alcohol"),("druk"),("CO2"),("Ph"),("Troebelheid");
+
+
+INSERT
+INTO
+    SoortActie (Naam)
+VALUES("toevoegen"),("overhevelen"),("afkoelen in diepvries"),("afkoelen in koelkast");
+
+INSERT
+INTO
+    Programma
+VALUES(
+    1,
+    "Pers & push",
+    "Ca. 70 Liter",
+    "1,2 Bar"
+);
+
+
+INSERT
+INTO
+    Druif(Naam)
+VALUES("Cabernet Sauvignon"),("Airén"),("Merlot"),("Chardonnay"),("Sauvignon Blanc"),("Pinot Noir");
+
+
+INSERT
+INTO
+    Vat
+VALUES(1, "Tank 1", "110 Kg", FALSE, 1, 6,100,NULL,TRUE);
+
+
+INSERT
+INTO
+    Actie
+VALUES(
+    1,
+    "Gist",
+    NOW(), 1, 1, 1, "10 gram Gist");
+
+
+INSERT
+INTO
+    Sensor
+VALUES(1, "Temperatuur Meten", 1),(2, "Ph Meten", 5);
+
+
+INSERT
+INTO
+    AlarmWaarde
+VALUES(1, 1, 1, 31.5);
+
+INSERT
+INTO
+    AlarmGebruiker
+VALUES(1, 1, 1, 1, 1,FALSE,NULL);
+
+INSERT
+INTO
+    AutomatischeMeting(
+        Tijdstempel,
+        VatID,
+        SensorID,
+        Waarde
+    )
+VALUES(
+    ADDTIME(NOW(), '01:00:00'), 1, 1, 18),
+    (
+        ADDTIME(NOW(), '02:00:00'), 1, 1, 20),
+        (
+            ADDTIME(NOW(), '08:00:00'), 1, 1, 38)
+
 _U kan deze gebruiken om zelf uw tabellen op te vullen._
 
 ## Configuratie Grafana
