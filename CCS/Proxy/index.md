@@ -43,16 +43,20 @@ Om deze proxy-werking te bereiken gebruiken we een Apache Webserver, waar we ter
             ProxyPreserveHost On
             ProxyPass / http://10.10.10.101:5000/
             ProxyPassReverse / http://10.10.10.101:5000/
-            </VirtualHost>
+        </VirtualHost>
         ```
+* Restart Apache om config te laden
+    * ```sudo service apache2 restart```
+    * ```sudo service apache2 status```
 
+_een request op poort 3401 op de proxy server wordt dus achterliggend geforward naar 10.10.10.105 met poort 5000._
 
 ## Zie ook
 * [Netwerk](/{{ site.RepoName }}/CCS/Netwerk)
 * [SSL](/{{ site.RepoName }}/CCS/SSL)
 
 ## Bronnen 
-* []()
+* [Apache Proxy Mod](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html)
 * []()
 
 {% include footer.html %}
