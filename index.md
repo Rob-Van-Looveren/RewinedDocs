@@ -20,6 +20,8 @@ git clone https://github.com/Rob-Van-Looveren/RewinedDocs.git
 ```
 * [Markdown voorbeeld](markdown.md)
 * [Template](template.md)
+* [handleiding applicatie](/{{ site.RepoName }}/media/handleiding.pdf)
+
 
 ----
 
