@@ -22,15 +22,16 @@ Met SSL gaan we er voorzorgen dat de verbinding tussen de client en de server be
 Om te beginnen moeten we het bestaande certificaat exporteren van de Synology NAS. Het huidige certificaat is geldig tot 10 april, op de NAS wordt dit certificaat automatisch vernieuwd, door een nieuw certificaat aan te vragen bij de provider (lets encrypt). In realiteit zou dit ook zo ingesteld kunnen worden op de Proxy. 
 
 ![Cert](/{{ site.RepoName }}//media/netwerk/certificaat.png)
+![keys](/{{ site.RepoName }}//media/netwerk/keys.png)
 
 Vervolgens maken we een map aan op de proxy server waar we het certificaat en keys gaan opslaan. We hebben ervoor gekozen voor volgende locatie. 
 ```sudo mkdir /var/www/cert/```
+
 Nadien plaatsen we de bestanden in op deze locatie, en geven we apache lees rechten.
 Het overzetten kan zowel via FTP, of door de inhoud te kopieren en te plakken binnen een SSH sessie.
 Om snel leesrechten te geven kunnen we ```sudo chmod +r /var/www/cert/* ``` gebruiken, echter is het veilig om de user ```www-data``` eigenaar van het bestand te maken via ```sudo chown -R www-data /var/www/cert```
 
 
-![keys](/{{ site.RepoName }}//media/netwerk/keys.png)
 ![Cert](/{{ site.RepoName }}//media/netwerk/tree.png)
 
 
