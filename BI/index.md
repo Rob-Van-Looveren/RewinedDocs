@@ -18,22 +18,23 @@ In het onderdeel 'CCS' vindt u bij het gedeelte 'MySQL' hoe u deze installeert. 
 
 ## SQL code om tabellen aan te maken
 Voor dit project hebben we zelf een database aangemaakt met PhpMyAdmin en hierin tabellen gemaakt. Deze zijn gebaseerd op het model dat we voor dit project hebben opgesteld:
+
 ![databaseModel](/{{site.RepoName}}/media/bi/databasemodel.png)
 
 Om deze aan te maken, werd een SQL script gemaakt. We tonen hier het gedeelte om tabellen aan te maken. We tonen niet gans het script, daar u zelf aan de slag zult gaan met een eigen naam voor elke tabel. 
 
 Volgende SQL code zorgt voor de aanmaak van de tabellen:
 
-![sql1](/{{site.RepoName}}/media/bi/sql1.png)
-![sql2](/{{site.RepoName}}/media/bi/sql2.png)
+![sql1](/{{site.RepoName}}/media/bi/sql1.JPG)
+![sql2](/{{site.RepoName}}/media/bi/sql2.JPG)
 _U kan deze gebruiken om zelf uw eigen tabellen aan te maken._
 
 Wanneer de tabellen zijn aangemaakt, kunt u er al testdata inzetten. Zo kan u delen van de applicatie testen zonder dat het gedeelte van de sensoren ingesteld moet zijn.
 
 Volgende SQL code zorgt voor het invoeren van testdata:
 
-![sql3](/{{site.RepoName}}/media/bi/sql3.png)
-![sql4](/{{site.RepoName}}/media/bi/sql4.png)
+![sql3](/{{site.RepoName}}/media/bi/sql3.JPG)
+![sql4](/{{site.RepoName}}/media/bi/sql4.JPG)
 _U kan deze gebruiken om zelf uw tabellen op te vullen._
 
 ## Configuratie
