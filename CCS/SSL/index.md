@@ -8,7 +8,6 @@ author: Rob V.L.
 
 # SSL
 ![SSL](/{{ site.RepoName }}//media/logo/SSL.png)
-<---![HTTPS](/{{ site.RepoName }}//media/logo/https.png)-->
 ![LE](/{{ site.RepoName }}//media/logo/LE.png)
 
 
@@ -75,7 +74,9 @@ Je kan zelf testen of het certificaat correct geconfigureerd is door te surfen n
 
 
 ## Bronnen 
-* []()
+* [Config SSL Apache2](https://www.ssls.com/knowledgebase/how-to-install-an-ssl-certificate-on-apache/)
+* [Apache2 SSL Mod](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
+* [Let's Encrypt](https://letsencrypt.org/)
 * [SSL checker - Digicert](https://www.digicert.com/help/)
 
 {% include footer.html %}
