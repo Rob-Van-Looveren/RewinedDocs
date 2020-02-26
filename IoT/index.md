@@ -80,6 +80,7 @@ Nu kunt u de file opslagen met de toetsencombinatie ```ctrl+x```gevolgd met 'y'.
 Nu de Raspberry Pi klaar is voor gebruik, moet deze in het bezit zijn van het juiste Python script om de gegevens van de sensoren door te sturen naar de server. 
 
 Om het het bestand van uw PC naar de Raspberry Pi over te zetten, sleept u dit gewoonweg naar de 'home/pi' map van de Raspberry Pi met Mobaxterm.
+Elk script moet wel de extensie '.py' hebben om te werken. Bijvoorbeeld: test.py. Een script kan u maken met Notepad++, Kladblod, ... . 
 
 De toelichting staat in het script zelf. Elk stukje code wordt in commentaar (in het groen) toegelicht.
 
@@ -88,6 +89,10 @@ De toelichting staat in het script zelf. Elk stukje code wordt in commentaar (in
 ![Iot-script3](/{{site.RepoName}}/media/iot/iot-script3.JPG)
 ![Iot-script4](/{{site.RepoName}}/media/iot/iot-script4.JPG)
 
+## Testen
+
+Indien alles correct is aangesloten, kan u (indien alle componenten aanwezig zijn van de applicatie) het script testen.
+Dit doet u met het commando ```sudo python naamScript.py```.
 
 
 
