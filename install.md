@@ -9,26 +9,20 @@ author: Rewined
 # Rewined Documentation
 ![Rewined](media/logo/rewined_logo_s.png)
 
-### Welkom!
+## Installatie
 
-Welkom op de documentatiepagina van Rewined, ook wel RewinedDocs genoemd.
-Deze documentatie is opgesteld in markdown en wordt beheerd in een repository op Github en gehost door
-[Github Pages](https://rob-van-looveren.github.io/RewinedDocs/).
+### Raspberry Pi
 
-```
-git clone https://github.com/Rob-Van-Looveren/RewinedDocs.git
-```
+* Flash de Image op SD kaart
+* Verbind de sensoren volgens schema
+* Run script
 
-* [Handleiding applicatie](/{{ site.RepoName }}/media/handleiding.pdf)
-* Installatie en configuratie vind je onder onderstaande items
+### Applicatie
 
-
-----
-
-* [CCS](CCS/)
-* [IoT](IoT/)
-* [APP](APP/)
-* [BI](BI/)
+* Stel Proxmox omgeving in
+* Download Virtuele machines (van huidige opstelling, of backup)
+* Importeer de machines
+* Verander eventueel netwerk instellingen
 
      
 {% include footer.html %}
