@@ -1,6 +1,6 @@
 ---
 layout: default
-title: bi
+title: BI
 author: Evi W.
 
 ---
