@@ -77,16 +77,16 @@ CREATE TABLE Vat(<br/>
 	&nbsp;  CONSTRAINT FK_Vat_Soortwijn FOREIGN KEY(SoortWijnID) REFERENCES SoortWijn(SoortWijnID)<br/>
 );<br/>
 
-CREATE TABLE TypeVat(
-	TypeVatID INT NOT NULL AUTO_INCREMENT,
-	Naam VARCHAR (255),
-	CONSTRAINT PK_TypeVat PRIMARY KEY(TypeVatID)
+CREATE TABLE TypeVat(<br/>
+	&nbsp;  TypeVatID INT NOT NULL AUTO_INCREMENT,
+	&nbsp;  Naam VARCHAR (255),
+	&nbsp;  CONSTRAINT PK_TypeVat PRIMARY KEY(TypeVatID)
 )
 
-CREATE TABLE Materiaal(
-	MateriaalID INT NOT NULL AUTO_INCREMENT,
-	Naam VARCHAR (255),
-	CONSTRAINT PK_Materiaal PRIMARY KEY(MateriaalID)
+CREATE TABLE Materiaal(<br/>
+	&nbsp;  MateriaalID INT NOT NULL AUTO_INCREMENT,
+	&nbsp;  Naam VARCHAR (255),
+	&nbsp;  CONSTRAINT PK_Materiaal PRIMARY KEY(MateriaalID)
 )
 
 CREATE TABLE SoortWijn(
@@ -95,83 +95,83 @@ CREATE TABLE SoortWijn(
 	CONSTRAINT PK_SoortWijn PRIMARY KEY(SoortWijnID)
 )
 
-CREATE TABLE Gebruiker(
-    PersoonID INT NOT NULL AUTO_INCREMENT,
-    Naam VARCHAR(255),
-    Wachtwoord VARCHAR(255),
-    Email VARCHAR(255),
-    TelNummer VARCHAR(255),
-    IsAdmin BOOLEAN,
-    CONSTRAINT PK_Gebruiker PRIMARY KEY(PersoonID)
+CREATE TABLE Gebruiker(<br/>
+    &nbsp;  PersoonID INT NOT NULL AUTO_INCREMENT,
+    &nbsp;  Naam VARCHAR(255),
+    &nbsp;  Wachtwoord VARCHAR(255),
+    &nbsp;  Email VARCHAR(255),
+    &nbsp;  TelNummer VARCHAR(255),
+    &nbsp;  IsAdmin BOOLEAN,
+    &nbsp;  CONSTRAINT PK_Gebruiker PRIMARY KEY(PersoonID)
 );
 
 
-CREATE TABLE SoortActie(
-    SoortActieID INT NOT NULL AUTO_INCREMENT,
-    Naam VARCHAR(255),
-    CONSTRAINT PK_SoortActie PRIMARY KEY(SoortActieID)
+CREATE TABLE SoortActie(<br/>
+    &nbsp;  SoortActieID INT NOT NULL AUTO_INCREMENT,
+    &nbsp;  Naam VARCHAR(255),
+    &nbsp;  CONSTRAINT PK_SoortActie PRIMARY KEY(SoortActieID)
 );
 
 
-CREATE TABLE Actie(
-    ActieID INT NOT NULL AUTO_INCREMENT,
-    Naam VARCHAR(255),
-    Tijdstempel DATETIME,
-    VatID INT,
-    GebruikerID INT,
-    SoortActieID INT,
-    Notitie TEXT,
-    CONSTRAINT PK_Actie PRIMARY KEY(ActieID),
-    CONSTRAINT FK_Actie_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
-    CONSTRAINT FK_Actie_Gebruiker FOREIGN KEY(GebruikerID) REFERENCES Gebruiker(PersoonID),
-    CONSTRAINT FK_Actie_SoortActie FOREIGN KEY(SoortActieID) REFERENCES SoortActie(SoortActieID)
+CREATE TABLE Actie(<br/>
+    &nbsp;  ActieID INT NOT NULL AUTO_INCREMENT,
+    &nbsp;  Naam VARCHAR(255),
+    &nbsp;  Tijdstempel DATETIME,
+    &nbsp;  VatID INT,
+    &nbsp;  GebruikerID INT,
+    &nbsp;  SoortActieID INT,
+    &nbsp;  Notitie TEXT,
+    &nbsp;  CONSTRAINT PK_Actie PRIMARY KEY(ActieID),
+    &nbsp;  CONSTRAINT FK_Actie_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
+    &nbsp;  CONSTRAINT FK_Actie_Gebruiker FOREIGN KEY(GebruikerID) REFERENCES Gebruiker(PersoonID),
+    &nbsp;  CONSTRAINT FK_Actie_SoortActie FOREIGN KEY(SoortActieID) REFERENCES SoortActie(SoortActieID)
 );
 
 
-CREATE TABLE SoortMeting(
-    SoortMetingID INT NOT NULL AUTO_INCREMENT,
-    Naam VARCHAR(255),
-    CONSTRAINT PK_SoortMeting PRIMARY KEY(SoortMetingID)
+CREATE TABLE SoortMeting(<br/>
+    &nbsp;  SoortMetingID INT NOT NULL AUTO_INCREMENT,
+    &nbsp;  Naam VARCHAR(255),
+    &nbsp;  CONSTRAINT PK_SoortMeting PRIMARY KEY(SoortMetingID)
 );
 
 
-CREATE TABLE ManueleMeting(
-    ManueleMetingID INT NOT NULL AUTO_INCREMENT,
-	Tijdstempel DATETIME,
-    GebruikerID INT,
-    VatID INT,
-    SoortMetingID INT,
-    Waarde DOUBLE,
-    CONSTRAINT PK_ManueleMeting PRIMARY KEY(ManueleMetingID),
-    CONSTRAINT FK_ManueleMeting_Gebruiker FOREIGN KEY(GebruikerID) REFERENCES Gebruiker(PersoonID),
-    CONSTRAINT FK_ManueleMeting_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
-    CONSTRAINT FK_ManueleMeting_SoortMeting FOREIGN KEY(SoortMetingID) REFERENCES SoortMeting(SoortMetingID)
+CREATE TABLE ManueleMeting(<br/>
+    &nbsp;  ManueleMetingID INT NOT NULL AUTO_INCREMENT,
+	&nbsp;  Tijdstempel DATETIME,
+    &nbsp;  GebruikerID INT,
+    &nbsp;  VatID INT,
+    &nbsp;  SoortMetingID INT,
+    &nbsp;  Waarde DOUBLE,
+    &nbsp;  ONSTRAINT PK_ManueleMeting PRIMARY KEY(ManueleMetingID),
+    &nbsp;  CONSTRAINT FK_ManueleMeting_Gebruiker FOREIGN KEY(GebruikerID) REFERENCES Gebruiker(PersoonID),
+    &nbsp;  CONSTRAINT FK_ManueleMeting_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
+    &nbsp;  CONSTRAINT FK_ManueleMeting_SoortMeting FOREIGN KEY(SoortMetingID) REFERENCES SoortMeting(SoortMetingID)
 );
 
 
-CREATE TABLE Sensor(
-    SensorID INT NOT NULL AUTO_INCREMENT,
-    Naam VARCHAR(255),
-    SoortMetingID INT,
-    CONSTRAINT PK_Sensor PRIMARY KEY(SensorID),
-    CONSTRAINT FK_Sensor_SoortMeting FOREIGN KEY(SoortMetingID) REFERENCES SoortMeting(SoortMetingID)
+CREATE TABLE Sensor(<br/>
+    &nbsp;  SensorID INT NOT NULL AUTO_INCREMENT,
+    &nbsp;  Naam VARCHAR(255),
+    &nbsp;  SoortMetingID INT,
+    &nbsp;  CONSTRAINT PK_Sensor PRIMARY KEY(SensorID),
+    &nbsp;  ONSTRAINT FK_Sensor_SoortMeting FOREIGN KEY(SoortMetingID) REFERENCES SoortMeting(SoortMetingID)
 );
 
 
-CREATE TABLE AutomatischeMeting(
-    AutomatischeMetingID INT NOT NULL AUTO_INCREMENT,
-    Tijdstempel DATETIME,
-    VatID INT,
-    SensorID INT,
-    waarde DOUBLE,
-    CONSTRAINT PK_AutomatischeMeting PRIMARY KEY(AutomatischeMetingID),
-    CONSTRAINT FK_AutomatischeMeting_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
-    CONSTRAINT FK_AutomatischeMeting_Sensor FOREIGN KEY(SensorID) REFERENCES Sensor(SensorID)
+CREATE TABLE AutomatischeMeting(<br/>
+    &nbsp;  AutomatischeMetingID INT NOT NULL AUTO_INCREMENT,
+    &nbsp;  Tijdstempel DATETIME,
+    &nbsp;  VatID INT,
+    &nbsp;  SensorID INT,
+    &nbsp;  waarde DOUBLE,
+    &nbsp;  CONSTRAINT PK_AutomatischeMeting PRIMARY KEY(AutomatischeMetingID),
+    &nbsp;  CONSTRAINT FK_AutomatischeMeting_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
+    &nbsp;  CONSTRAINT FK_AutomatischeMeting_Sensor FOREIGN KEY(SensorID) REFERENCES Sensor(SensorID)
 );
 
 
 
-CREATE TABLE AlarmWaarde(
+CREATE TABLE AlarmWaarde(<br/>
     AlarmWaardeID INT NOT NULL AUTO_INCREMENT,
     SensorID INT,
     VatID INT,
@@ -181,135 +181,133 @@ CREATE TABLE AlarmWaarde(
 );
 
 
-CREATE TABLE SoortAlarm(
-    SoortAlarmID INT NOT NULL AUTO_INCREMENT,
-    Naam VARCHAR(255),
-    CONSTRAINT PK_SoortAlarm PRIMARY KEY(SoortAlarmID)
+CREATE TABLE SoortAlarm(<br/>
+    &nbsp;  SoortAlarmID INT NOT NULL AUTO_INCREMENT,
+    &nbsp;  Naam VARCHAR(255),
+    &nbsp;  CONSTRAINT PK_SoortAlarm PRIMARY KEY(SoortAlarmID)
 );
 
 
-CREATE TABLE AlarmGebruiker(
-    AlarmGebruikerID INT NOT NULL AUTO_INCREMENT,
-    AlarmWaardeID INT,
-    SoortAlarmID INT,
-    vatID INT,
-    GebruikerID INT,
-	IsVerzondenSms BOOLEAN,
-	IsVerzondenEmail BOOLEAN,
-    CONSTRAINT PK_AlarmGebruiker PRIMARY KEY(AlarmGebruikerID),
-    CONSTRAINT FK_AlarmGebruiker_AlarmWaarde FOREIGN KEY(AlarmWaardeID) REFERENCES AlarmWaarde(AlarmWaardeID),
-    CONSTRAINT FK_AlarmGebruiker_SoortAlarm FOREIGN KEY(SoortAlarmID) REFERENCES SoortAlarm(SoortAlarmID),
-    CONSTRAINT FK_AlarmGebruiker_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
-    CONSTRAINT FK_AlarmGebruiker_Gebruiker FOREIGN KEY(GebruikerID) REFERENCES Gebruiker(PersoonID)
+CREATE TABLE AlarmGebruiker(<br/>
+    &nbsp;  AlarmGebruikerID INT NOT NULL AUTO_INCREMENT,
+    &nbsp;  AlarmWaardeID INT,
+    &nbsp;  SoortAlarmID INT,
+    &nbsp;  vatID INT,
+    &nbsp;  GebruikerID INT,
+	&nbsp;  IsVerzondenSms BOOLEAN,
+	&nbsp;  IsVerzondenEmail BOOLEAN,
+    &nbsp;  CONSTRAINT PK_AlarmGebruiker PRIMARY KEY(AlarmGebruikerID),
+    &nbsp;  CONSTRAINT FK_AlarmGebruiker_AlarmWaarde FOREIGN KEY(AlarmWaardeID) REFERENCES AlarmWaarde(AlarmWaardeID),
+    &nbsp;  CONSTRAINT FK_AlarmGebruiker_SoortAlarm FOREIGN KEY(SoortAlarmID) REFERENCES SoortAlarm(SoortAlarmID),
+    &nbsp;  CONSTRAINT FK_AlarmGebruiker_Vat FOREIGN KEY(VatID) REFERENCES Vat(VatID),
+    &nbsp;  CONSTRAINT FK_AlarmGebruiker_Gebruiker FOREIGN KEY(GebruikerID) REFERENCES Gebruiker(PersoonID)
 );
 
 Wanneer de tabellen zijn aangemaakt, kunt u er al testdata inzetten. Zo kan u delen van de applicatie testen zonder dat het gedeelte van de sensoren ingesteld moet zijn.
 
 ### SQL code invoeren van testdata
 
-INSERT
-INTO
-    Gebruiker(
-        Naam,
-        Wachtwoord,
-        Email,
-        TelNummer,
-        IsAdmin
-    )
-VALUES(
-    "Admin",
-    "Admin123",
-    "Admin@live.com",
-    "0483666666",
-    TRUE
-),(
-    "WijnBoer",
-    "wijnboer123",
-    "wijnboer@live.com",
-    "0483555555",
-    FALSE
+INSERT<br/>
+INTO<br/>
+    &nbsp;  Gebruiker(<br/>
+    &nbsp;    Naam,<br/>
+    &nbsp;    Wachtwoord,<br/>
+    &nbsp;    Email,<br/>
+    &nbsp;    TelNummer,<br/>
+     &nbsp;   IsAdmin<br/>
+    &nbsp;  )
+VALUES(<br/>
+    &nbsp;  "Admin",<br/>
+    &nbsp;  "Admin123",<br/>
+    &nbsp;  "Admin@live.com",<br/>
+    &nbsp;  "0483666666",<br/>
+    &nbsp;  TRUE<br/>
+),(<br/>
+    &nbsp;  "WijnBoer",<br/>
+    &nbsp;  "wijnboer123",<br/>
+    &nbsp;  "wijnboer@live.com",<br/>
+    &nbsp;  "0483555555",<br/>
+    &nbsp;  FALSE<br/>
 );
 
 
-INSERT
-INTO
-    SoortAlarm
-VALUES(1, "SMS"),(2, "Email");
+INSERT<br/>
+INTO<br/>
+    &nbsp;  SoortAlarm<br/>
+VALUES(1, "SMS"),(2, "Email");<br/>
 
 
-INSERT
-INTO
-    SoortMeting(Naam)
-VALUES("temperatuur"),("alcohol"),("druk"),("CO2"),("Ph"),("Troebelheid");
+INSERT<br/>
+INTO<br/>
+    &nbsp;  SoortMeting(Naam)<br/>
+VALUES("temperatuur"),("alcohol"),("druk"),("CO2"),("Ph"),("Troebelheid");<br/>
 
 
-INSERT
-INTO
-    SoortActie (Naam)
-VALUES("toevoegen"),("overhevelen"),("afkoelen in diepvries"),("afkoelen in koelkast");
+INSERT<br/>
+INTO<br/>
+   &nbsp;  SoortActie (Naam)<br/>
+VALUES("toevoegen"),("overhevelen"),("afkoelen in diepvries"),("afkoelen in koelkast");<br/>
 
-INSERT
-INTO
-    Programma
-VALUES(
-    1,
-    "Pers & push",
-    "Ca. 70 Liter",
-    "1,2 Bar"
+INSERT<br/>
+INTO<br/>
+    &nbsp;  Programma<br/>
+VALUES(<br/>
+    &nbsp;  1,<br/>
+    &nbsp;  "Pers & push",<br/>
+    &nbsp;  "Ca. 70 Liter",<br/>
+    &nbsp;  "1,2 Bar"<br/>
 );
 
 
-INSERT
-INTO
-    Druif(Naam)
-VALUES("Cabernet Sauvignon"),("Airén"),("Merlot"),("Chardonnay"),("Sauvignon Blanc"),("Pinot Noir");
+INSERT<br/>
+INTO<br/>
+    &nbsp;  Druif(Naam)<br/>
+VALUES("Cabernet Sauvignon"),("Airén"),("Merlot"),("Chardonnay"),("Sauvignon Blanc"),("Pinot Noir");<br/>
 
 
-INSERT
-INTO
-    Vat
-VALUES(1, "Tank 1", "110 Kg", FALSE, 1, 6,100,NULL,TRUE);
+INSERT<br/>
+INTO<br/>
+    &nbsp;  Vat<br/>
+VALUES(1, "Tank 1", "110 Kg", FALSE, 1, 6,100,NULL,TRUE);<br/>
 
 
-INSERT
-INTO
-    Actie
-VALUES(
-    1,
-    "Gist",
-    NOW(), 1, 1, 1, "10 gram Gist");
+INSERT<br/>
+INTO<br/>
+    &nbsp;  Actie<br/>
+VALUES(<br/>
+    &nbsp;  1,<br/>
+    &nbsp;  "Gist",<br/>
+    &nbsp;  NOW(), 1, 1, 1, "10 gram Gist");<br/>
 
 
-INSERT
-INTO
-    Sensor
-VALUES(1, "Temperatuur Meten", 1),(2, "Ph Meten", 5);
+INSERT<br/>
+INTO<br/>
+    &nbsp;  Sensor<br/>
+VALUES(1, "Temperatuur Meten", 1),(2, "Ph Meten", 5);<br/>
 
 
-INSERT
-INTO
-    AlarmWaarde
-VALUES(1, 1, 1, 31.5);
+INSERT<br/>
+INTO<br/>
+    &nbsp;  AlarmWaarde<br/>
+VALUES(1, 1, 1, 31.5);<br/>
 
-INSERT
-INTO
-    AlarmGebruiker
-VALUES(1, 1, 1, 1, 1,FALSE,NULL);
+INSERT<br/>
+INTO<br/>
+    &nbsp;  AlarmGebruiker<br/>
+VALUES(1, 1, 1, 1, 1,FALSE,NULL);<br/>
 
-INSERT
-INTO
-    AutomatischeMeting(
-        Tijdstempel,
-        VatID,
-        SensorID,
-        Waarde
-    )
-VALUES(
-    ADDTIME(NOW(), '01:00:00'), 1, 1, 18),
-    (
-        ADDTIME(NOW(), '02:00:00'), 1, 1, 20),
-        (
-            ADDTIME(NOW(), '08:00:00'), 1, 1, 38)
+INSERT<br/>
+INTO<br/>
+    &nbsp;  AutomatischeMeting(<br/>
+    &nbsp;    Tijdstempel,<br/>
+    &nbsp;    VatID,<br/>
+    &nbsp;    SensorID,<br/>
+    &nbsp;    Waarde<br/>
+    &nbsp;  )<br/>
+VALUES(<br/>
+    &nbsp;  ADDTIME(NOW(), '01:00:00'), 1, 1, 18),<br/>    
+    &nbsp;  ADDTIME(NOW(), '02:00:00'), 1, 1, 20),<br/>
+    &nbsp;  ADDTIME(NOW(), '08:00:00'), 1, 1, 38)<br/>
 
 
 ## Configuratie Grafana
