@@ -6,10 +6,8 @@ author: Rewined
 
 {% include nav-breadcrumbs.html %}
 
-# Rewined Documentation
-![Rewined](media/logo/rewined_logo_s.png)
 
-## Installatie
+## Installatie in grote stappen
 
 ### Raspberry Pi
 
