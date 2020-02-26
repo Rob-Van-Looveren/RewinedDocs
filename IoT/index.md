@@ -81,7 +81,7 @@ Nu de Raspberry Pi klaar is voor gebruik, moet deze in het bezit zijn van het ju
 
 Om het het bestand van uw PC naar de Raspberry Pi over te zetten, sleept u dit gewoonweg naar de 'home/pi' map van de Raspberry Pi met Mobaxterm.
 
-De toelichting staat in het script zelf. Elk stukje code wordt in commentaar toegelicht.
+De toelichting staat in het script zelf. Elk stukje code wordt in commentaar (in het groen) toegelicht.
 
 ![iot-script1](/{{site.RepoName}}/media/iot/iot-script1.JPG)
 ![Iot-script2](/{{site.RepoName}}/media/iot/iot-script2.JPG)
