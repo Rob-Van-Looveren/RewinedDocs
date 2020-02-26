@@ -21,7 +21,7 @@ Het zal dus nodig zijn dat u, bij gebruik van de echte sensoren, opzoekt hoe u d
 
 Hier ziet u het schema dat onze demo opstelling weergeeft. Elk vat heeft een eigen Raspberry Pi, die de gegevens van de sensoren zal verzenden naar de applicatie. Verder op deze pagina vindt u de instellingen hiervan.
 
-![Iot-schema](/{{site.RepoName}}/media/bi/iot-schema.jpg)
+![Iot-schema](/{{site.RepoName}}/media/iot/iot-schema.jpg)
 
 _Hier ziet u hoe u alles dient aan te sluiten op de Raspberry Pi._
 
@@ -46,7 +46,7 @@ Wanneer dit gelukt is, komt u in een terminal terecht waar u Linux commando's ku
 
 Omdat de Raspberry Pi niet automatisch met wifi verbonden is, is het gemakkelijk om bij de eerste setup via een ethernetkabel de Raspberry Pi te configureren. Hiervoor moet u naar uw netwerkinstellingen gaan op uw PC en de wifi delen met de ethernetpoort waar de Raspberry Pi op aangesloten is.
 
-![Iot-adapter](/{{site.RepoName}}/media/bi/iot-adapter.JPG)
+![iot-adapter](/{{site.RepoName}}/media/iot/iot-adapter.JPG)
 
 _Later kunt u ervoor kiezen om de Raspberry Pi draadloos in te stellen._
 
@@ -81,10 +81,10 @@ _Om het het bestand van uw PC naar de Raspberry Pi over te zetten, sleept u dit 
 
 De toelichting staat in het script zelf. Elk stukje code wordt in commentaar toegelicht.
 
-![iot-script1](/{{site.RepoName}}/media/bi/iot-script1.JPG)
-![Iot-script2](/{{site.RepoName}}/media/bi/iot-script2.JPG)
-![Iot-script3](/{{site.RepoName}}/media/bi/iot-script3.JPG)
-![Iot-script4](/{{site.RepoName}}/media/bi/iot-script4.JPG)
+![iot-script1](/{{site.RepoName}}/media/iot/iot-script1.JPG)
+![Iot-script2](/{{site.RepoName}}/media/iot/iot-script2.JPG)
+![Iot-script3](/{{site.RepoName}}/media/iot/iot-script3.JPG)
+![Iot-script4](/{{site.RepoName}}/media/iot/iot-script4.JPG)
 
 
 
