@@ -27,11 +27,11 @@ Om deze aan te maken, werd een SQL script gemaakt. We tonen in het volgende gede
 
 CREATE TABLE Druif(
     DruifID INT NOT NULL AUTO_INCREMENT,<br/>
-    Naam VARCHAR(255),<br/>
-	Kloontype VARCHAR(255),<br/>
-	Leeftijd int,<br/>
-	Perceel VARCHAR(255),<br/>
-	CONSTRAINT PK_Druif PRIMARY KEY(DruifID)<br/>
+    &nbsp;Naam VARCHAR(255),<br/>
+	&nbsp;Kloontype VARCHAR(255),<br/>
+	&nbsp;Leeftijd int,<br/>
+	&nbsp;Perceel VARCHAR(255),<br/>
+	&nbsp;CONSTRAINT PK_Druif PRIMARY KEY(DruifID)<br/>
 );
 
 
