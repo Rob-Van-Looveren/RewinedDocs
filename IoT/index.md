@@ -39,8 +39,8 @@ In deze sectie trachten we u zo duidelijk mogelijk uit te leggen hoe u met de Ra
 
 ### Verbinding met Raspberry Pi
 
-Eerst moet u de laatste versie van Raspbian downloaden en mounten op uw SD kaartje. De laatste versie kunt u op de volgende link vinden: 
-* [Raspbian downloaden](https://www.raspberry.org/downloads/raspbian).
+Eerst moet u de laatste versie van Raspbian downloaden en mounten op uw SD kaartje. 
+[Klik hier om naar de downloadpagina te gaan](https://www.raspberry.org/downloads/raspbian).
 Wanneer u deze op uw SD kaart hebt gezet, kan de ethernet- en powerkabel aangesloten worden aan uw PC en uw Raspberry Pi.
 
 Nu kan je de Raspberry Pi updaten en gereed maken voor het verdere gebruik van de omgeving. Verbinding maken met de Raspberry Pi kan met programma's zoals Putty of MobaXterm. Dit doet u door het IP adres van de Raspberry Pi in te geven. 
