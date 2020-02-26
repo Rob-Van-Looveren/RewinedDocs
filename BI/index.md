@@ -1,7 +1,7 @@
 ---
 layout: default
 title: bi
-author: -
+author: Evi W.
 
 ---
 
@@ -19,7 +19,7 @@ Het BI-gedeelte houdt de visualisatie in van de gegevens met behulp van de softw
 
 
 * [SQL](/{{site.RepoName}}/BI/SQL)
-* [Condfig](/{{site.RepoName}}/BI/Config)
+* [Config](/{{site.RepoName}}/BI/Config)
 
 
 
