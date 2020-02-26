@@ -38,11 +38,11 @@ Het eerste dat we moeten doen is er voor zorgen dat Apache met SSL certicaten en
 Vervolgens kunnen we per vhost bepalen welke SSL instellingen we willen maken.
 We doen dit binnen ```/etc/apache2/sites-enabled/000-default.conf```
 * Eerst zetten we binnen onze vhost SSL aan
-    * SSLEngine On
+    * ```SSLEngine On```
 * Vervolgens geven we op de nodige bestanden staan, namelijk het certificaat, chain & private key
-    * SSLCertificateFile /var/www/cert/cert.pem
-    * SSLCertificateKeyFile /var/www/cert/privkey.pem
-    * SSLCACertificateFile /var/www/cert/chain.pem
+    * ```SSLCertificateFile /var/www/cert/cert.pem```
+    * ```SSLCertificateKeyFile /var/www/cert/privkey.pem```
+    * ```SSLCACertificateFile /var/www/cert/chain.pem```
 
 ``` 
 sudo nano /etc/apache2/sites-enabled/000-default.conf
@@ -53,7 +53,6 @@ sudo nano /etc/apache2/sites-enabled/000-default.conf
     SSLCACertificateFile /var/www/cert/chain.pem
     ...
 </VirtualHost>
-
 ```
 
 
