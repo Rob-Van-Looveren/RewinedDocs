@@ -16,8 +16,8 @@ Het BI-gedeelte houdt de visualisatie in van de gegevens met behulp van de softw
 
 In het onderdeel 'CCS' vindt u bij het gedeelte 'MySQL' hoe u deze installeert. Als u dit eerst wilt raadplegen, klikt u [hier](../CCS/MySQL/).
 
-[SQL](/{{site.RepoName}}/BI/SQL)
-[SQL](/{{site.RepoName}}/BI/Config)
+* [SQL](/{{site.RepoName}}/BI/SQL)
+* [Condfig](/{{site.RepoName}}/BI/Config)
 
 ## Configuratie Grafana
 
