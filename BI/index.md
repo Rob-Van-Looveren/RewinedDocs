@@ -16,7 +16,7 @@ Het BI-gedeelte houdt de visualisatie in van de gegevens met behulp van de softw
 
 In het onderdeel 'CCS' vindt u bij het gedeelte 'MySQL' hoe u deze installeert. Als u dit eerst wilt raadplegen, klikt u [hier](../CCS/MySQL/).
 
-## SQL code om tabellen aan te maken
+## SQL 
 Voor dit project hebben we zelf een database aangemaakt met PhpMyAdmin en hierin tabellen gemaakt. Deze zijn gebaseerd op het model dat we voor dit project hebben opgesteld:
 
 ![databaseModel](/{{site.RepoName}}/media/bi/databasemodel.png)
@@ -37,7 +37,7 @@ Volgende SQL code zorgt voor het invoeren van testdata:
 ![sql4](/{{site.RepoName}}/media/bi/sql4.JPG)
 _U kan deze gebruiken om zelf uw tabellen op te vullen._
 
-## Configuratie
+## Configuratie Grafana
 
 Voordat u alle functionaliteiten van Grafana kunt gebruiken in de applicatie, moeten nog enkele configuraties aangepast worden.
 
