@@ -21,9 +21,9 @@ Voor dit project hebben we zelf een database aangemaakt met PhpMyAdmin en hierin
 
 ![databaseModel](/{{site.RepoName}}/media/bi/databasemodel.png)
 
-Om deze aan te maken, werd een SQL script gemaakt. We tonen hier het gedeelte om tabellen aan te maken. We tonen niet gans het script, daar u zelf aan de slag zult gaan met een eigen naam voor elke tabel. 
+Om deze aan te maken, werd een SQL script gemaakt. We tonen in het volgende gedeelte de code die u hiervoor nodig heeft. U kan deze kopiëren en plakken in een teksteditor (bijvoorbeeld Kladblok). U dient dit op te slaan met de extensie ```.sql```.
 
-Volgende SQL code zorgt voor de aanmaak van de tabellen:
+### SQL code aanmaken tabellen
 
 CREATE TABLE Druif(
     DruifID INT NOT NULL AUTO_INCREMENT,
@@ -203,11 +203,9 @@ CREATE TABLE AlarmGebruiker(
     CONSTRAINT FK_AlarmGebruiker_Gebruiker FOREIGN KEY(GebruikerID) REFERENCES Gebruiker(PersoonID)
 );
 
-_U kan deze gebruiken om zelf uw eigen tabellen aan te maken._
-
 Wanneer de tabellen zijn aangemaakt, kunt u er al testdata inzetten. Zo kan u delen van de applicatie testen zonder dat het gedeelte van de sensoren ingesteld moet zijn.
 
-Volgende SQL code zorgt voor het invoeren van testdata:
+### SQL code invoeren van testdata
 
 INSERT
 INTO
@@ -313,7 +311,6 @@ VALUES(
         (
             ADDTIME(NOW(), '08:00:00'), 1, 1, 38)
 
-_U kan deze gebruiken om zelf uw tabellen op te vullen._
 
 ## Configuratie Grafana
 
