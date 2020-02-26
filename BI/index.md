@@ -215,7 +215,7 @@ INTO<br/>
     &nbsp;    Email,<br/>
     &nbsp;    TelNummer,<br/>
      &nbsp;   IsAdmin<br/>
-    &nbsp;  )
+    &nbsp;  )<br/>
 VALUES(<br/>
     &nbsp;  "Admin",<br/>
     &nbsp;  "Admin123",<br/>
