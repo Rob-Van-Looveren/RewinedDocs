@@ -8,9 +8,8 @@ author: Rob V.L.
 
 # SSL
 ![SSL](/{{ site.RepoName }}//media/logo/SSL.png)
-![HTTPS](/{{ site.RepoName }}//media/logo/https.png)
+<---![HTTPS](/{{ site.RepoName }}//media/logo/https.png)-->
 ![LE](/{{ site.RepoName }}//media/logo/LE.png)
-
 
 
 ## Wat
