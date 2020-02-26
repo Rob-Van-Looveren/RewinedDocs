@@ -32,6 +32,19 @@ Om deze proxy-werking te bereiken gebruiken we een Apache Webserver, waar we ter
 
 * Enable de proxy modules binnen apache 
     * ```sudo a2enmod proxy proxy_http proxy_balancer lbmethod_byrequests```
+* Configuur proxy voor elke achter liggende server in een vhost
+    * 3 onderdelen
+        * ProxyPreserveHost On
+        * ProxyPass / http://IP:port/
+        * ProxyPassReverse / http://IP:Port/
+    * Voorbeeld
+        ```
+        <VirtualHost *:3401>
+            ProxyPreserveHost On
+            ProxyPass / http://10.10.10.101:5000/
+            ProxyPassReverse / http://10.10.10.101:5000/
+            </VirtualHost>
+        ```
 
 
 ## Zie ook
