@@ -14,7 +14,7 @@ Welkom!
 
 Het BI-gedeelte houdt de visualisatie in van de gegevens met behulp van de software Grafana. Hiervoor moet uiteraard ook een database aanwezig zijn waar alle gegevens van de sensoren en vaten in komen te staan.
 
-In het onderdeel 'CCS' vindt u bij het gedeelte 'MySQL' hoe u deze installeert. Als u dit eerst wilt raadplegen, klikt u [hier](CCS/MySQL/).
+In het onderdeel 'CCS' vindt u bij het gedeelte 'MySQL' hoe u deze installeert. Als u dit eerst wilt raadplegen, klikt u [hier](../CCS/MySQL/).
 
 ## SQL code om tabellen aan te maken
 Voor dit project hebben we zelf een database aangemaakt met PhpMyAdmin en hierin tabellen gemaakt. Deze zijn gebaseerd op het model dat we voor dit project hebben opgesteld:
