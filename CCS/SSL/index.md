@@ -61,7 +61,9 @@ We doen dit binnen ```/etc/apache2/sites-enabled/000-default.conf```
     * ```sudo service apache2 status```
     
 ### Certificaat testen
+Je kan zelf testen of het certificaat correct geconfigureerd is door te surfen naar de url met https. Als je een groen slotje krijgt is het certificaat goed geinstalleerd. Daarnaast vind je online ook tool die het certificaat testen en meer info geven over de status en eigenschappen. 
 
+![Cert](/{{ site.RepoName }}//media/netwerk/test.png)
 
 
 
