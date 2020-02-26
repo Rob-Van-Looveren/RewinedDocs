@@ -22,7 +22,7 @@ Met SSL gaan we er voorzorgen dat de verbinding tussen de client en de server be
 Om te beginnen moeten we het bestaande certificaat exporteren van de Synology NAS. Het huidige certificaat is geldig tot 10 april, op de NAS wordt dit certificaat automatisch vernieuwd, door een nieuw certificaat aan te vragen bij de provider (lets encrypt). In realiteit zou dit ook zo ingesteld kunnen worden op de Proxy. 
 
 ![Cert](/{{ site.RepoName }}//media/netwerk/certificaat.png)
-![keys](/{{ site.RepoName }}//media/netwerk/keys2.png)
+![keys](/{{ site.RepoName }}//media/netwerk/keys.png)
 
 ### Certificaat & Keys opslaan + rechten instellen 
 Vervolgens maken we een map aan op de proxy server waar we het certificaat en keys gaan opslaan. We hebben ervoor gekozen voor volgende locatie. 
@@ -35,7 +35,15 @@ Om snel leesrechten te geven kunnen we ```sudo chmod +r /var/www/cert/* ``` gebr
 ### SSL configureren binnen Apache2
 Het eerste dat we moeten doen is er voor zorgen dat Apache met SSL certicaten en keys kan werken. Dit doen we door de module ssl binnen apache te activeren 
 ```sudo a2enmod ssl ```
-Vervolgens kunnen we per vhost bepalen welke SSL instellingen we willen maken
+Vervolgens kunnen we per vhost bepalen welke SSL instellingen we willen maken.
+We doen dit binnen ```/etc/apache2/sites-enabled/000-default.conf```
+* Eerst zetten we binnen onze vhost SSL aan
+    * SSLEngine On
+* Vervolgens geven we op de nodige bestanden staan, namelijk het certificaat, chain & private key
+    * SSLCertificateFile /var/www/cert/cert.pem
+    * SSLCertificateKeyFile /var/www/cert/privkey.pem
+    * SSLCACertificateFile /var/www/cert/chain.pem
+
 ``` 
 sudo nano /etc/apache2/sites-enabled/000-default.conf
 
