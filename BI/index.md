@@ -36,7 +36,7 @@ U kan controleren of de instellingen juist zijn aangepast door in de webinterfac
 
 _de webinterface bereikt u in uw browser via 'http://host-ip:3000'_
 
-![Grafana_settings](/{{site.RepoName}}/media/bi/grafana_settings.png)
+![Grafana_settings](/{{site.RepoName}}/media/bi/grafana-settings.png)
 
 ## Datasource instellen
 
