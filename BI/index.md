@@ -74,7 +74,19 @@ Verder op de knop van general kunt u de naam en descriptie van deze grafiek aanp
 
 ![Grafana-general](/{{site.RepoName}}/media/bi/grafana-general.png)
 
-Wanneer je een paneel toevoegt of bewerkt, is het altijd belangrijk om alles op te slaan door rechtsboven de pagina op het volgende icoon te klikken: ![Grafana-opslaan](/{{site.RepoName}}/media/bi/grafana-opslaan.png)
+Wanneer je een paneel toevoegt of bewerkt, is het altijd belangrijk om alles op te slaan door rechtsboven de pagina op het volgende icoon te klikken: 
+![Grafana-opslaan](/{{site.RepoName}}/media/bi/grafana-opslaan.png)
+
+Ten slotte kunt u ook nog het tijdslot kiezen vanaf wanneer je data wilt zien. Alle data dat buiten dit slot valt, zal niet getoond worden.
+![Grafana-tijdslot](/{{site.RepoName}}/media/bi/grafana-tijdslot.png)
+
+## Panelen exporteren naar website
+
+We hebben voor ons project bewust gekozen voor Grafana omdat deze het zeer eenvoudig maakt om uw visualisaties te exporteren. Wanneer je op de titel van een paneel klikt, zal een menu tevoorschijn komen. Hier kiest u voor 'share':
+![Grafana-share](/{{site.RepoName}}/media/bi/grafana-share.png)
+
+Er zal een nieuw venster te zien zijn met verschillende opties om het paneel te delen. Kies hier bovenaan voor de optie 'embed'. De code die tevoorschijn komt, kan rechtstreeks in het html-gedeelte van de website gekopieerd worden zoals hieronder getoond. De huidige instellingen van dit paneel zullen allemaal mee overgedragen worden naar het paneel in de web applicatie. Het zal dus ook updaten om dezelfde ingestelde intervallen.
+![Grafana-delen](/{{site.RepoName}}/media/bi/grafana-delen.png)
 
 
 
