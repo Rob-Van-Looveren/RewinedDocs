@@ -46,6 +46,13 @@ We doen dit binnen ```/etc/apache2/sites-enabled/000-default.conf```
 
 ``` 
 sudo nano /etc/apache2/sites-enabled/000-default.conf
+<VirtualHost *:3400>
+    SSLEngine On
+    SSLCertificateFile /var/www/cert/cert.pem
+    SSLCertificateKeyFile /var/www/cert/privkey.pem
+    SSLCACertificateFile /var/www/cert/chain.pem
+    ...
+</VirtualHost>
 
 ```
 
