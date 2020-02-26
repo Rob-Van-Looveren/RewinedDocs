@@ -21,7 +21,7 @@ Het zal dus nodig zijn dat u, bij gebruik van de echte sensoren, opzoekt hoe u d
 
 Hier ziet u het schema dat onze demo opstelling weergeeft. Elk vat heeft een eigen Raspberry Pi, die de gegevens van de sensoren zal verzenden naar de applicatie. Verder op deze pagina vindt u de instellingen hiervan.
 
-![Iot-schema](/{{site.RepoName}}/media/bi/iot-schema.png)
+![Iot-schema](/{{site.RepoName}}/media/bi/iot-schema.jpg)
 
 _Hier ziet u hoe u alles dient aan te sluiten op de Raspberry Pi._
 
