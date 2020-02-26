@@ -79,7 +79,7 @@ Nu kunt u de file opslagen met de toetsencombinatie ```ctrl+x```gevolgd met 'y'.
 
 Nu de Raspberry Pi klaar is voor gebruik, moet deze in het bezit zijn van het juiste Python script om de gegevens van de sensoren door te sturen naar de server. 
 
-_Om het het bestand van uw PC naar de Raspberry Pi over te zetten, sleept u dit gewoonweg naar de 'home/pi' map van de Raspberry Pi met Mobaxterm_
+Om het het bestand van uw PC naar de Raspberry Pi over te zetten, sleept u dit gewoonweg naar de 'home/pi' map van de Raspberry Pi met Mobaxterm.
 
 De toelichting staat in het script zelf. Elk stukje code wordt in commentaar toegelicht.
 
