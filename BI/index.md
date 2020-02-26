@@ -321,6 +321,8 @@ Voordat u alle functionaliteiten van Grafana kunt gebruiken in de applicatie, mo
 
 Deze instellingen dienen aangemaakt te worden in de configuratiefile van Grafana. Deze kunt u vinden op de plaats waar u Grafana geïnstalleerd hebt. Deze file heeft als extensie ```.ini```.
 
+Hieronder vindt u de instellingen die veranderd moeten worden.
+
 ### Auth.anonymous
 
 enabled false --> veranderen naar 'enabled true'
