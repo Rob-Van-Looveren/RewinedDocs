@@ -47,7 +47,7 @@ Nu kan je de Raspberry Pi updaten en gereed maken voor het verdere gebruik van d
 Indien u niet weet hoe dit adres te weten, kan u via volgende link methodes vinden om dit op te zoeken:
 [Raspberry Pi IP adress ](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 
-De standaard username is 'raspberry' en het standaard wachtwoord is 'pi'. 
+De standaard username is 'pi' en het standaard wachtwoord is 'raspberry'. 
 
 Wanneer dit gelukt is, komt u in een terminal terecht waar u Linux commando's kunt doorgeven aan de Raspberry Pi.
 
