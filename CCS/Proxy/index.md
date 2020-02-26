@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Proxmox
+title: Proxy
 author: Rob V.L.
 ---
 
@@ -57,6 +57,6 @@ _een request op poort 3401 op de proxy server wordt dus achterliggend geforward 
 
 ## Bronnen 
 * [Apache Proxy Mod](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html)
-* []()
+* [What is a Reverse Proxy](https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/)
 
 {% include footer.html %}
