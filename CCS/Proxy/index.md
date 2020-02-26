@@ -39,6 +39,7 @@ Om deze proxy-werking te bereiken gebruiken we een Apache Webserver, waar we ter
         * ProxyPassReverse / http://IP:Port/
     * Voorbeeld
         ```
+        sudo nano /etc/apache2/sites-enabled/000-default.conf
         <VirtualHost *:3401>
             ProxyPreserveHost On
             ProxyPass / http://10.10.10.101:5000/

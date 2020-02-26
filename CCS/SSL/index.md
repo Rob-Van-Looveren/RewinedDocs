@@ -24,12 +24,22 @@ Om te beginnen moeten we het bestaande certificaat exporteren van de Synology NA
 ![Cert](/{{ site.RepoName }}//media/netwerk/certificaat.png)
 ![keys](/{{ site.RepoName }}//media/netwerk/keys2.png)
 
+### Certificaat & Keys opslaan + rechten instellen 
 Vervolgens maken we een map aan op de proxy server waar we het certificaat en keys gaan opslaan. We hebben ervoor gekozen voor volgende locatie. 
 ```sudo mkdir /var/www/cert/```
 
 Nadien plaatsen we de bestanden in op deze locatie, en geven we apache lees rechten.
 Het overzetten kan zowel via FTP, of door de inhoud te kopieren en te plakken binnen een SSH sessie.
 Om snel leesrechten te geven kunnen we ```sudo chmod +r /var/www/cert/* ``` gebruiken, echter is het veilig om de user ```www-data``` eigenaar van het bestand te maken via ```sudo chown -R www-data /var/www/cert```
+
+### SSL configureren binnen Apache2
+Het eerste dat we moeten doen is er voor zorgen dat Apache met SSL certicaten en keys kan werken. Dit doen we door de module ssl binnen apache te activeren 
+```sudo a2enmod ssl ```
+Vervolgens kunnen we per vhost bepalen welke SSL instellingen we willen maken
+``` 
+sudo nano /etc/apache2/sites-enabled/000-default.conf
+
+```
 
 
 ![Cert](/{{ site.RepoName }}//media/netwerk/tree.png)
