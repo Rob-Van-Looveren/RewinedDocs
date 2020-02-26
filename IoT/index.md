@@ -19,7 +19,9 @@ Het zal dus nodig zijn dat u, bij gebruik van de echte sensoren, opzoekt hoe u d
 
 ## IoT schema
 
-Hier ziet u het schema dat onze demo opstelling weergeeft. Elk vat heeft een eigen Raspberry Pi, die de gegevens van de sensoren zal verzenden naar de applicatie. Verder op deze pagina vindt u de instellingen hiervan.
+Hier ziet u het schema dat een demo opstelling weergeeft. Elk vat heeft een eigen Raspberry Pi, die de gegevens van de sensoren zal verzenden naar de applicatie. De sensoren dienen uiteraard vervangen te worden door de echte sensoren. Om deze aan te sluiten dient u toch enige kennis van IoT te hebben of hulp in te schakelen.
+
+Met behulp van dit schema, kunt u de applicatie al testen.
 
 ![Iot-schema](/{{site.RepoName}}/media/iot/iot-schema.jpg)
 
@@ -52,7 +54,7 @@ _Later kunt u ervoor kiezen om de Raspberry Pi draadloos in te stellen._
 
 ### Configuratie 
 
-Om de Raspberry Pi volledig up te date te stellen, dient u de volgende commando's in te geven
+Om de Raspberry Pi volledig up te date te stellen, dient u de volgende commando's in te geven:
 
 ```
 sudo apt update
