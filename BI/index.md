@@ -25,56 +25,56 @@ Om deze aan te maken, werd een SQL script gemaakt. We tonen in het volgende gede
 
 ### SQL code aanmaken tabellen
 
-CREATE TABLE Druif(
-    DruifID INT NOT NULL AUTO_INCREMENT,<br/>
-    &nbsp;Naam VARCHAR(255),<br/>
-	&nbsp;Kloontype VARCHAR(255),<br/>
-	&nbsp;Leeftijd int,<br/>
-	&nbsp;Perceel VARCHAR(255),<br/>
-	&nbsp;CONSTRAINT PK_Druif PRIMARY KEY(DruifID)<br/>
+CREATE TABLE Druif(<br/>
+    &nbsp;  DruifID INT NOT NULL AUTO_INCREMENT,<br/>
+    &nbsp;  Naam VARCHAR(255),<br/>
+	&nbsp;  Kloontype VARCHAR(255),<br/>
+	&nbsp;  Leeftijd int,<br/>
+	&nbsp;  Perceel VARCHAR(255),<br/>
+	&nbsp;  CONSTRAINT PK_Druif PRIMARY KEY(DruifID)<br/>
 );
 
 
-CREATE TABLE Programma(
-    ProgrammaID INT NOT NULL AUTO_INCREMENT,<br/>
-    Pmax VARCHAR(255),<br/>
-    Inhoud VARCHAR(255),<br/>
-    Naam VARCHAR(255),<br/>
-    CONSTRAINT PK_Programma PRIMARY KEY(ProgrammaID)<br/>
+CREATE TABLE Programma(<br/>
+    &nbsp;  ProgrammaID INT NOT NULL AUTO_INCREMENT,<br/>
+    &nbsp;  Pmax VARCHAR(255),<br/>
+    &nbsp;  Inhoud VARCHAR(255),<br/>
+    &nbsp;  Naam VARCHAR(255),<br/>
+    &nbsp;  CONSTRAINT PK_Programma PRIMARY KEY(ProgrammaID)<br/>
 );
 
-CREATE TABLE RaspberryPi(
-	RaspberryPiID INT NOT NULL AUTO_INCREMENT,<br/>
-	Naam VARCHAR(255),<br/>
-	Wachtwoord VARCHAR(255),<br/>
-	InGebruik BOOLEAN,<br/>
-	CONSTRAINT PK_RaspberryPi PRIMARY KEY(RaspberryPiID)<br/>
+CREATE TABLE RaspberryPi(<br/>
+	&nbsp;  RaspberryPiID INT NOT NULL AUTO_INCREMENT,<br/>
+	&nbsp;  Naam VARCHAR(255),<br/>
+	&nbsp;  Wachtwoord VARCHAR(255),<br/>
+	&nbsp;  InGebruik BOOLEAN,<br/>
+	&nbsp;  CONSTRAINT PK_RaspberryPi PRIMARY KEY(RaspberryPiID)<br/>
 );
 
-CREATE TABLE Vat(
-    VatID INT NOT NULL AUTO_INCREMENT,<br/>
-    Naam VARCHAR(255),<br/>
-    Oogst VARCHAR(255),<br/>
-    Gekneusd BOOLEAN,<br/>
-    ProgrammaID INT,<br/>
-    DruifID INT,<br/>
-    Nummer INT,<br/>
-	RaspberryPiID INT,<br/>
-	IsActief BOOLEAN,<br/>
-	Locatie VARCHAR(255),<br/>
-	TypeVatID INT,<br/>
-	Koelmantel BOOLEAN,<br/>
-	MateriaalID INT,<br/>
-	Mangat BOOLEAN,<br/>
-	SoortWijnID INT,<br/>
-	Jaar INT,<br/>
-    CONSTRAINT PK_Vat PRIMARY KEY(VatID),<br/>
-    CONSTRAINT FK_Vat_Programma FOREIGN KEY(ProgrammaID) REFERENCES Programma(ProgrammaID),<br/>
-    CONSTRAINT FK_Vat_Druif FOREIGN KEY(DruifID) REFERENCES Druif(DruifID),<br/>
-	CONSTRAINT FK_Vat_RaspberryPi FOREIGN KEY(RaspberryPiID) REFERENCES RaspberryPi(RaspberryPiID),<br/>
-	CONSTRAINT FK_Vat_TypeVat FOREIGN KEY(TypeVatID) REFERENCES TypeVat(TypeVatID),<br/>
-	CONSTRAINT FK_Vat_Materiaal FOREIGN KEY(MateriaalID) REFERENCES Materiaal(MateriaalID),<br/>
-	CONSTRAINT FK_Vat_Soortwijn FOREIGN KEY(SoortWijnID) REFERENCES SoortWijn(SoortWijnID)<br/>
+CREATE TABLE Vat(<br/>
+    &nbsp;  VatID INT NOT NULL AUTO_INCREMENT,<br/>
+    &nbsp;  Naam VARCHAR(255),<br/>
+    &nbsp;  Oogst VARCHAR(255),<br/>
+    &nbsp;  Gekneusd BOOLEAN,<br/>
+    &nbsp;  ProgrammaID INT,<br/>
+    &nbsp;  DruifID INT,<br/>
+    &nbsp;  Nummer INT,<br/>
+	&nbsp;  RaspberryPiID INT,<br/>
+	&nbsp;  IsActief BOOLEAN,<br/>
+	&nbsp;  Locatie VARCHAR(255),<br/>
+	&nbsp;  TypeVatID INT,<br/>
+	&nbsp;  Koelmantel BOOLEAN,<br/>
+	&nbsp;  MateriaalID INT,<br/>
+	&nbsp;  Mangat BOOLEAN,<br/>
+	&nbsp;  SoortWijnID INT,<br/>
+	&nbsp;  Jaar INT,<br/>
+    &nbsp;  CONSTRAINT PK_Vat PRIMARY KEY(VatID),<br/>
+    &nbsp;  CONSTRAINT FK_Vat_Programma FOREIGN KEY(ProgrammaID) REFERENCES Programma(ProgrammaID),<br/>
+    &nbsp;  CONSTRAINT FK_Vat_Druif FOREIGN KEY(DruifID) REFERENCES Druif(DruifID),<br/>
+	&nbsp;  CONSTRAINT FK_Vat_RaspberryPi FOREIGN KEY(RaspberryPiID) REFERENCES RaspberryPi(RaspberryPiID),<br/>
+	&nbsp;  CONSTRAINT FK_Vat_TypeVat FOREIGN KEY(TypeVatID) REFERENCES TypeVat(TypeVatID),<br/>
+	&nbsp;  CONSTRAINT FK_Vat_Materiaal FOREIGN KEY(MateriaalID) REFERENCES Materiaal(MateriaalID),<br/>
+	&nbsp;  CONSTRAINT FK_Vat_Soortwijn FOREIGN KEY(SoortWijnID) REFERENCES SoortWijn(SoortWijnID)<br/>
 );<br/>
 
 CREATE TABLE TypeVat(
