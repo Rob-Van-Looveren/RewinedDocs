@@ -46,20 +46,21 @@ We doen dit binnen ```/etc/apache2/sites-enabled/000-default.conf```
     * ```SSLCertificateKeyFile /var/www/cert/privkey.pem```
     * ```SSLCACertificateFile /var/www/cert/chain.pem```
     * voorbeeld
-    ``` 
-    sudo nano /etc/apache2/sites-enabled/000-default.conf
-    <VirtualHost *:3400>
-        SSLEngine On
-        SSLCertificateFile /var/www/cert/cert.pem
-        SSLCertificateKeyFile /var/www/cert/privkey.pem
-        SSLCACertificateFile /var/www/cert/chain.pem
-        ...
-    </VirtualHost>
-    ```
+        ``` 
+        sudo nano /etc/apache2/sites-enabled/000-default.conf
+        <VirtualHost *:3400>
+            SSLEngine On
+            SSLCertificateFile /var/www/cert/cert.pem
+            SSLCertificateKeyFile /var/www/cert/privkey.pem
+            SSLCACertificateFile /var/www/cert/chain.pem
+            ...
+        </VirtualHost>
+        ```
 * Ten slotte herstarten we apache2 nog
     * ```sudo service apache2 restart```
     * ```sudo service apache2 status```
     
+### Certificaat testen
 
 
 
@@ -74,6 +75,6 @@ We doen dit binnen ```/etc/apache2/sites-enabled/000-default.conf```
 
 ## Bronnen 
 * []()
-* []()
+* [SSL checker - Digicert](https://www.digicert.com/help/)
 
 {% include footer.html %}
